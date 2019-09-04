@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/killapp.dir/main.cpp.o  -o killapp 

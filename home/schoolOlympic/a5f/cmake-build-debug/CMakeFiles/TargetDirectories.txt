@@ -1,0 +1,3 @@
+/home/anton/CPP/home/schoolOlympic/a5f/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/anton/CPP/home/schoolOlympic/a5f/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anton/CPP/home/schoolOlympic/a5f/cmake-build-debug/CMakeFiles/a5f.dir
