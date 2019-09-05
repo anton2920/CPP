@@ -12,6 +12,9 @@ int main() {
     /* Main part */
     for (;;) {
         func = menu1();
+        if (func == -1) {
+            return 0;
+        }
         properRead = menu2();
 
         nelem = getNelem();

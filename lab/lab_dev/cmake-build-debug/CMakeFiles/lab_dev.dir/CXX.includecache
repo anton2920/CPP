@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs.cpp
-libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
-string
--
-
 /home/anton/CPP/lab/lab_dev/libs/libs.hpp
 iostream
 -

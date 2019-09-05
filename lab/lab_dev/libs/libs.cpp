@@ -29,7 +29,7 @@ size_t getNelem() {
 int *getArray(size_t nelem) {
 
     /* Returning value */
-    return new int [nelem];
+    return new int[nelem];
 }
 
 bool readArr(int *arr, size_t nelem = 10) {
@@ -110,10 +110,146 @@ bool fileArr(int *arr, size_t nelem = 10) {
     return true;
 }
 
+void no_cmd(void) {
+
+    /* Final output */
+    printf("| menu: no such command!                                     |\n");
+}
+
+int quit_m(void) {
+
+    /* Initializing variables */
+    int junk;
+
+    /* Main part */
+    if ((junk = getchar()) == 'u') {
+        if ((junk = getchar()) == 'i') {
+            if ((junk = getchar()) == 't') {
+                if ((junk = getchar()) == '\n') {
+                    return -1;
+                } else {
+                    no_cmd();
+                    while ((junk = getchar()) != '\n');
+                    return 0;
+                }
+            } else {
+                no_cmd();
+                if (junk == '\n') {
+                    return 0;
+                } else {
+                    while ((junk = getchar()) != '\n');
+                    return 0;
+                }
+            }
+        } else {
+            no_cmd();
+            if (junk == '\n') {
+                return 0;
+            } else {
+                while ((junk = getchar()) != '\n');
+                return 0;
+            }
+        }
+    } else {
+        no_cmd();
+        if (junk == '\n') {
+            return 0;
+        } else {
+            while ((junk = getchar()) != '\n');
+            return 0;
+        }
+    }
+}
+
+int back_m(void) {
+    /* Initializing variables */
+    int junk;
+
+    /* Main part */
+    if ((junk = getchar()) == 'a') {
+        if ((junk = getchar()) == 'c') {
+            if ((junk = getchar()) == 'k') {
+                if ((junk = getchar()) == '\n') {
+                    return -1;
+                } else {
+                    no_cmd();
+                    while ((junk = getchar()) != '\n');
+                    return 0;
+                }
+            } else {
+                no_cmd();
+                if (junk == '\n') {
+                    return 0;
+                } else {
+                    while ((junk = getchar()) != '\n');
+                    return 0;
+                }
+            }
+        } else {
+            no_cmd();
+            if (junk == '\n') {
+                return 0;
+            } else {
+                while ((junk = getchar()) != '\n');
+                return 0;
+            }
+        }
+    } else {
+        no_cmd();
+        if (junk == '\n') {
+            return 0;
+        } else {
+            while ((junk = getchar()) != '\n');
+            return 0;
+        }
+    }
+}
+
 int menu1() {
 
-    /* Returning value */
-    return 0;
+    /* Initializing variables */
+    int func, junk, n = 0;
+
+    /* I/O flow */
+    while (1) {
+        std::cout << " ------------------------------------------------------------\n" <<
+"|                                                            |\n" <<
+"|                        >> Lab_01 <<                        |\n" <<
+"|                                                            |\n" <<
+"|  >> Choose a task:                                         |\n" <<
+"|                                                            |\n" <<
+"|       1) Task #1                                           |\n" <<
+"|       2) Task #2                                           |\n" <<
+"|       3) Task #3                                           |\n" <<
+"|       4) Task #4                                           |\n" <<
+"|                                                            |\n" <<
+"|       >> Type \"quit\" to terminate this program <<          |\n" <<
+"|                                                            |\n";
+        std::cout << "| Answer: ";
+        func = std::cin.get();
+        prt_ln();
+        if (func >= '1' && func <= '4') {
+            func -= '0';
+            if ((junk = std::cin.get()) != '\n') {
+                while ((junk = std::cin.get()) != '\n');
+                no_cmd();
+                continue;
+            }
+            return func;
+        } else if (func == 'q') {
+            if (quit_m()) {
+                return -1;
+            } else {
+                continue;
+            }
+        } else {
+            no_cmd();
+            if (func != '\n') {
+                while ((junk = std::cin.get()) != '\n');
+            }
+            continue;
+        }
+    }
 }
 
 bool (*menu2())(int *, size_t) {
