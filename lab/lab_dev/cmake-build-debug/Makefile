@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/anton/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/anton/Downloads/clion-2019.1.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/anton/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/anton/Downloads/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/anton/CPP/lab/lab_dev/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/anton/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/anton/Downloads/clion-2019.1.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/anton/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/anton/Downloads/clion-2019.1.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -150,6 +150,33 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
+libs/marr.o: libs/marr.cpp.o
+
+.PHONY : libs/marr.o
+
+# target to build an object file
+libs/marr.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.o
+.PHONY : libs/marr.cpp.o
+
+libs/marr.i: libs/marr.cpp.i
+
+.PHONY : libs/marr.i
+
+# target to preprocess a source file
+libs/marr.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.i
+.PHONY : libs/marr.cpp.i
+
+libs/marr.s: libs/marr.cpp.s
+
+.PHONY : libs/marr.s
+
+# target to generate assembly for a file
+libs/marr.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.s
+.PHONY : libs/marr.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
+	@echo "... libs/marr.o"
+	@echo "... libs/marr.i"
+	@echo "... libs/marr.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
