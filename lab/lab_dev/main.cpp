@@ -21,7 +21,7 @@ int main() {
         }
 
         nelem = getNumber();
-        class marr array(nelem);
+        marr array(nelem);
 
         if (!array.is_init()) {
             func = promtMsg("| Error! Array can't be allocated!\n");
@@ -51,7 +51,7 @@ int main() {
                 break;
         }
 
-        class marr backup_arr(array.getNelem());
+        marr backup_arr(array.getNelem());
         backup_arr.copy_from(&array);
 
         switch (func) {
@@ -59,7 +59,19 @@ int main() {
                 task_14(&array);
                 break;
             case 2:
-
+                if (!task_19(&array)) {
+                    func = promtMsg("| Error! Can't perform \"marr::insert_after(size_t, double)\" routine!\n");
+                    switch (func) {
+                        case 1:
+                            std::exit(1);
+                        case 2:
+                            continue;
+                        case 3:
+                            return 1;
+                        default:
+                            break;
+                    }
+                }
                 break;
             case 3:
 

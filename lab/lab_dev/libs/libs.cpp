@@ -58,7 +58,7 @@ int promtMsg(const char *msg) {
     return ret_val;
 }
 
-void write_answer(class marr *array, class marr *back) {
+void write_answer(marr *array, marr *back) {
 
     /* Initializing variables */
     size_t i;
@@ -319,12 +319,12 @@ bool menu_continue() {
 }
 
 /* task1.cpp */
-void task_14(class marr *array) {
+void task_14(marr *array) {
 
     /* Initializing variables */
-    int *beg = nullptr, *end = nullptr;
+    double *beg = nullptr, *end = nullptr;
     size_t best_size = 0;
-    int *bbeg = beg, *bend = end;
+    double *bbeg = beg, *bend = end;
     marr new_array(array->getNelem());
     bool flag = false;
 
@@ -358,11 +358,11 @@ void task_14(class marr *array) {
     }
 }
 
-void task_19(class marr *array) {
+bool task_19(marr *array) {
 
     /* Initializing variables */
-    int count = 0, min = INT32_MAX;
-    size_t min_pos = 0;
+    double min = INT32_MAX;
+    size_t min_pos = 0, count = 0;
     double mean = 0;
 
     /* Main part */
@@ -371,11 +371,11 @@ void task_19(class marr *array) {
             min = array->getElem(i);
             min_pos = i;
         }
-        if (!(array->getElem(i) & 1)) { /* number is even */
+        if (!(static_cast<int>(array->getElem(i)) & 1)) { /* number is even */
             mean += array->getElem(i);
             ++count;
         }
     }
 
-    array->insert_after(min_pos, mean);
+    return array->insert_after(min_pos, mean / count);
 }

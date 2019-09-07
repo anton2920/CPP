@@ -1,20 +1,18 @@
 #include "marr.hpp"
 
-template <class T>
-marr<T>::marr() {
+marr::marr() {
 
     /* Main part */
-    if ((this->data = new T [this->nelem]) != nullptr) {
+    if ((this->data = new double [this->nelem + 1]) != nullptr) {
         this->init_ok = true;
     }
 }
 
-template <class T>
 marr::marr(size_t nelem) {
 
     /* Main part */
     if (nelem > 0) {
-        if ((this->data = new T [nelem]) != nullptr) {
+        if ((this->data = new double [nelem + 1]) != nullptr) {
             this->init_ok = true;
             this->nelem = nelem;
         }
@@ -124,19 +122,19 @@ bool marr::fileArr() {
     return true;
 }
 
-T marr::getElem(size_t index) {
+double marr::getElem(size_t index) {
 
     /* Returning value */
     return (index >= 0 && index <= this->nelem) ? this->data[index] : -1;
 }
 
-T *marr::getElemAddr(size_t index) {
+double *marr::getElemAddr(size_t index) {
 
     /* Main part */
     return (index >= 0 && index <= this->nelem) ? &this->data[index] : nullptr;
 }
 
-void marr::setElem(size_t index, T elem) {
+void marr::setElem(size_t index, double elem) {
 
     if (index >= 0 && index <= this->nelem) {
         this->data[index] = elem;
@@ -162,25 +160,28 @@ bool marr::copy_from(class marr *src) {
     return true;
 }
 
-T marr::operator[](const size_t index) {
+double marr::operator[](const size_t index) {
 
     /* Returning value */
     return (index >= 0 && index <= this->nelem) ? this->data[index] : -1;
 }
 
-bool marr::insert_after(size_t index, T elem) {
+bool marr::insert_after(size_t index, double elem) {
 
     /* Initializing variables */
-    class marr new_array;
+    double temp;
+    class marr arr(this->nelem);
 
     /* Main part */
-    new_array.copy_from(this);
+    arr.copy_from(this);
 
-    delete [] this->data;
-
-    for (size_t i = 0; i < new_array.getNelem(); ++i) {
-
+    for (size_t i = index + 1; i < this->nelem; ++i) {
+        this->data[i + 1] = arr[i];
     }
+
+    ++this->nelem;
+
+    this->data[index + 1] = elem;
 
     /* Returning value */
     return true;
