@@ -351,9 +351,31 @@ void task_14(class marr *array) {
 
     array->setNelem(array->getNelem() - best_size);
 
-    for (size_t i = 0, j = 0; i < array->getNelem(); ++i) {
+    for (size_t i = 0, j = 0; i < new_array.getNelem(); ++i) {
         if (array->getElemAddr(i) < bbeg || array->getElemAddr(i) >= bend) {
-            array->setElem(new_array[i], j++);
+            array->setElem(j++, new_array[i]);
         }
     }
+}
+
+void task_19(class marr *array) {
+
+    /* Initializing variables */
+    int count = 0, min = INT32_MAX;
+    size_t min_pos = 0;
+    double mean = 0;
+
+    /* Main part */
+    for (size_t i = 0; i < array->getNelem(); ++i) {
+        if (array->getElem(i) < min) {
+            min = array->getElem(i);
+            min_pos = i;
+        }
+        if (!(array->getElem(i) & 1)) { /* number is even */
+            mean += array->getElem(i);
+            ++count;
+        }
+    }
+
+    array->insert_after(min_pos, mean);
 }

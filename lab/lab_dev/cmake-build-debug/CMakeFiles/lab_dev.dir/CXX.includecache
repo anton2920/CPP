@@ -20,9 +20,21 @@ fstream
 marr.hpp
 /home/anton/CPP/lab/lab_dev/libs/marr.hpp
 
+/home/anton/CPP/lab/lab_dev/libs/marr.cpp
+marr.hpp
+/home/anton/CPP/lab/lab_dev/libs/marr.hpp
+
 /home/anton/CPP/lab/lab_dev/libs/marr.hpp
 iostream
 -
 libs.hpp
 /home/anton/CPP/lab/lab_dev/libs/libs.hpp
+
+/home/anton/CPP/lab/lab_dev/main.cpp
+iostream
+-
+libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+libs/marr.hpp
+/home/anton/CPP/lab/lab_dev/libs/marr.hpp
 

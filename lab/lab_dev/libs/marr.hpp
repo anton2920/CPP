@@ -4,10 +4,11 @@
 #include <iostream>
 #include "libs.hpp"
 
+template <class T>
 class marr {
     /* Fields */
 private:
-    int *data = nullptr;
+    T *data = nullptr;
     size_t nelem = 10;
     bool init_ok = false;
 
@@ -24,14 +25,16 @@ public:
     void randArr();
     bool fileArr();
 
-    int operator[](const size_t);
+    T operator[](const size_t);
 
-    int getElem(size_t);
-    int *getElemAddr(size_t);
-    void setElem(int, size_t);
+    T getElem(size_t);
+    T *getElemAddr(size_t);
+    void setElem(size_t, T);
     bool is_init();
 
     bool copy_from(class marr *);
+
+    bool insert_after(size_t, T);
 };
 
 #endif

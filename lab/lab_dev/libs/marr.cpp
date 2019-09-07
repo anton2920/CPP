@@ -1,18 +1,20 @@
 #include "marr.hpp"
 
-marr::marr() {
+template <class T>
+marr<T>::marr() {
 
     /* Main part */
-    if ((this->data = new int [this->nelem]) != nullptr) {
+    if ((this->data = new T [this->nelem]) != nullptr) {
         this->init_ok = true;
     }
 }
 
+template <class T>
 marr::marr(size_t nelem) {
 
     /* Main part */
     if (nelem > 0) {
-        if ((this->data = new int [nelem]) != nullptr) {
+        if ((this->data = new T [nelem]) != nullptr) {
             this->init_ok = true;
             this->nelem = nelem;
         }
@@ -56,7 +58,7 @@ void marr::readArr() {
 void marr::randArr() {
 
     /* Initializing variables */
-    int leftBnd, rightBnd;
+    int leftBnd = 0, rightBnd = RAND_MAX;
 
     /* I/O flow */
     std::cout << "| Type left bound: ";
@@ -122,19 +124,19 @@ bool marr::fileArr() {
     return true;
 }
 
-int marr::getElem(size_t index) {
+T marr::getElem(size_t index) {
 
     /* Returning value */
     return (index >= 0 && index <= this->nelem) ? this->data[index] : -1;
 }
 
-int *marr::getElemAddr(size_t index) {
+T *marr::getElemAddr(size_t index) {
 
     /* Main part */
     return (index >= 0 && index <= this->nelem) ? &this->data[index] : nullptr;
 }
 
-void marr::setElem(int elem, size_t index) {
+void marr::setElem(size_t index, T elem) {
 
     if (index >= 0 && index <= this->nelem) {
         this->data[index] = elem;
@@ -160,8 +162,26 @@ bool marr::copy_from(class marr *src) {
     return true;
 }
 
-int marr::operator[](const size_t index) {
+T marr::operator[](const size_t index) {
 
     /* Returning value */
     return (index >= 0 && index <= this->nelem) ? this->data[index] : -1;
+}
+
+bool marr::insert_after(size_t index, T elem) {
+
+    /* Initializing variables */
+    class marr new_array;
+
+    /* Main part */
+    new_array.copy_from(this);
+
+    delete [] this->data;
+
+    for (size_t i = 0; i < new_array.getNelem(); ++i) {
+
+    }
+
+    /* Returning value */
+    return true;
 }

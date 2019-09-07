@@ -25,5 +25,8 @@ bool menu_continue();
 
 /* task1.cpp */
 void task_14(class marr *);
+void task_19(class marr *);
+void task_4(class marr *);
+void task_9(class marr *);
 
 #endif
