@@ -59,31 +59,20 @@ int main() {
                 task_14(&array);
                 break;
             case 2:
-                if (!task_19(&array)) {
-                    func = promtMsg("| Error! Can't perform \"marr::insert_after(size_t, double)\" routine!\n");
-                    switch (func) {
-                        case 1:
-                            std::exit(1);
-                        case 2:
-                            continue;
-                        case 3:
-                            return 1;
-                        default:
-                            break;
-                    }
-                }
+                task_19(&array);
                 break;
             case 3:
-
+                array.rearrange(task_4_cmp);
                 break;
             case 4:
-
+                task_9(&array);
                 break;
             default:
                 break;
         }
 
         write_answer(&array, &backup_arr);
+        array.write_to_file("output.txt");
 
         if (!menu_continue()) {
             break;

@@ -34,6 +34,10 @@ public:
     bool copy_from(class marr *);
 
     bool insert_after(size_t, double);
+
+    void rearrange(int(*)(const void *, const void *));
+
+    bool write_to_file(const char *);
 };
 
 #endif

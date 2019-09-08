@@ -117,6 +117,7 @@ bool marr::fileArr() {
 
     /* Final output */
     prt_ln();
+    std::cout.flush();
 
     /* Returning value */
     return true;
@@ -182,6 +183,44 @@ bool marr::insert_after(size_t index, double elem) {
     ++this->nelem;
 
     this->data[index + 1] = elem;
+
+    /* Returning value */
+    return true;
+}
+
+void marr::rearrange(int (*cmp)(const void *, const void *)) {
+
+    /* Main part */
+    std::qsort((void *) this->data, this->nelem, sizeof(double), cmp);
+}
+
+bool marr::write_to_file(const char *name) {
+
+    /* Initializing variables */
+    std::ofstream outputs(name);
+    int func;
+
+    /* Main part */
+    for (;;) {
+        if (outputs.is_open()) {
+            for (size_t i = 0; i < this->nelem; ++i) {
+                outputs << *(this->data + i) << " ";
+            }
+            break;
+        } else {
+            func = promtMsg("| Error! File can't be opened!\n");
+            switch (func) {
+                case 1:
+                    exit(2);
+                case 2:
+                    continue;
+                case 3:
+                    return false;
+                default:
+                    break;
+            }
+        }
+    }
 
     /* Returning value */
     return true;

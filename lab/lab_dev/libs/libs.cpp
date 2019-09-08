@@ -379,3 +379,43 @@ bool task_19(marr *array) {
 
     return array->insert_after(min_pos, mean / count);
 }
+
+int task_4_cmp(const void *aa1, const void *aa2) {
+
+    /* Initializing variables */
+    auto *a1 = (double *) aa1, *a2 = (double *) aa2;
+
+    /* Main part */
+    if (std::abs(*a1) <= 1 && std::abs(*a2) > 1) {
+        return -1;
+    } else if (std::abs(*a1) > 1 && std::abs(*a2) <= 1) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+void task_9(marr *array) {
+
+    /* Initializing variables */
+    auto *max = new int [array->getNelem()];
+    double max_max = 0;
+    size_t j = 0;
+
+    /* Main part */
+    for (size_t i = 0; i < array->getNelem(); ++i) {
+        if (array->getElem(i) - std::floor(array->getElem(i)) > max_max) {
+            max_max = array->getElem(i) - std::floor(array->getElem(i));
+        }
+    }
+
+    for (size_t i = 0; i < array->getNelem(); ++i) {
+        if (array->getElem(i) - std::floor(array->getElem(i)) == max_max) {
+            max[j++] = i;
+        }
+    }
+
+    for (size_t i = 0; i < j; ++i) {
+        array->setElem(max[i], 0);
+    }
+}

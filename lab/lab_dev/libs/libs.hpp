@@ -4,6 +4,7 @@
 /* Header inclusions */
 #include <iostream>
 #include <fstream>
+#include <cmath>
 #include "marr.hpp"
 
 /* Macro definitions */
@@ -26,7 +27,7 @@ bool menu_continue();
 /* task1.cpp */
 void task_14(marr *);
 bool task_19(marr *);
-void task_4(marr *);
+int task_4_cmp(const void *, const void *);
 void task_9(marr *);
 
 #endif

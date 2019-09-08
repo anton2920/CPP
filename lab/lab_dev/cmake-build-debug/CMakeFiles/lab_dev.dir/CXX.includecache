@@ -11,6 +11,8 @@ iostream
 -
 fstream
 -
+cmath
+-
 marr.hpp
 /home/anton/CPP/lab/lab_dev/libs/marr.hpp
 
