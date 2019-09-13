@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"libs",
+				"libs.o\tabc"
+			],
+			[
+				"li",
+				"libs.cpp\tabc"
+			],
+			[
+				"output",
+				"outputs\tabc"
+			],
+			[
+				"inc",
+				"include\tabc"
+			],
+			[
+				"main",
+				"main_1.cpp\tabc"
+			],
+			[
+				"CPP",
+				"CPPFLAGS\tabc"
+			],
+			[
 				"sse",
 				"sse4_strcmp\t(routines.s)"
 			],
@@ -490,35 +514,20 @@
 			[
 				"create",
 				"create_database\tabc"
-			],
-			[
-				"op",
-				"open_database_exit_error_pass\tabc"
-			],
-			[
-				"open",
-				"open_database_exit\tabc"
-			],
-			[
-				"data",
-				"database\tabc"
-			],
-			[
-				"len_error",
-				"len_error_pass\tabc"
-			],
-			[
-				"erro",
-				"error_pass\tabc"
-			],
-			[
-				"ope",
-				"open_database_exit\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "lab/OOP/lab_01/Makefile",
+			"settings":
+			{
+				"buffer_size": 1009,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -668,10 +677,29 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anton/CPP"
+		"/home/anton/CPP",
+		"/home/anton/CPP/lab",
+		"/home/anton/CPP/lab/OOP",
+		"/home/anton/CPP/lab/OOP/lab_01",
+		"/home/anton/CPP/lab/OOP/lab_01/ptr",
+		"/home/anton/CPP/lab/OOP/lab_01/vector"
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/lab/OOP/lab_01/vector/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/menu.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/io.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/libs_1.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new",
+		"/home/anton/CPP/lab/OOP/lab_01/marr.hpp",
 		"/home/anton/ASM/training/string/main.s",
 		"/home/anton/ASM/lab/RGR/routines.s",
 		"/home/anton/ASM/lab/RGR/db.s",
@@ -785,21 +813,7 @@
 		"/home/anton/C/lab/lab_17/lab.h",
 		"/home/anton/C/lab/lab_17/rwr.c",
 		"/home/anton/C/lab/lab_17/task.c",
-		"/home/anton/C/lab/lab_17/main.c",
-		"/home/anton/C/lab/lab_15/rwr.c",
-		"/home/anton/C/home/Project/libs/menu2.c",
-		"/home/anton/C/home/Project/libs/menu.c",
-		"/home/anton/C/home/Project/main.c",
-		"/home/anton/C/home/Project/headers/project.h",
-		"/home/anton/C/univer/study/MRecursion/a5.c",
-		"/home/anton/C/univer/study/MRecursion/a4.c",
-		"/home/anton/C/univer/study/MRecursion/a3.c",
-		"/home/anton/C/univer/study/MRecursion/a1.c",
-		"/home/anton/C/univer/study/MRecursion/a2.c",
-		"/home/anton/C/lab/lab_15/a1.c",
-		"/home/anton/C/lab/lab_15/a1.h",
-		"/home/anton/C/lab/lab_15/struct.c",
-		"/home/anton/C/training/8lowlevel/read.c"
+		"/home/anton/C/lab/lab_17/main.c"
 	],
 	"find":
 	{
@@ -817,6 +831,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"size_t",
 			"lstrcm",
 			"lstrle",
 			":\n",
@@ -881,6 +896,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"std::size_t",
 			"                              ",
 			"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 			"PASSBUF2",
@@ -935,8 +951,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lab/OOP/lab_01/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1009,
+								1009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -987,7 +1033,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 71.0
 	},
 	"save_all_on_build": true,
 	"select_file":

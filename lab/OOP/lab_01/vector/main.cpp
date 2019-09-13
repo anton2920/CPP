@@ -1,6 +1,5 @@
 #include <iostream>
-#include "libs/libs.hpp"
-#include "libs/marr.hpp"
+#include "libs.hpp"
 
 int main() {
 
@@ -21,29 +20,43 @@ int main() {
         }
 
         nelem = getNumber();
-        std::unique_ptr<marr[]> array(new marr [nelem]);
+        std::vector<double> array;
 
         switch (func2) {
             case 1:
-                readPtr(array, nelem);
+                readVec(array, nelem);
                 break;
             case 2:
-                randPtr(array, nelem);
+                randVec(array, nelem);
                 break;
             case 3:
-                filePtr(array, nelem);
+                fileVec(array, nelem);
                 break;
             default:
                 break;
         }
 
-        marr back_array(nelem);
+        std::vector<double> backup_arr(array);
 
+        switch (func) {
+            case 1:
+                task_14(array);
+                break;
+            case 2:
+                task_19(array);
+                break;
+            case 3:
+                task_4(array, task_4_cmp);
+                break;
+            case 4:
+                task_9(array);
+                break;
+            default:
+                break;
+        }
 
-        special_task(array);
-
-        write_answer(array, );
-        write_to_file(, "output.txt");
+        write_answer(array, backup_arr);
+        write_to_file(array, "output.txt");
 
         if (!menu_continue()) {
             break;

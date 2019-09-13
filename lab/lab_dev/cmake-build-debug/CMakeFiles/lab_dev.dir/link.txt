@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/marr.cpp.o  -o lab_dev 
+/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/marr.cpp.o CMakeFiles/lab_dev.dir/libs/libs_2.cpp.o  -o lab_dev 

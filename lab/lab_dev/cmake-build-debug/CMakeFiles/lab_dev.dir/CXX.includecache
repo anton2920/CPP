@@ -11,14 +11,16 @@ iostream
 -
 fstream
 -
+vector
+-
 cmath
 -
 marr.hpp
 /home/anton/CPP/lab/lab_dev/libs/marr.hpp
 
-/home/anton/CPP/lab/lab_dev/libs/marr.cpp
-marr.hpp
-/home/anton/CPP/lab/lab_dev/libs/marr.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs_2.cpp
+libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
 
 /home/anton/CPP/lab/lab_dev/libs/marr.hpp
 iostream

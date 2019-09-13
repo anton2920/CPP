@@ -8,7 +8,7 @@ marr::marr() {
     }
 }
 
-marr::marr(size_t nelem) {
+marr::marr(std::size_t nelem) {
 
     /* Main part */
     if (nelem > 0) {
@@ -25,16 +25,16 @@ marr::~marr() {
     delete[](this->data);
 }
 
-size_t marr::getNelem() {
+std::size_t marr::getNelem() {
 
     /* Returning value */
     return this->nelem;
 }
 
-void marr::setNelem(size_t newn) {
+void marr::setNelem(std::size_t newn) {
 
     /* Main part */
-    if (newn >= this->nelem) {
+    if (newn >= this->nelem + 1) {
         return;
     } else {
         this->nelem = newn;
@@ -44,7 +44,7 @@ void marr::setNelem(size_t newn) {
 void marr::readArr() {
 
     /* I/O flow */
-    for (size_t i = 0; i < this->nelem; ++i) {
+    for (std::size_t i = 0; i < this->nelem; ++i) {
         std::cout << "| Type " << i << ENDING(i) << " element: ";
         std::cin >> *(this->data + i);
     }
@@ -68,7 +68,7 @@ void marr::randArr() {
     } while (rightBnd < leftBnd);
 
     /* Main part */
-    for (size_t i = 0; i < this->nelem; ++i) {
+    for (std::size_t i = 0; i < this->nelem; ++i) {
         *(this->data + i) = (std::rand() % (rightBnd - leftBnd + 1)) + leftBnd;
     }
 
@@ -91,7 +91,7 @@ bool marr::fileArr() {
     for (;;) {
         inputs.open(filename, std::ios_base::in);
         if (inputs.is_open()) {
-            for (size_t i = 0; i < this->nelem; ++i) {
+            for (std::size_t i = 0; i < this->nelem; ++i) {
                 inputs >> *(this->data + i);
                 if (inputs.eof()) {
                     inputs.close();
@@ -123,19 +123,19 @@ bool marr::fileArr() {
     return true;
 }
 
-double marr::getElem(size_t index) {
+double marr::getElem(std::size_t index) {
 
     /* Returning value */
     return (index <= this->nelem) ? this->data[index] : -1;
 }
 
-double *marr::getElemAddr(size_t index) {
+double *marr::getElemAddr(std::size_t index) {
 
     /* Main part */
     return (index <= this->nelem) ? &this->data[index] : nullptr;
 }
 
-void marr::setElem(size_t index, double elem) {
+void marr::setElem(std::size_t index, double elem) {
 
     if (index <= this->nelem) {
         this->data[index] = elem;
@@ -153,7 +153,7 @@ bool marr::copy_from(class marr *src) {
         return false;
     }
 
-    for (size_t i = 0; i < src->getNelem(); ++i) {
+    for (std::size_t i = 0; i < src->getNelem(); ++i) {
         this->data[i] = src->getElem(i);
     }
 
@@ -161,13 +161,13 @@ bool marr::copy_from(class marr *src) {
     return true;
 }
 
-double marr::operator[](const size_t index) {
+double marr::operator[](const std::size_t index) {
 
     /* Returning value */
     return (index <= this->nelem) ? this->data[index] : -1;
 }
 
-bool marr::insert_after(size_t index, double elem) {
+bool marr::insert_after(std::size_t index, double elem) {
 
     /* Initializing variables */
     class marr arr(this->nelem);
@@ -175,7 +175,7 @@ bool marr::insert_after(size_t index, double elem) {
     /* Main part */
     arr.copy_from(this);
 
-    for (size_t i = index + 1; i < this->nelem; ++i) {
+    for (std::size_t i = index + 1; i < this->nelem; ++i) {
         this->data[i + 1] = arr[i];
     }
 
@@ -202,7 +202,7 @@ bool marr::write_to_file(const char *name) {
     /* Main part */
     for (;;) {
         if (outputs.is_open()) {
-            for (size_t i = 0; i < this->nelem; ++i) {
+            for (std::size_t i = 0; i < this->nelem; ++i) {
                 outputs << *(this->data + i) << " ";
             }
             break;

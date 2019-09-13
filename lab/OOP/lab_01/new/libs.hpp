@@ -5,7 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-#include <memory>
+#include "marr.hpp"
 
 /* Macro definitions */
 #define ENDING(__expr) (((__expr) == 1) ? "st" : ((__expr) == 2) ? "nd" : ((__expr) == 3) ? "rd" : "th")
@@ -23,7 +23,11 @@ int menu1();
 int menu2();
 bool menu_continue();
 
-
-
+/* libs_1.cpp */
+void task_14(class marr *);
+bool task_19(class marr *);
+int task_4_cmp(const void *, const void *);
+void task_9(class marr *);
+void write_answer(class marr *, class marr *);
 
 #endif
