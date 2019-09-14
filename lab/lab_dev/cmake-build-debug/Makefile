@@ -150,32 +150,32 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/libs_2.o: libs/libs_2.cpp.o
+libs/libs_3.o: libs/libs_3.cpp.o
 
-.PHONY : libs/libs_2.o
+.PHONY : libs/libs_3.o
 
 # target to build an object file
-libs/libs_2.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.o
-.PHONY : libs/libs_2.cpp.o
+libs/libs_3.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.o
+.PHONY : libs/libs_3.cpp.o
 
-libs/libs_2.i: libs/libs_2.cpp.i
+libs/libs_3.i: libs/libs_3.cpp.i
 
-.PHONY : libs/libs_2.i
+.PHONY : libs/libs_3.i
 
 # target to preprocess a source file
-libs/libs_2.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.i
-.PHONY : libs/libs_2.cpp.i
+libs/libs_3.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.i
+.PHONY : libs/libs_3.cpp.i
 
-libs/libs_2.s: libs/libs_2.cpp.s
+libs/libs_3.s: libs/libs_3.cpp.s
 
-.PHONY : libs/libs_2.s
+.PHONY : libs/libs_3.s
 
 # target to generate assembly for a file
-libs/libs_2.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.s
-.PHONY : libs/libs_2.cpp.s
+libs/libs_3.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.s
+.PHONY : libs/libs_3.cpp.s
 
 libs/marr.o: libs/marr.cpp.o
 
@@ -243,9 +243,9 @@ help:
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/libs_2.o"
-	@echo "... libs/libs_2.i"
-	@echo "... libs/libs_2.s"
+	@echo "... libs/libs_3.o"
+	@echo "... libs/libs_3.i"
+	@echo "... libs/libs_3.s"
 	@echo "... libs/marr.o"
 	@echo "... libs/marr.i"
 	@echo "... libs/marr.s"

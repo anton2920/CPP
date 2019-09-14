@@ -523,7 +523,34 @@
 			"file": "lab/OOP/lab_01/Makefile",
 			"settings":
 			{
-				"buffer_size": 1009,
+				"buffer_size": 1252,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_01/ptr/main.cpp",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_01/ptr/libs.cpp",
+			"settings":
+			{
+				"buffer_size": 4239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_01/ptr/libs.hpp",
+			"settings":
+			{
+				"buffer_size": 950,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -817,7 +844,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -960,15 +987,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1009,
+						"buffer_size": 1252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1009,
-								1009
+								1064,
+								1064
 							]
 						],
 						"settings":
@@ -982,13 +1009,104 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lab/OOP/lab_01/ptr/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								723,
+								723
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lab/OOP/lab_01/ptr/libs.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								989,
+								989
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lab/OOP/lab_01/ptr/libs.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								950
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1033,7 +1151,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 71.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -30,7 +30,14 @@ libs_2.o: vector/libs.cpp
 	$(CPP) $(CPPFLAGS) -c vector/libs.cpp -o vector/libs.o
 
 # Third approach
-ptr:
+ptr: main_3.o io.o menu.o libs_3.o
+	$(CPP) ptr/main.o io.o menu.o ptr/libs.o -o main_ptr $(LDFLAGS)
+
+main_3.o: ptr/main.cpp
+	$(CPP) $(CPPFLAGS) -c ptr/main.cpp -o ptr/main.o
+
+libs_3.o: ptr/libs.cpp
+	$(CPP) $(CPPFLAGS) -c ptr/libs.cpp -o ptr/libs.o
 
 # General parts
 io.o: io.cpp
