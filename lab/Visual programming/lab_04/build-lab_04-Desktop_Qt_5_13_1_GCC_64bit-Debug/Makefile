@@ -233,6 +233,7 @@ DIST          = /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf \
+		../lab_04/.qmake.stash \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -441,6 +442,7 @@ Makefile: ../lab_04/lab_04.pro /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.con
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -638,6 +640,7 @@ Makefile: ../lab_04/lab_04.pro /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.con
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf:
@@ -955,7 +958,10 @@ main.o: ../lab_04/main.cpp ../lab_04/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/qeventloop.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
-		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QStyle \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QDesktopWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../lab_04/main.cpp
 
 mainwindow.o: ../lab_04/mainwindow.cpp ../lab_04/mainwindow.h \
@@ -1065,7 +1071,58 @@ mainwindow.o: ../lab_04/mainwindow.cpp ../lab_04/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QDate \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qdatetime.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QVariant \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QApplication \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qcoreapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qeventloop.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QDateEdit \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qvalidator.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qregularexpression.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QFormLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qformlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qgridlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QFrame \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QGridLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QLabel \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlabel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QLineEdit \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlineedit.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextcursor.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextformat.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qpen.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QMenuBar \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmenubar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmenu.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qaction.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qactiongroup.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QPushButton \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QSpacerItem \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QSpinBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QStatusBar \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstatusbar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QVBoxLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QMessageBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmessagebox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_04/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

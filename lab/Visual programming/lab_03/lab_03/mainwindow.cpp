@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+//    ui->centralwidget->setStyleSheet("QWidget {background-color : white; font : 30pt \"Noto Sans\";}");
     ui->label->setStyleSheet("QLabel {background-color : gray; color : orange}");
 }
 
@@ -26,8 +27,7 @@ void MainWindow::on_label_clicked()
 
     /* Main part */
     number = ui->label->text().toLongLong();
-    number += 1;
-    ui->label->setText(QString::fromStdString(Dodecahedron::to_string(number)));
+    ui->label->setText(QString::fromStdString(Dodecahedron::to_string(number + 1)));
 }
 
 void MainWindow::on_factBtn_clicked()

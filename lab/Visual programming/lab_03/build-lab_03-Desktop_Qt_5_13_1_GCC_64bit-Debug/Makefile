@@ -1298,7 +1298,10 @@ main.o: ../lab_03/main.cpp ../lab_03/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/qeventloop.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
-		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QStyle \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QDesktopWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../lab_03/main.cpp
 
 mainwindow.o: ../lab_03/mainwindow.cpp ../lab_03/mainwindow.h \
@@ -1441,7 +1444,7 @@ mainwindow.o: ../lab_03/mainwindow.cpp ../lab_03/mainwindow.h \
 		../lab_03/bigint.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_03/mainwindow.cpp
 
-bigint.o: ../lab_03/bigint.cpp 
+bigint.o: ../lab_03/bigint.cpp ../lab_03/bigint.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bigint.o ../lab_03/bigint.cpp
 
 moc_clickablelabel.o: moc_clickablelabel.cpp 
