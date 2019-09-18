@@ -178,3 +178,19 @@ bool special_task(std::unique_ptr<int[]> &array, std::size_t nelem) {
     /* Returning value */
     return isEqual;
 }
+
+int num_cmp(const void *aa1, const void *aa2) {
+
+    /* Initializing variables */
+    double *a1 = (double *) aa1;
+    double *a2 = (double *) aa2;
+
+    /* Main part */
+    if (*a1 > *a2) {
+        return 1;
+    } else if (*a1 < *a2) {
+        return -1;
+    } else {
+        return 0;
+    }
+}

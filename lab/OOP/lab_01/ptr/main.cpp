@@ -31,7 +31,7 @@ int main() {
             default:
                 break;
         }
-
+        // std::qsort((void *) array.get(), nelem, sizeof(double), num_cmp);
         std::unique_ptr<int[]> back_arr(new int [nelem]);
         ptrCpy(back_arr, array, nelem);
 

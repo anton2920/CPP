@@ -6,6 +6,7 @@
 #include <fstream>
 #include <cmath>
 #include <memory>
+#include <algorithm>
 
 /* Macro definitions */
 #define ENDING(__expr) (((__expr) == 1) ? "st" : ((__expr) == 2) ? "nd" : ((__expr) == 3) ? "rd" : "th")
@@ -33,5 +34,7 @@ void write_answer(std::unique_ptr<int[]> &array, std::unique_ptr<int[]> &back, s
 void ptrCpy(std::unique_ptr<int[]> &dest, std::unique_ptr<int[]> &src, std::size_t);
 
 bool special_task(std::unique_ptr<int[]> &, std::size_t);
+
+int num_cmp(const void *aa1, const void *aa2);
 
 #endif

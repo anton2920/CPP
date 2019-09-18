@@ -50,7 +50,7 @@ int main() {
             default:
                 break;
         }
-
+        array.sort(num_cmp);
         marr backup_arr(array.getNelem());
         backup_arr.copy_from(&array);
 

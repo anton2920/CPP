@@ -10,7 +10,7 @@ void prt_ln() {
 std::size_t getNumber() {
 
     /* Initializing variables */
-    std::size_t n;
+    long n;
 
     /* I/O flow */
     do {
@@ -19,6 +19,8 @@ std::size_t getNumber() {
         if (n != '\n') {
             std::cin.putback(n);
             std::cin >> n;
+
+            std::cin.get();
         }
     } while (n <= 0);
 
@@ -26,7 +28,7 @@ std::size_t getNumber() {
     prt_ln();
 
     /* Returning value */
-    return n;
+    return (std::size_t) n;
 }
 
 int promtMsg(const char *msg) {

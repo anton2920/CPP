@@ -224,3 +224,9 @@ bool marr::write_to_file(const char *name) {
     /* Returning value */
     return true;
 }
+
+void marr::sort(int (*cmp)(const void *, const void *)) {
+
+    /* Main part */
+    std::qsort((void *) this->data, this->nelem, sizeof(double), cmp);
+}

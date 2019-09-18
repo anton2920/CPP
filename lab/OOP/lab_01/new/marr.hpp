@@ -38,6 +38,8 @@ public:
     void rearrange(int(*)(const void *, const void *));
 
     bool write_to_file(const char *);
+
+    void sort(int (*)(const void *, const void *));
 };
 
 #endif

@@ -6,6 +6,7 @@
 #include <fstream>
 #include <cmath>
 #include <vector>
+#include <algorithm>
 
 /* Macro definitions */
 #define ENDING(__expr) (((__expr) == 1) ? "st" : ((__expr) == 2) ? "nd" : ((__expr) == 3) ? "rd" : "th")

@@ -31,7 +31,7 @@ libs_2.o: vector/libs.cpp
 
 # Third approach
 ptr: main_3.o io.o menu.o libs_3.o
-	$(CPP) ptr/main.o io.o menu.o ptr/libs.o -o main_ptr $(LDFLAGS)
+	$(CPP) $(CPPFLAGS) ptr/main.o io.o menu.o ptr/libs.o -o main_ptr $(LDFLAGS)
 
 main_3.o: ptr/main.cpp
 	$(CPP) $(CPPFLAGS) -c ptr/main.cpp -o ptr/main.o

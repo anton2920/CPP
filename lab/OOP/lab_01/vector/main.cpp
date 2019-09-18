@@ -35,7 +35,7 @@ int main() {
             default:
                 break;
         }
-
+        std::sort(array.begin(), array.end());
         std::vector<double> backup_arr(array);
 
         switch (func) {

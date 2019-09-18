@@ -80,9 +80,7 @@ int task_4_cmp(const void *aa1, const void *aa2) {
 void task_9(marr *array) {
 
     /* Initializing variables */
-    auto *max = new int [array->getNelem()];
     double max_max = 0;
-    std::size_t j = 0;
 
     /* Main part */
     for (std::size_t i = 0; i < array->getNelem(); ++i) {
@@ -93,15 +91,9 @@ void task_9(marr *array) {
 
     for (std::size_t i = 0; i < array->getNelem(); ++i) {
         if (array->getElem(i) - std::floor(array->getElem(i)) == max_max) {
-            array->setElem(max[i], 0);
+            array->setElem(i, 0);
         }
     }
-
-    for (std::size_t i = 0; i < j; ++i) {
-        array->setElem(max[i], 0);
-    }
-
-    delete [] max;
 }
 
 void write_answer(marr *array, marr *back) {
@@ -126,4 +118,20 @@ void write_answer(marr *array, marr *back) {
 
     /* Final output */
     prt_ln();
+}
+
+int num_cmp(const void *aa1, const void *aa2) {
+
+    /* Initializing variables */
+    double *a1 = (double *) aa1;
+    double *a2 = (double *) aa2;
+
+    /* Main part */
+    if (*a1 > *a2) {
+        return 1;
+    } else if (*a1 < *a2) {
+        return -1;
+    } else {
+        return 0;
+    }
 }

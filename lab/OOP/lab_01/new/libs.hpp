@@ -30,4 +30,6 @@ int task_4_cmp(const void *, const void *);
 void task_9(class marr *);
 void write_answer(class marr *, class marr *);
 
+int num_cmp(const void *aa1, const void *aa2);
+
 #endif
