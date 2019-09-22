@@ -36,7 +36,8 @@ int main() {
                 break;
         }
         std::sort(array.begin(), array.end());
-        std::vector<double> backup_arr(array);
+
+        write_vector("| Source array:\t", array);
 
         switch (func) {
             case 1:
@@ -55,8 +56,12 @@ int main() {
                 break;
         }
 
-        write_answer(array, backup_arr);
+        write_vector("| Answer: ", array);
         write_to_file(array, "output.txt");
+
+        while (std::cin.get() != '\n')
+            ;
+        prt_ln();
 
         if (!menu_continue()) {
             break;

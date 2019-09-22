@@ -6,6 +6,7 @@ int main() {
     /* Initializing variables */
     std::size_t nelem;
     int func2;
+    bool res;
 
     /* Main part */
     for (;;) {
@@ -31,12 +32,16 @@ int main() {
             default:
                 break;
         }
-        // std::qsort((void *) array.get(), nelem, sizeof(double), num_cmp);
-        std::unique_ptr<int[]> back_arr(new int [nelem]);
-        ptrCpy(back_arr, array, nelem);
 
-        write_answer(array, back_arr, nelem, special_task(array, nelem));
+        write_ptr("| Source array:\t", array, nelem);
+        res = special_task(array, nelem);
+        write_ptr("| Answer:\t", array, nelem);
+        write_answer(res);
         write_to_file(array, nelem, "output.txt");
+
+        while (std::cin.get() != '\n')
+            ;
+        prt_ln();
 
         if (!menu_continue()) {
             break;

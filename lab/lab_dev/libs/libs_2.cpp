@@ -1,4 +1,4 @@
-#include "libs.hpp"
+#include "libs_2.hpp"
 
 void readVec(std::vector<double> &array, std::size_t nelem) {
 
@@ -89,7 +89,6 @@ bool fileVec(std::vector<double> &array, std::size_t nelem) {
     return true;
 }
 
-/* Assume: array is sorted in ascending order */
 void task_14(std::vector<double> &array) {
 
     /* Initializing variables */
@@ -102,7 +101,6 @@ void task_14(std::vector<double> &array) {
     array.erase(array.begin() + i, array.end());
 }
 
-/* Assume: array is sorted in ascending order */
 void task_19(std::vector<double> &array) {
 
     /* Initializing variables */

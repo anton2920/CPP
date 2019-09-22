@@ -51,12 +51,12 @@ int main() {
                 break;
         }
         array.sort(num_cmp);
-        marr backup_arr(array.getNelem());
-        backup_arr.copy_from(&array);
+
+        write_array("| Source array:\t", array);
 
         switch (func) {
             case 1:
-                task_14(&array);
+                task_14(array);
                 break;
             case 2:
                 task_19(&array);
@@ -71,7 +71,10 @@ int main() {
                 break;
         }
 
-        write_answer(&array, &backup_arr);
+        write_array("| Answer:\t", array);
+        while (std::cin.get() != '\n')
+            ;
+        prt_ln();
         array.write_to_file("output.txt");
 
         if (!menu_continue()) {

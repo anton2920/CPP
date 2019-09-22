@@ -123,32 +123,32 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
-libs/libs.o: libs/libs.cpp.o
+libs/libs_2.o: libs/libs_2.cpp.o
 
-.PHONY : libs/libs.o
+.PHONY : libs/libs_2.o
 
 # target to build an object file
-libs/libs.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.o
-.PHONY : libs/libs.cpp.o
+libs/libs_2.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.o
+.PHONY : libs/libs_2.cpp.o
 
-libs/libs.i: libs/libs.cpp.i
+libs/libs_2.i: libs/libs_2.cpp.i
 
-.PHONY : libs/libs.i
+.PHONY : libs/libs_2.i
 
 # target to preprocess a source file
-libs/libs.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.i
-.PHONY : libs/libs.cpp.i
+libs/libs_2.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.i
+.PHONY : libs/libs_2.cpp.i
 
-libs/libs.s: libs/libs.cpp.s
+libs/libs_2.s: libs/libs_2.cpp.s
 
-.PHONY : libs/libs.s
+.PHONY : libs/libs_2.s
 
 # target to generate assembly for a file
-libs/libs.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
-.PHONY : libs/libs.cpp.s
+libs/libs_2.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.s
+.PHONY : libs/libs_2.cpp.s
 
 libs/libs_3.o: libs/libs_3.cpp.o
 
@@ -204,6 +204,33 @@ libs/marr.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.s
 .PHONY : libs/marr.cpp.s
 
+libs/menu.o: libs/menu.cpp.o
+
+.PHONY : libs/menu.o
+
+# target to build an object file
+libs/menu.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.o
+.PHONY : libs/menu.cpp.o
+
+libs/menu.i: libs/menu.cpp.i
+
+.PHONY : libs/menu.i
+
+# target to preprocess a source file
+libs/menu.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.i
+.PHONY : libs/menu.cpp.i
+
+libs/menu.s: libs/menu.cpp.s
+
+.PHONY : libs/menu.s
+
+# target to generate assembly for a file
+libs/menu.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.s
+.PHONY : libs/menu.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -240,15 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
-	@echo "... libs/libs.o"
-	@echo "... libs/libs.i"
-	@echo "... libs/libs.s"
+	@echo "... libs/libs_2.o"
+	@echo "... libs/libs_2.i"
+	@echo "... libs/libs_2.s"
 	@echo "... libs/libs_3.o"
 	@echo "... libs/libs_3.i"
 	@echo "... libs/libs_3.s"
 	@echo "... libs/marr.o"
 	@echo "... libs/marr.i"
 	@echo "... libs/marr.s"
+	@echo "... libs/menu.o"
+	@echo "... libs/menu.i"
+	@echo "... libs/menu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

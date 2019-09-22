@@ -95,6 +95,8 @@ bool marr::fileArr() {
                 inputs >> *(this->data + i);
                 if (inputs.eof()) {
                     inputs.close();
+                    prt_ln();
+                    std::cout.flush();
                     return false;
                 }
             }

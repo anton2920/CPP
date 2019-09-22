@@ -519,6 +519,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lab/OOP/lab_01/ptr/main.cpp",
+			"settings":
+			{
+				"buffer_size": 1115,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_01/ptr/libs.hpp",
+			"settings":
+			{
+				"buffer_size": 915,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_01/ptr/libs.cpp",
+			"settings":
+			{
+				"buffer_size": 4211,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -669,24 +696,28 @@
 	"expanded_folders":
 	[
 		"/home/anton/CPP",
-		"/home/anton/CPP/lab"
+		"/home/anton/CPP/lab",
+		"/home/anton/CPP/lab/lab_dev",
+		"/home/anton/CPP/lab/OOP",
+		"/home/anton/CPP/lab/OOP/lab_01",
+		"/home/anton/CPP/lab/OOP/lab_01/ptr"
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/vector/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/menu.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/io.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/libs_1.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new",
 		"/home/anton/CPP/lab/OOP/lab_01/marr.hpp",
@@ -938,8 +969,97 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lab/OOP/lab_01/ptr/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lab/OOP/lab_01/ptr/libs.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lab/OOP/lab_01/ptr/libs.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

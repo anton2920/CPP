@@ -84,19 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs.cpp">
-			<Option target="lab_dev"/>
-		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs_2.cpp">
+			<Option target="lab_dev"/>
+		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs_2.hpp">
+			<Option target="lab_dev"/>
+		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs_3.cpp">
+			<Option target="lab_dev"/>
+		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs_3.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/marr.cpp">
 			<Option target="lab_dev"/>
 		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/marr.hpp">
+			<Option target="lab_dev"/>
+		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/menu.cpp">
 			<Option target="lab_dev"/>
 		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/main.cpp">

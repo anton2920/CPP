@@ -5,10 +5,11 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-#include <memory>
+#include "marr.hpp"
 
 /* Macro definitions */
 #define ENDING(__expr) (((__expr) == 1) ? "st" : ((__expr) == 2) ? "nd" : ((__expr) == 3) ? "rd" : "th")
+#define EPS (10e-2)
 
 /* io.cpp */
 void prt_ln();
@@ -23,15 +24,13 @@ int menu1();
 int menu2();
 bool menu_continue();
 
-void readPtr(std::unique_ptr<int[]> &, std::size_t);
-void randPtr(std::unique_ptr<int[]> &, std::size_t);
-bool filePtr(std::unique_ptr<int[]> &, std::size_t);
+/* libs_1.cpp */
+void task_14(class marr &);
+bool task_19(class marr *);
+int task_4_cmp(const void *, const void *);
+void task_9(class marr *);
+void write_array(const char *, marr &);
 
-bool write_to_file(std::unique_ptr<int[]> &, std::size_t, const char *);
-void write_answer(std::unique_ptr<int[]> &array, std::unique_ptr<int[]> &back, std::size_t, bool);
-
-void ptrCpy(std::unique_ptr<int[]> &dest, std::unique_ptr<int[]> &src, std::size_t);
-
-bool special_task(std::unique_ptr<int[]> &, std::size_t);
+int num_cmp(const void *aa1, const void *aa2);
 
 #endif
