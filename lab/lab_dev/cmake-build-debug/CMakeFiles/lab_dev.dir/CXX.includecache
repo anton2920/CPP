@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs_3.cpp
+libs_3.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs_3.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/libs_3.hpp
 iostream
 -
 fstream
@@ -15,14 +19,6 @@ cmath
 -
 memory
 -
-
-/home/anton/CPP/lab/lab_dev/libs/libs_3.cpp
-libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
-
-/home/anton/CPP/lab/lab_dev/main.cpp
-iostream
+algorithm
 -
-libs/libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
 

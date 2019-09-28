@@ -1,9 +1,6 @@
-#include "libs.hpp"
+#include "libs_3.hpp"
 
 void readPtr(std::unique_ptr<int[]> &array, std::size_t nelem) {
-
-    /* Initializing variables */
-    double tmp;
 
     /* I/O flow */
     for (std::size_t i = 0; i < nelem; ++i) {
@@ -44,7 +41,6 @@ bool filePtr(std::unique_ptr<int[]> &array, std::size_t nelem) {
     std::ifstream inputs;
     std::string filename;
     int func;
-    double tmp;
 
     /* I/O flow */
     std::cout << "| Type filename: ";
@@ -58,6 +54,8 @@ bool filePtr(std::unique_ptr<int[]> &array, std::size_t nelem) {
                 inputs >> array[i];
                 if (inputs.eof()) {
                     inputs.close();
+                    prt_ln();
+                    std::cout.flush();
                     return false;
                 }
             }
@@ -118,38 +116,23 @@ bool write_to_file(std::unique_ptr<int[]> &array, std::size_t nelem, const char 
     return true;
 }
 
-void write_answer(std::unique_ptr<int[]> &array, std::unique_ptr<int[]> &back, std::size_t nelem, bool isAny) {
+void write_ptr(const char *str, std::unique_ptr<int[]> &array, std::size_t nelem) {
 
     /* Initializing variables */
     std::size_t i;
 
     /* I/O flow */
-    std::cout << "| Source array: ";
-    for (i = 0; i < nelem; ++i) {
-        std::cout << back[i] << " ";
-    }
-    std::cout << "\n| Answer:       ";
+        std::cout << str;
     for (i = 0; i < nelem; ++i) {
         std::cout << array[i] << " ";
     }
     std::cout << std::endl;
-
-    std::cout << "\n| There " << (isAny ? "is " : "isn\'t ") << "an identical elements" << std::endl;
-
-    /* Main part */
-    while (std::cin.get() != '\n')
-        ;
-
-    /* Final output */
-    prt_ln();
 }
 
-void ptrCpy(std::unique_ptr<int[]> &dest, std::unique_ptr<int[]> &src, std::size_t nelem) {
+void write_answer(bool isAny) {
 
-    /* Main part */
-    for (std::size_t i = 0; i < nelem; ++i) {
-        dest[i] = src[i];
-    }
+    /* Final output */
+    std::cout << "|\n| There " << (isAny ? "are " : "aren\'t ") << "an identical elements" << std::endl;
 }
 
 bool special_task(std::unique_ptr<int[]> &array, std::size_t nelem) {
@@ -181,4 +164,20 @@ bool special_task(std::unique_ptr<int[]> &array, std::size_t nelem) {
 
     /* Returning value */
     return isEqual;
+}
+
+int num_cmp(const void *aa1, const void *aa2) {
+
+    /* Initializing variables */
+    double *a1 = (double *) aa1;
+    double *a2 = (double *) aa2;
+
+    /* Main part */
+    if (*a1 > *a2) {
+        return 1;
+    } else if (*a1 < *a2) {
+        return -1;
+    } else {
+        return 0;
+    }
 }
