@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs_3.cpp
-libs_3.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs_3.hpp
-
-/home/anton/CPP/lab/lab_dev/libs/libs_3.hpp
+/home/anton/CPP/lab/lab_dev/libs2/student.hpp
 iostream
 -
-fstream
+string
 -
-cmath
+ctime
 -
-memory
+
+/home/anton/CPP/lab/lab_dev/main.cpp
+iostream
 -
-algorithm
--
+libs2/student.hpp
+/home/anton/CPP/lab/lab_dev/libs2/student.hpp
 

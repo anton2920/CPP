@@ -123,113 +123,32 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
-libs/libs_2.o: libs/libs_2.cpp.o
+libs2/student.o: libs2/student.cpp.o
 
-.PHONY : libs/libs_2.o
-
-# target to build an object file
-libs/libs_2.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.o
-.PHONY : libs/libs_2.cpp.o
-
-libs/libs_2.i: libs/libs_2.cpp.i
-
-.PHONY : libs/libs_2.i
-
-# target to preprocess a source file
-libs/libs_2.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.i
-.PHONY : libs/libs_2.cpp.i
-
-libs/libs_2.s: libs/libs_2.cpp.s
-
-.PHONY : libs/libs_2.s
-
-# target to generate assembly for a file
-libs/libs_2.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_2.cpp.s
-.PHONY : libs/libs_2.cpp.s
-
-libs/libs_3.o: libs/libs_3.cpp.o
-
-.PHONY : libs/libs_3.o
+.PHONY : libs2/student.o
 
 # target to build an object file
-libs/libs_3.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.o
-.PHONY : libs/libs_3.cpp.o
+libs2/student.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs2/student.cpp.o
+.PHONY : libs2/student.cpp.o
 
-libs/libs_3.i: libs/libs_3.cpp.i
+libs2/student.i: libs2/student.cpp.i
 
-.PHONY : libs/libs_3.i
-
-# target to preprocess a source file
-libs/libs_3.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.i
-.PHONY : libs/libs_3.cpp.i
-
-libs/libs_3.s: libs/libs_3.cpp.s
-
-.PHONY : libs/libs_3.s
-
-# target to generate assembly for a file
-libs/libs_3.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs_3.cpp.s
-.PHONY : libs/libs_3.cpp.s
-
-libs/marr.o: libs/marr.cpp.o
-
-.PHONY : libs/marr.o
-
-# target to build an object file
-libs/marr.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.o
-.PHONY : libs/marr.cpp.o
-
-libs/marr.i: libs/marr.cpp.i
-
-.PHONY : libs/marr.i
+.PHONY : libs2/student.i
 
 # target to preprocess a source file
-libs/marr.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.i
-.PHONY : libs/marr.cpp.i
+libs2/student.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs2/student.cpp.i
+.PHONY : libs2/student.cpp.i
 
-libs/marr.s: libs/marr.cpp.s
+libs2/student.s: libs2/student.cpp.s
 
-.PHONY : libs/marr.s
-
-# target to generate assembly for a file
-libs/marr.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/marr.cpp.s
-.PHONY : libs/marr.cpp.s
-
-libs/menu.o: libs/menu.cpp.o
-
-.PHONY : libs/menu.o
-
-# target to build an object file
-libs/menu.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.o
-.PHONY : libs/menu.cpp.o
-
-libs/menu.i: libs/menu.cpp.i
-
-.PHONY : libs/menu.i
-
-# target to preprocess a source file
-libs/menu.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.i
-.PHONY : libs/menu.cpp.i
-
-libs/menu.s: libs/menu.cpp.s
-
-.PHONY : libs/menu.s
+.PHONY : libs2/student.s
 
 # target to generate assembly for a file
-libs/menu.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/menu.cpp.s
-.PHONY : libs/menu.cpp.s
+libs2/student.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs2/student.cpp.s
+.PHONY : libs2/student.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
-	@echo "... libs/libs_2.o"
-	@echo "... libs/libs_2.i"
-	@echo "... libs/libs_2.s"
-	@echo "... libs/libs_3.o"
-	@echo "... libs/libs_3.i"
-	@echo "... libs/libs_3.s"
-	@echo "... libs/marr.o"
-	@echo "... libs/marr.i"
-	@echo "... libs/marr.s"
-	@echo "... libs/menu.o"
-	@echo "... libs/menu.i"
-	@echo "... libs/menu.s"
+	@echo "... libs2/student.o"
+	@echo "... libs2/student.i"
+	@echo "... libs2/student.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,52 +1,38 @@
 #include <iostream>
-#include "libs/libs_3.hpp"
+
+#include "libs2/student.hpp"
+
+enum errors {
+    TOO_LARGE_SIZE = 6585
+};
 
 int main() {
 
     /* Initializing variables */
-    std::size_t nelem;
-    int func2;
-    bool res;
+    std::size_t size;
 
-    /* Main part */
+    /* I/O flow && VarCheck */
     for (;;) {
-        if ((func2 = menu2()) == -1 ) {
-            return 0;
-        } else if (!func2) {
-            continue;
-        }
+        try {
+            std::cout << "Type size of the array: ";
+            std::cin >> size;
 
-        nelem = getNumber();
-        std::unique_ptr<int[]> array(new int [nelem]);
-
-        switch (func2) {
-            case 1:
-                readPtr(array, nelem);
+            if (size > 100) {
+                throw errors::TOO_LARGE_SIZE;
+            } else {
                 break;
-            case 2:
-                randPtr(array, nelem);
-                break;
-            case 3:
-                filePtr(array, nelem);
-                break;
-            default:
-                break;
-        }
-
-        write_ptr("| Source array:\t", array, nelem);
-        res = special_task(array, nelem);
-        write_ptr("| Answer:\t", array, nelem);
-        write_answer(res);
-        write_to_file(array, nelem, "output.txt");
-
-        while (std::cin.get() != '\n')
-            ;
-        prt_ln();
-
-        if (!menu_continue()) {
-            break;
+            }
+        } catch (int err) {
+            if (err == errors::TOO_LARGE_SIZE) {
+                std::cerr << "Size must be less than 100\n";
+            } else {
+                std::cerr << "Other problems with size!\n";
+            }
+            std::cerr.flush();
         }
     }
+
+    auto arr = new student[size];
 
     /* Returning value */
     return 0;
