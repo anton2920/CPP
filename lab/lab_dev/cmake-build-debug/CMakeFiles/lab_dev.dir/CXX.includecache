@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs2/student.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+student.hpp
+/home/anton/CPP/lab/lab_dev/libs/student.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/student.hpp
 iostream
 -
 string
@@ -17,6 +21,12 @@ ctime
 /home/anton/CPP/lab/lab_dev/main.cpp
 iostream
 -
-libs2/student.hpp
-/home/anton/CPP/lab/lab_dev/libs2/student.hpp
+cstring
+-
+libs/student.hpp
+/home/anton/CPP/lab/lab_dev/libs/student.hpp
+libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+sorting.h
+-
 

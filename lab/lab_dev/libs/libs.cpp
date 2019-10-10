@@ -1,98 +1,143 @@
 #include "libs.hpp"
-#include "marr.hpp"
+#include "student.hpp"
 
-/* Assume: array is sorted in ascending order */
-void task_14(marr &array) {
+/* Constants */
+const std::size_t MAX_SIZE = 101;
+
+void readAllFields(student *array, std::size_t size) {
 
     /* Initializing variables */
-    std::size_t i;
+    std::string ans;
 
     /* Main part */
-    for (i = 0; i < array.getNelem() && array[i] <= 0; ++i)
-        ;
+    for (std::size_t i = 0; i < size; ++i) {
+        std::cout << "----\t\t\t----\n" << "Student #" << i + 1 << "\n" << "Do you want to change his (her) info? [y/n]: ";
+        std::cin >> ans;
 
-    array.setNelem(array.getNelem() - (array.getNelem() - i));
+        if (ans == "Y" || ans == "y" || ans == "yes") {
+            std::string tmpStr;
+            std::cout << "\nType «0» in every prompt to leave default value\n";
+
+            std::cout << "Type last name: ";
+            std::cin >> tmpStr;
+            if (tmpStr != "0") {
+                array[i].setLastName(tmpStr);
+            }
+
+            std::cout << "Type first name: ";
+            std::cin >> tmpStr;
+            if (tmpStr != "0") {
+                array[i].setFirstName(tmpStr);
+            }
+
+            std::cout << "Type third name: ";
+            std::cin >> tmpStr;
+            if (tmpStr != "0") {
+                array[i].setThirdName(tmpStr);
+            }
+
+            student::date tmpDate;
+
+            std::cout << "Type date of birth (dd.mm.yyyy): ";
+            std::scanf("%ld.%ld.%ld", &tmpDate.day, &tmpDate.month, &tmpDate.year);
+            if (tmpDate.day && tmpDate.month && tmpDate.year) {
+                array[i].setDob(tmpDate);
+            }
+
+            std::cout << "Type address: ";
+            std::cin >> tmpStr;
+            if (tmpStr != "0") {
+                array[i].setAddress(tmpStr);
+            }
+
+            unsigned long tmpPhone;
+            std::cout << "Type phone number: ";
+            std::cin >> tmpPhone;
+            if (tmpPhone) {
+                array[i].setPhone(tmpPhone);
+            }
+
+            std::cout << "Type faculty: ";
+            std::cin >> tmpStr;
+            if (tmpStr != "0") {
+                array[i].setFaculty(tmpStr);
+            }
+
+            std::size_t tmpCourse;
+            std::cout << "Type course: ";
+            std::cin >> tmpCourse;
+            if (tmpCourse) {
+                array[i].setCourse(tmpCourse);
+            }
+
+        } else if (ans == "N" || ans == "n" || ans == "no") {
+            continue;
+        } else {
+            std::cout << "Something went wrong!\n";
+            --i;
+        }
+    }
 }
 
-/* Assume: array is sorted in ascending order */
-bool task_19(marr *array) {
+size_t readSize() {
 
     /* Initializing variables */
-    std::size_t count = 0;
-    double mean = 0;
+    std::size_t size = 0;
 
     /* Main part */
-    for (std::size_t i = 0; i < array->getNelem(); ++i) {
-        if (!(static_cast<int>(array->getElem(i)) & 1)) { /* number is even */
-            mean += array->getElem(i);
-            ++count;
+    for (;;) {
+        try {
+            std::cout << "Type size of the array: ";
+            std::cin >> size;
+
+            if (size > MAX_SIZE) {
+                throw errors::TOO_LARGE_SIZE;
+            } else {
+                break;
+            }
+        } catch (int err) {
+            if (err == errors::TOO_LARGE_SIZE) {
+                std::cerr << "Size must be less than 100\n";
+            } else {
+                std::cerr << "Other problems with size!\n";
+            }
+            std::cerr.flush();
         }
     }
 
-    return array->insert_after(0, mean / count);
+    /* Returning value */
+    return size;
 }
 
-int task_4_cmp(const void *aa1, const void *aa2) {
-
-    /* Initializing variables */
-    auto *a1 = (double *) aa1, *a2 = (double *) aa2;
+void print_1(student *array, std::size_t size, std::string faculty) {
 
     /* Main part */
-    if (std::abs(*a1) <= 1 && std::abs(*a2) > 1) {
-        return -1;
-    } else if (std::abs(*a1) > 1 && std::abs(*a2) <= 1) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-/* Delta epsilon sh**t */
-void task_9(marr *array) {
-
-    /* Initializing variables */
-    double max_max = 0;
-
-    /* Main part */
-    for (std::size_t i = 0; i < array->getNelem(); ++i) {
-        if (array->getElem(i) - std::floor(array->getElem(i)) > max_max) {
-            max_max = array->getElem(i) - std::floor(array->getElem(i));
-        }
-    }
-
-    for (std::size_t i = 0; i < array->getNelem(); ++i) {
-        if (array->getElem(i) - std::floor(array->getElem(i)) > max_max - EPS &&
-                array->getElem(i) - std::floor(array->getElem(i)) < max_max + EPS) {
-            array->setElem(i, 0);
+    for (std::size_t i = 0; i < size; ++i) {
+        if (array[i].getFaculty() == faculty) {
+            std::cout << "----\t\t\t----\n" << "Student #" << i + 1 << "\n";
+            array[i].printStudentInfo();
+            std::cout << std::endl;
         }
     }
 }
 
-void write_array(const char *str, marr &array) {
-
-    /* Initializing variables */
-    std::size_t i;
-
-    /* I/O flow */
-    std::cout << str;
-    for (i = 0; i < array.getNelem(); ++i) {
-        std::cout << array[i] << " ";
-    }
-    std::cout << std::endl;
-}
-
-int num_cmp(const void *aa1, const void *aa2) {
-
-    /* Initializing variables */
-    auto *a1 = (double *) aa1;
-    auto *a2 = (double *) aa2;
+void print_2(student *array, std::size_t size) {
 
     /* Main part */
-    if (*a1 > *a2) {
-        return 1;
-    } else if (*a1 < *a2) {
-        return -1;
-    } else {
-        return 0;
+    for (std::size_t i = 0; i < size; ++i) {
+        array[i].printStudentInfo();
+        std::cout << std::endl;
+    }
+}
+
+void print_3(student *array, std::size_t size, std::time_t year) {
+
+    /* Main part */
+    for (std::size_t i = 0; i < size; ++i) {
+        if (array[i].getDob().year > year) {
+            std::cout << "----\t\t\t----\n" << "Student #" << i + 1 << "\n";
+            array[i].printStudentInfo();
+            std::cout << std::endl;
+        }
     }
 }
