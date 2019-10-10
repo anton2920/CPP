@@ -519,39 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "lab/OOP/lab_01/new/libs.cpp",
-			"settings":
-			{
-				"buffer_size": 3549,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_01/vector/libs.cpp",
-			"settings":
-			{
-				"buffer_size": 5637,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_01/new/main.cpp",
-			"settings":
-			{
-				"buffer_size": 1819,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_01/new/marr.cpp",
-			"settings":
-			{
-				"buffer_size": 4823,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -613,6 +580,14 @@
 		"selected_items":
 		[
 			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"coloer",
+				"UI: Select Color Scheme"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
 			],
@@ -623,10 +598,6 @@
 			[
 				"color ",
 				"UI: Select Color Scheme"
-			],
-			[
-				"colo",
-				"Code Folding: Fold Tag Attributes"
 			],
 			[
 				"col",
@@ -701,21 +672,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anton/CPP",
-		"/home/anton/CPP/lab",
-		"/home/anton/CPP/lab/lab_dev",
-		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_01",
-		"/home/anton/CPP/lab/OOP/lab_01/ptr"
+		"/home/anton/CPP"
 	],
 	"file_history":
 	[
-		"/home/anton/CPP/lab/OOP/lab_01/ptr/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/libs.hpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.cpp",
@@ -726,7 +691,6 @@
 		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_01/menu.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/libs_1.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new",
 		"/home/anton/CPP/lab/OOP/lab_01/marr.hpp",
@@ -839,12 +803,11 @@
 		"/home/anton/C/experiments/asm/c4.c",
 		"/home/anton/C/experiments/asm/asm4.asm",
 		"/home/anton/C/home/Max_lab_9/cmake-build-debug/rec.dat",
-		"/home/anton/C/lab/lab_13/a1out.bin",
-		"/home/anton/C/lab/lab_17/lab.h"
+		"/home/anton/C/lab/lab_13/a1out.bin"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -978,135 +941,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "lab/OOP/lab_01/new/libs.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3549,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2727,
-								2727
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2147.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "lab/OOP/lab_01/vector/libs.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4283.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "lab/OOP/lab_01/new/main.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 957.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "lab/OOP/lab_01/new/marr.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4763,
-								4763
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5962.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 44.0
 	},
 	"input":
 	{
@@ -1151,7 +993,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":
