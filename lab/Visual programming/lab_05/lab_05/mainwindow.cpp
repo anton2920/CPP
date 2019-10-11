@@ -903,3 +903,13 @@ void MainWindow::on_actionPaste_triggered() {
     /* Main part */
     ui->label->setText(clip->text());
 }
+
+void MainWindow::on_pushButton_percent_clicked() {
+
+    /* Main part */
+    if (ui->label->text() != ERROR_MSG) {
+        if (ui->label->text().toDouble() != 0.0) {
+            ui->label->setText(QString::number(a / 100 * ui->label->text().toDouble()));
+        }
+    }
+}

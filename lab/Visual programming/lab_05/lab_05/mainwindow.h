@@ -106,6 +106,8 @@ private slots:
 
     void on_actionPaste_triggered();
 
+    void on_pushButton_percent_clicked();
+
 private:
     Ui::MainWindow *ui;
 

@@ -211,6 +211,7 @@ public:
         pushButton_tan->setFont(font);
         pushButton_exp = new QPushButton(centralwidget);
         pushButton_exp->setObjectName(QString::fromUtf8("pushButton_exp"));
+        pushButton_exp->setEnabled(false);
         pushButton_exp->setGeometry(QRect(430, 390, 60, 60));
         pushButton_exp->setFont(font);
         pushButton_cos = new QPushButton(centralwidget);
