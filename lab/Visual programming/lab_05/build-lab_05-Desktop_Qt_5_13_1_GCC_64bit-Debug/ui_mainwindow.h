@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
@@ -24,12 +25,13 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QAction *actionSettings;
     QAction *actionCopy;
     QAction *actionPaste;
     QAction *actionAbout_Qt;
     QAction *actionAbout;
     QAction *actionQuit;
+    QAction *actionDegrees;
+    QAction *actionRadians;
     QWidget *centralwidget;
     QPushButton *pushButton;
     QPushButton *pushButton_pm;
@@ -67,6 +69,11 @@ public:
     QPushButton *pushButton_mmin;
     QPushButton *pushButton_shift;
     QLabel *label;
+    QPushButton *pushButton_cos_2;
+    QPushButton *pushButton_sqr_2;
+    QPushButton *pushButton_sin_2;
+    QPushButton *pushButton_sqrt_2;
+    QPushButton *pushButton_tan_2;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
@@ -77,8 +84,11 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(500, 480);
-        actionSettings = new QAction(MainWindow);
-        actionSettings->setObjectName(QString::fromUtf8("actionSettings"));
+        MainWindow->setMinimumSize(QSize(500, 480));
+        MainWindow->setMaximumSize(QSize(500, 480));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../../../../../Pictures/Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
         actionCopy = new QAction(MainWindow);
         actionCopy->setObjectName(QString::fromUtf8("actionCopy"));
         actionPaste = new QAction(MainWindow);
@@ -89,6 +99,13 @@ public:
         actionAbout->setObjectName(QString::fromUtf8("actionAbout"));
         actionQuit = new QAction(MainWindow);
         actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
+        actionDegrees = new QAction(MainWindow);
+        actionDegrees->setObjectName(QString::fromUtf8("actionDegrees"));
+        actionDegrees->setCheckable(true);
+        actionDegrees->setChecked(true);
+        actionRadians = new QAction(MainWindow);
+        actionRadians->setObjectName(QString::fromUtf8("actionRadians"));
+        actionRadians->setCheckable(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
@@ -222,6 +239,7 @@ public:
         pushButton_pi->setFont(font);
         pushButton_mr = new QPushButton(centralwidget);
         pushButton_mr->setObjectName(QString::fromUtf8("pushButton_mr"));
+        pushButton_mr->setEnabled(false);
         pushButton_mr->setGeometry(QRect(10, 80, 211, 41));
         pushButton_mr->setFont(font);
         pushButton_mp = new QPushButton(centralwidget);
@@ -239,9 +257,11 @@ public:
         font1.setFamily(QString::fromUtf8("Lato Light"));
         font1.setPointSize(16);
         font1.setBold(false);
-        font1.setUnderline(true);
+        font1.setUnderline(false);
         font1.setWeight(50);
         pushButton_shift->setFont(font1);
+        pushButton_shift->setCheckable(true);
+        pushButton_shift->setChecked(false);
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 10, 480, 61));
@@ -255,10 +275,76 @@ public:
         label->setLineWidth(2);
         label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         label->setMargin(0);
+        pushButton_cos_2 = new QPushButton(centralwidget);
+        pushButton_cos_2->setObjectName(QString::fromUtf8("pushButton_cos_2"));
+        pushButton_cos_2->setGeometry(QRect(430, 250, 60, 60));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Lato Light"));
+        font3.setPointSize(21);
+        font3.setBold(false);
+        font3.setWeight(50);
+        pushButton_cos_2->setFont(font3);
+        pushButton_sqr_2 = new QPushButton(centralwidget);
+        pushButton_sqr_2->setObjectName(QString::fromUtf8("pushButton_sqr_2"));
+        pushButton_sqr_2->setGeometry(QRect(360, 250, 60, 60));
+        pushButton_sqr_2->setFont(font);
+        pushButton_sin_2 = new QPushButton(centralwidget);
+        pushButton_sin_2->setObjectName(QString::fromUtf8("pushButton_sin_2"));
+        pushButton_sin_2->setGeometry(QRect(430, 180, 60, 60));
+        pushButton_sin_2->setFont(font3);
+        pushButton_sqrt_2 = new QPushButton(centralwidget);
+        pushButton_sqrt_2->setObjectName(QString::fromUtf8("pushButton_sqrt_2"));
+        pushButton_sqrt_2->setGeometry(QRect(360, 180, 60, 60));
+        pushButton_sqrt_2->setFont(font);
+        pushButton_tan_2 = new QPushButton(centralwidget);
+        pushButton_tan_2->setObjectName(QString::fromUtf8("pushButton_tan_2"));
+        pushButton_tan_2->setGeometry(QRect(430, 320, 60, 60));
+        pushButton_tan_2->setFont(font3);
         MainWindow->setCentralWidget(centralwidget);
+        pushButton->raise();
+        pushButton_pm->raise();
+        pushButton_dot->raise();
+        pushButton_1->raise();
+        pushButton_2->raise();
+        pushButton_3->raise();
+        pushButton_4->raise();
+        pushButton_5->raise();
+        pushButton_6->raise();
+        pushButton_7->raise();
+        pushButton_8->raise();
+        pushButton_9->raise();
+        pushButton_mult->raise();
+        pushButton_plus->raise();
+        pushButton_min->raise();
+        pushButton_div->raise();
+        pushButton_recip->raise();
+        pushButton_equals->raise();
+        pushButton_percent->raise();
+        pushButton_fact->raise();
+        pushButton_10n->raise();
+        pushButton_exp->raise();
+        pushButton_back->raise();
+        pushButton_ce->raise();
+        pushButton_clear->raise();
+        pushButton_pi->raise();
+        pushButton_mr->raise();
+        pushButton_mp->raise();
+        pushButton_mmin->raise();
+        pushButton_shift->raise();
+        label->raise();
+        pushButton_cos_2->raise();
+        pushButton_sqr_2->raise();
+        pushButton_sin_2->raise();
+        pushButton_sqrt_2->raise();
+        pushButton_tan_2->raise();
+        pushButton_sin->raise();
+        pushButton_sqr->raise();
+        pushButton_sqrt->raise();
+        pushButton_tan->raise();
+        pushButton_cos->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 500, 28));
+        menubar->setGeometry(QRect(0, 0, 500, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuEdit = new QMenu(menubar);
@@ -270,11 +356,12 @@ public:
         menubar->addAction(menuFile->menuAction());
         menubar->addAction(menuEdit->menuAction());
         menubar->addAction(menuHelp->menuAction());
-        menuFile->addAction(actionSettings);
-        menuFile->addSeparator();
         menuFile->addAction(actionQuit);
         menuEdit->addAction(actionCopy);
         menuEdit->addAction(actionPaste);
+        menuEdit->addSeparator();
+        menuEdit->addAction(actionDegrees);
+        menuEdit->addAction(actionRadians);
         menuHelp->addAction(actionAbout_Qt);
         menuHelp->addSeparator();
         menuHelp->addAction(actionAbout);
@@ -286,11 +373,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "ProCalc 2.0", nullptr));
-        actionSettings->setText(QCoreApplication::translate("MainWindow", "Settings", nullptr));
-#if QT_CONFIG(shortcut)
-        actionSettings->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+S", nullptr));
-#endif // QT_CONFIG(shortcut)
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Rubidium", nullptr));
         actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
 #if QT_CONFIG(shortcut)
         actionCopy->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+C", nullptr));
@@ -304,6 +387,14 @@ public:
         actionQuit->setText(QCoreApplication::translate("MainWindow", "Quit", nullptr));
 #if QT_CONFIG(shortcut)
         actionQuit->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Q", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionDegrees->setText(QCoreApplication::translate("MainWindow", "Degrees", nullptr));
+#if QT_CONFIG(shortcut)
+        actionDegrees->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+D", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionRadians->setText(QCoreApplication::translate("MainWindow", "Radians", nullptr));
+#if QT_CONFIG(shortcut)
+        actionRadians->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+R", nullptr));
 #endif // QT_CONFIG(shortcut)
         pushButton->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         pushButton_pm->setText(QCoreApplication::translate("MainWindow", "\302\261", nullptr));
@@ -341,6 +432,11 @@ public:
         pushButton_mmin->setText(QCoreApplication::translate("MainWindow", "M\342\210\222", nullptr));
         pushButton_shift->setText(QCoreApplication::translate("MainWindow", "shift", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        pushButton_cos_2->setText(QCoreApplication::translate("MainWindow", "acos", nullptr));
+        pushButton_sqr_2->setText(QCoreApplication::translate("MainWindow", "x\342\201\277", nullptr));
+        pushButton_sin_2->setText(QCoreApplication::translate("MainWindow", "asin", nullptr));
+        pushButton_sqrt_2->setText(QCoreApplication::translate("MainWindow", "\342\201\277\342\210\232", nullptr));
+        pushButton_tan_2->setText(QCoreApplication::translate("MainWindow", "atan", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuHelp->setTitle(QCoreApplication::translate("MainWindow", "Help", nullptr));

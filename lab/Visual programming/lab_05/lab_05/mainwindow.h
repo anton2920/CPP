@@ -46,7 +46,69 @@ private slots:
 
     void on_pushButton_sqr_clicked();
 
+    void on_pushButton_shift_clicked();
+
+    void on_actionDegrees_triggered();
+
+    void on_actionRadians_triggered();
+
+    void on_pushButton_sin_clicked();
+
+    void on_pushButton_cos_clicked();
+
+    void on_pushButton_tan_clicked();
+
+    void on_pushButton_sin_2_clicked();
+
+    void on_pushButton_tan_2_clicked();
+
+    void on_pushButton_cos_2_clicked();
+
+    void on_pushButton_pi_clicked();
+
+    void on_pushButton_10n_clicked();
+
+    void on_pushButton_fact_clicked();
+
+    void on_pushButton_recip_clicked();
+
+    void on_pushButton_back_clicked();
+
+    void on_pushButton_ce_clicked();
+
+    void on_pushButton_mr_clicked();
+
+    void on_pushButton_mp_clicked();
+
+    void on_pushButton_mmin_clicked();
+
+    void on_pushButton_plus_clicked();
+
+    void on_pushButton_min_clicked();
+
+    void on_pushButton_mult_clicked();
+
+    void on_pushButton_div_clicked();
+
+    void on_pushButton_sqrt_2_clicked();
+
+    void on_pushButton_sqr_2_clicked();
+
+    void on_pushButton_equals_clicked();
+
+    void on_actionQuit_triggered();
+
+    void on_actionAbout_triggered();
+
+    void on_actionAbout_Qt_triggered();
+
+    void on_actionCopy_triggered();
+
+    void on_actionPaste_triggered();
+
 private:
     Ui::MainWindow *ui;
+
+    void ravno2();
 };
 #endif // MAINWINDOW_H

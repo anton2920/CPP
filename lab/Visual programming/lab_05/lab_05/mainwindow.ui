@@ -10,8 +10,24 @@
     <height>480</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>480</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>ProCalc 2.0</string>
+   <string>Rubidium</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../Pictures/Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico</normaloff>../../../../../Pictures/Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
@@ -666,6 +682,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_mr">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -743,11 +762,17 @@
       <pointsize>16</pointsize>
       <weight>50</weight>
       <bold>false</bold>
-      <underline>true</underline>
+      <underline>false</underline>
      </font>
     </property>
     <property name="text">
      <string>shift</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -785,6 +810,152 @@
      <number>0</number>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_cos_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>250</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>21</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>acos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqr_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>250</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>24</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>xⁿ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sin_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>180</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>21</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>asin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqrt_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>180</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>24</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ⁿ√</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tan_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>320</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>21</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>atan</string>
+    </property>
+   </widget>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_pm</zorder>
+   <zorder>pushButton_dot</zorder>
+   <zorder>pushButton_1</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>pushButton_9</zorder>
+   <zorder>pushButton_mult</zorder>
+   <zorder>pushButton_plus</zorder>
+   <zorder>pushButton_min</zorder>
+   <zorder>pushButton_div</zorder>
+   <zorder>pushButton_recip</zorder>
+   <zorder>pushButton_equals</zorder>
+   <zorder>pushButton_percent</zorder>
+   <zorder>pushButton_fact</zorder>
+   <zorder>pushButton_10n</zorder>
+   <zorder>pushButton_exp</zorder>
+   <zorder>pushButton_back</zorder>
+   <zorder>pushButton_ce</zorder>
+   <zorder>pushButton_clear</zorder>
+   <zorder>pushButton_pi</zorder>
+   <zorder>pushButton_mr</zorder>
+   <zorder>pushButton_mp</zorder>
+   <zorder>pushButton_mmin</zorder>
+   <zorder>pushButton_shift</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton_cos_2</zorder>
+   <zorder>pushButton_sqr_2</zorder>
+   <zorder>pushButton_sin_2</zorder>
+   <zorder>pushButton_sqrt_2</zorder>
+   <zorder>pushButton_tan_2</zorder>
+   <zorder>pushButton_sin</zorder>
+   <zorder>pushButton_sqr</zorder>
+   <zorder>pushButton_sqrt</zorder>
+   <zorder>pushButton_tan</zorder>
+   <zorder>pushButton_cos</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -792,15 +963,13 @@
      <x>0</x>
      <y>0</y>
      <width>500</width>
-     <height>28</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionSettings"/>
-    <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -809,6 +978,9 @@
     </property>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionDegrees"/>
+    <addaction name="actionRadians"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -822,14 +994,6 @@
    <addaction name="menuEdit"/>
    <addaction name="menuHelp"/>
   </widget>
-  <action name="actionSettings">
-   <property name="text">
-    <string>Settings</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+S</string>
-   </property>
-  </action>
   <action name="actionCopy">
    <property name="text">
     <string>Copy</string>
@@ -862,6 +1026,31 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionDegrees">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Degrees</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionRadians">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Radians</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
    </property>
   </action>
  </widget>

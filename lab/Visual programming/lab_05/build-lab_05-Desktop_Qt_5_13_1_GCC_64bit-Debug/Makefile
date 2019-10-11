@@ -53,9 +53,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../lab_05/main.cpp \
-		../lab_05/mainwindow.cpp moc_mainwindow.cpp
+		../lab_05/mainwindow.cpp \
+		../lab_05/bigint.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
+		bigint.o \
 		moc_mainwindow.o
 DIST          = /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/common/unix.conf \
@@ -253,8 +255,10 @@ DIST          = /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/exceptions.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/yacc.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/lex.prf \
-		../lab_05/lab_05.pro ../lab_05/mainwindow.h ../lab_05/main.cpp \
-		../lab_05/mainwindow.cpp
+		../lab_05/lab_05.pro ../lab_05/mainwindow.h \
+		../lab_05/bigint.h ../lab_05/main.cpp \
+		../lab_05/mainwindow.cpp \
+		../lab_05/bigint.cpp
 QMAKE_TARGET  = lab_05
 DESTDIR       = 
 TARGET        = lab_05
@@ -676,8 +680,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/Qt/5.13.1/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../lab_05/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../lab_05/main.cpp ../lab_05/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../lab_05/mainwindow.h ../lab_05/bigint.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../lab_05/main.cpp ../lab_05/mainwindow.cpp ../lab_05/bigint.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../lab_05/mainwindow.ui $(DISTDIR)/
 
 
@@ -1093,8 +1097,14 @@ mainwindow.o: ../lab_05/mainwindow.cpp ../lab_05/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QPushButton \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qpushbutton.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget \
+		../lab_05/bigint.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QtMath \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qmath.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_05/mainwindow.cpp
+
+bigint.o: ../lab_05/bigint.cpp ../lab_05/bigint.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bigint.o ../lab_05/bigint.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
