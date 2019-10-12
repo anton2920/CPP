@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "libs/slau.hpp"
+#include "slau.hpp"
 
 const double omega = 1.0;
 

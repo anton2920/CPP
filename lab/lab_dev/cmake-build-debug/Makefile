@@ -150,32 +150,32 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/student.o: libs/student.cpp.o
+libs/slau.o: libs/slau.cpp.o
 
-.PHONY : libs/student.o
+.PHONY : libs/slau.o
 
 # target to build an object file
-libs/student.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/student.cpp.o
-.PHONY : libs/student.cpp.o
+libs/slau.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.o
+.PHONY : libs/slau.cpp.o
 
-libs/student.i: libs/student.cpp.i
+libs/slau.i: libs/slau.cpp.i
 
-.PHONY : libs/student.i
+.PHONY : libs/slau.i
 
 # target to preprocess a source file
-libs/student.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/student.cpp.i
-.PHONY : libs/student.cpp.i
+libs/slau.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.i
+.PHONY : libs/slau.cpp.i
 
-libs/student.s: libs/student.cpp.s
+libs/slau.s: libs/slau.cpp.s
 
-.PHONY : libs/student.s
+.PHONY : libs/slau.s
 
 # target to generate assembly for a file
-libs/student.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/student.cpp.s
-.PHONY : libs/student.cpp.s
+libs/slau.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.s
+.PHONY : libs/slau.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +216,9 @@ help:
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/student.o"
-	@echo "... libs/student.i"
-	@echo "... libs/student.s"
+	@echo "... libs/slau.o"
+	@echo "... libs/slau.i"
+	@echo "... libs/slau.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

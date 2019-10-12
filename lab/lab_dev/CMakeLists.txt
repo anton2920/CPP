@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(STUDENT libs/student.cpp libs/student.hpp)
 set(LIBS libs/libs.cpp libs/libs.hpp)
+set(SLAU libs/slau.cpp libs/slau.hpp)
 
-add_executable(lab_dev main.cpp ${STUDENT} ${LIBS})
+add_executable(lab_dev main.cpp ${LIBS} ${SLAU})
 target_link_libraries(lab_dev Sorting)

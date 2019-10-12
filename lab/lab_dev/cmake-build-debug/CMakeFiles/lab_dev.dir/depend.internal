@@ -4,11 +4,9 @@
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o
  /home/anton/CPP/lab/lab_dev/libs/libs.cpp
  /home/anton/CPP/lab/lab_dev/libs/libs.hpp
- /home/anton/CPP/lab/lab_dev/libs/student.hpp
-CMakeFiles/lab_dev.dir/libs/student.cpp.o
- /home/anton/CPP/lab/lab_dev/libs/student.cpp
- /home/anton/CPP/lab/lab_dev/libs/student.hpp
+CMakeFiles/lab_dev.dir/libs/slau.cpp.o
+ /home/anton/CPP/lab/lab_dev/libs/slau.cpp
+ /home/anton/CPP/lab/lab_dev/libs/slau.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o
- /home/anton/CPP/lab/lab_dev/libs/libs.hpp
- /home/anton/CPP/lab/lab_dev/libs/student.hpp
+ /home/anton/CPP/lab/lab_dev/libs/slau.hpp
  /home/anton/CPP/lab/lab_dev/main.cpp

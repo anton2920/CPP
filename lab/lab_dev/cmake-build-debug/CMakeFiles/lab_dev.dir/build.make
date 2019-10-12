@@ -70,22 +70,9 @@ CMakeFiles/lab_dev.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_dev.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/CPP/lab/lab_dev/main.cpp -o CMakeFiles/lab_dev.dir/main.cpp.s
 
-CMakeFiles/lab_dev.dir/libs/student.cpp.o: CMakeFiles/lab_dev.dir/flags.make
-CMakeFiles/lab_dev.dir/libs/student.cpp.o: ../libs/student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_dev.dir/libs/student.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_dev.dir/libs/student.cpp.o -c /home/anton/CPP/lab/lab_dev/libs/student.cpp
-
-CMakeFiles/lab_dev.dir/libs/student.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_dev.dir/libs/student.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/CPP/lab/lab_dev/libs/student.cpp > CMakeFiles/lab_dev.dir/libs/student.cpp.i
-
-CMakeFiles/lab_dev.dir/libs/student.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_dev.dir/libs/student.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/CPP/lab/lab_dev/libs/student.cpp -o CMakeFiles/lab_dev.dir/libs/student.cpp.s
-
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: CMakeFiles/lab_dev.dir/flags.make
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_dev.dir/libs/libs.cpp.o -c /home/anton/CPP/lab/lab_dev/libs/libs.cpp
 
 CMakeFiles/lab_dev.dir/libs/libs.cpp.i: cmake_force
@@ -96,18 +83,31 @@ CMakeFiles/lab_dev.dir/libs/libs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_dev.dir/libs/libs.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/CPP/lab/lab_dev/libs/libs.cpp -o CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 
+CMakeFiles/lab_dev.dir/libs/slau.cpp.o: CMakeFiles/lab_dev.dir/flags.make
+CMakeFiles/lab_dev.dir/libs/slau.cpp.o: ../libs/slau.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab_dev.dir/libs/slau.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_dev.dir/libs/slau.cpp.o -c /home/anton/CPP/lab/lab_dev/libs/slau.cpp
+
+CMakeFiles/lab_dev.dir/libs/slau.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_dev.dir/libs/slau.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/CPP/lab/lab_dev/libs/slau.cpp > CMakeFiles/lab_dev.dir/libs/slau.cpp.i
+
+CMakeFiles/lab_dev.dir/libs/slau.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_dev.dir/libs/slau.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/CPP/lab/lab_dev/libs/slau.cpp -o CMakeFiles/lab_dev.dir/libs/slau.cpp.s
+
 # Object files for target lab_dev
 lab_dev_OBJECTS = \
 "CMakeFiles/lab_dev.dir/main.cpp.o" \
-"CMakeFiles/lab_dev.dir/libs/student.cpp.o" \
-"CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
+"CMakeFiles/lab_dev.dir/libs/libs.cpp.o" \
+"CMakeFiles/lab_dev.dir/libs/slau.cpp.o"
 
 # External object files for target lab_dev
 lab_dev_EXTERNAL_OBJECTS =
 
 lab_dev: CMakeFiles/lab_dev.dir/main.cpp.o
-lab_dev: CMakeFiles/lab_dev.dir/libs/student.cpp.o
 lab_dev: CMakeFiles/lab_dev.dir/libs/libs.cpp.o
+lab_dev: CMakeFiles/lab_dev.dir/libs/slau.cpp.o
 lab_dev: CMakeFiles/lab_dev.dir/build.make
 lab_dev: CMakeFiles/lab_dev.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab_dev"

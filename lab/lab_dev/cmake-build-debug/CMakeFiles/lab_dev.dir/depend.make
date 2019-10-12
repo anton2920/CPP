@@ -3,12 +3,10 @@
 
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.cpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.hpp
-CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/student.hpp
 
-CMakeFiles/lab_dev.dir/libs/student.cpp.o: ../libs/student.cpp
-CMakeFiles/lab_dev.dir/libs/student.cpp.o: ../libs/student.hpp
+CMakeFiles/lab_dev.dir/libs/slau.cpp.o: ../libs/slau.cpp
+CMakeFiles/lab_dev.dir/libs/slau.cpp.o: ../libs/slau.hpp
 
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/libs.hpp
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/student.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/slau.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../main.cpp
 
