@@ -80,6 +80,11 @@ void MainWindow::on_pushButton_clicked() {
         ui->radioButton_corr->setStyleSheet(" QRadioButton {background-color : green} ");
     }
 
+    if (!ui->radioButton_2->isChecked() && !ui->radioButton_3->isChecked() &&
+            !ui->radioButton_4->isChecked()) {
+        correct = false;
+    }
+
     if (correct) {
         QMessageBox::about(this, "Congrats!", "The formulas and the answer are correct!");
     } else {
