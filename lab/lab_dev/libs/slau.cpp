@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
+#include <exception>
 
 #include "slau.hpp"
 
@@ -14,6 +15,7 @@ slau::slau(size_t m) : m(m) {
         this->b = new double[m]();
         this->xcurr = new double[m]();
         this->xprev = new double[m]();
+        this->normB = this->normB2 = 0;
     } catch (...) {
         std::cerr << "Errors with memory allocation!\n" << std::flush;
         std::exit(-1);
@@ -36,47 +38,56 @@ void slau::sor1(double *x_new, const double *x, double omega) {
     size_t i, j;
 
 /* Do the Gauss-Seidel computation */
-    for (i = 0; i < this->m; i++) {
+    for (i = 0; i < this->m; ++i) {
         x_new[i] = b[i];
-        for (j = 0; j < i; j++) {
+        for (j = 0; j < i; ++j) {
             x_new[i] = x_new[i] - A[i + j * this->m] * x_new[j];
         }
-        for (j = i + 1; j < this->m; j++) {
+        for (j = i + 1; j < this->m; ++j) {
             x_new[i] = x_new[i] - A[i + j * this->m] * x[j];
         }
         x_new[i] = x_new[i] / A[i + i * this->m];
     }
 /* Use omega to blend the Gauss-Seidel update with the old solution */
     if (omega != 1.0) {
-        for (i = 0; i < this->m; i++) {
+        for (i = 0; i < this->m; ++i) {
             x_new[i] = (1.0 - omega) * x[i] + omega * x_new[i];
         }
     }
 }
 
-std::size_t slau::sor(double omega) {
+std::size_t slau::sor(double omega, double eps) {
 
     /* Initializing variables */
-    double *B;
+    double *diffM;
     std::size_t iter = 0;
 
     /* Main part */
     try {
-        B = new double[this->m];
+        diffM = new double[this->m];
     } catch (...) {
         std::cerr << "Errors with memory allocation!\n" << std::flush;
         std::exit(-1);
     }
 
-    do {
-        ++iter;
-        sor1(this->xcurr, this->xprev, omega);
-        /* std::cout << this->xcurr[0] << " " << this->xcurr[1] << " " << this->xcurr[2] << std::endl << std::flush; */
-        diff(B, this->xcurr, this->xprev);
-        std::copy(this->xcurr, this->xcurr + this->m, this->xprev);
-    } while (norm1(B) > this->eps);
+    try {
+        if (!this->check_conv()) {
+            throw std::range_error("normB > 1");
+        }
+        do {
+            ++iter;
+            sor1(this->xcurr, this->xprev, omega);
+            /* std::cout << this->xcurr[0] << " " << this->xcurr[1] << " " << this->xcurr[2] << std::endl << std::flush; */
+            diff(diffM, this->xcurr, this->xprev);
+            std::copy(this->xcurr, this->xcurr + this->m, this->xprev);
+        } while ((norm1(diffM) * this->normB2 / (1 - this->normB) ) > eps);
+    } catch (...) {
+        std::cout << "\nUnfortunately this method diverges with this matrix. " <<
+                     "\nTry another method (out program doesn't provide it)\n" << std::flush;
+        return -1;
+    }
 
-    delete[] B;
+    delete[] diffM;
 
     /* Returning value */
     return iter;
@@ -132,4 +143,41 @@ void slau::printSolution(std::size_t iter, std::ostream &stream) {
 
     /* Final output */
     std::cout << std::endl;
+}
+
+bool slau::check_conv() {
+
+    /* Initializing variables */
+    double curr_sum, max_sum = 0;
+    double curr_sum2, max_sum2 = 0;
+
+    /* Main part */
+    for (std::size_t i = 0; i < this->m; ++i) {
+        curr_sum = 0;
+        curr_sum2 = 0;
+        for (std::size_t j = 0; j < this->m; ++j) {
+            if (i == j) {
+                continue;
+            }
+            if (j > i) {
+                curr_sum2 += fabs(-this->A[i + j * this->m] / this->A[i + i * this->m]);
+            }
+
+            curr_sum += fabs(-this->A[i + j * this->m] / this->A[i + i * this->m]);
+        }
+
+        if (curr_sum > max_sum) {
+            max_sum = curr_sum;
+        }
+
+        if (curr_sum2 > max_sum2) {
+            max_sum2 = curr_sum2;
+        }
+    }
+
+    this->normB = max_sum;
+    this->normB2 = max_sum2;
+
+    /* Returning value */
+    return this->normB <= 1;
 }

@@ -13,16 +13,12 @@ fstream
 -
 cmath
 -
+exception
+-
 slau.hpp
 /home/anton/CPP/lab/lab_dev/libs/slau.hpp
 
 /home/anton/CPP/lab/lab_dev/libs/slau.hpp
 iostream
 -
-
-/home/anton/CPP/lab/lab_dev/main.cpp
-iostream
--
-libs/slau.hpp
-/home/anton/CPP/lab/lab_dev/libs/slau.hpp
 

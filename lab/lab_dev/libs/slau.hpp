@@ -13,8 +13,8 @@ private:
     double *xcurr; /* n-approximation vector */
     double *xprev; /* (n-1)-approximation vector */
     std::size_t m; /* Size of matrix */
-
-    const double eps = 1e-9;
+    double normB;
+    double normB2;
 
 public:
     /* Methods */
@@ -25,9 +25,10 @@ private:
     void sor1(double *, const double *, double);
     double norm1(const double *);
     void diff(double *res, const double *, const double *);
+    bool check_conv();
 
 public:
-    std::size_t sor(double omega);
+    std::size_t sor(double omega, double eps);
     void read();
     void printSolution(std::size_t iter, std::ostream &stream);
 };
