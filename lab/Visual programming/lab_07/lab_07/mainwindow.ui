@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>673</width>
+    <width>759</width>
     <height>440</height>
    </rect>
   </property>
@@ -53,8 +53,11 @@
        </item>
        <item row="0" column="1">
         <widget class="QCheckBox" name="checkBox_F2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="text">
-          <string>Ф = ∑qᵢ / ε</string>
+          <string>Ф = ∑qᵢ / εo</string>
          </property>
          <property name="tristate">
           <bool>false</bool>
@@ -168,6 +171,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="text">
          <string>Check</string>
         </property>
@@ -198,8 +204,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>673</width>
-     <height>22</height>
+     <width>759</width>
+     <height>28</height>
     </rect>
    </property>
   </widget>

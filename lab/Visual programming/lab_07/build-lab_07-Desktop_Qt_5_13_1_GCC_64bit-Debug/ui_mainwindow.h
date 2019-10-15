@@ -60,7 +60,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(673, 440);
+        MainWindow->resize(759, 440);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -89,6 +89,7 @@ public:
 
         checkBox_F2 = new QCheckBox(groupBox);
         checkBox_F2->setObjectName(QString::fromUtf8("checkBox_F2"));
+        checkBox_F2->setEnabled(true);
         checkBox_F2->setTristate(false);
 
         gridLayout->addWidget(checkBox_F2, 0, 1, 1, 1);
@@ -154,6 +155,7 @@ public:
 
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setEnabled(true);
 
         horizontalLayout->addWidget(pushButton);
 
@@ -167,7 +169,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 673, 22));
+        menubar->setGeometry(QRect(0, 0, 759, 28));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -185,7 +187,7 @@ public:
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Formulas", nullptr));
         checkBox_Fara->setText(QCoreApplication::translate("MainWindow", "\342\210\256E\302\240\342\213\205 dl = -d\320\244 / dt", nullptr));
         checkBox_A->setText(QCoreApplication::translate("MainWindow", "A = F \342\213\205\302\240S", nullptr));
-        checkBox_F2->setText(QCoreApplication::translate("MainWindow", "\320\244 = \342\210\221q\341\265\242 / \316\265", nullptr));
+        checkBox_F2->setText(QCoreApplication::translate("MainWindow", "\320\244 = \342\210\221q\341\265\242 / \316\265o", nullptr));
         checkBox_F1->setText(QCoreApplication::translate("MainWindow", "\320\244 = \342\210\256E \342\213\205 ds", nullptr));
         checkBox_N->setText(QCoreApplication::translate("MainWindow", "N = F \342\213\205 v", nullptr));
         checkBox_Newt->setText(QCoreApplication::translate("MainWindow", "\342\210\221F = ma", nullptr));
