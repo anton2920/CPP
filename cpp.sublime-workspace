@@ -532,7 +532,7 @@
 			"file": "lab/OOP/lab_02/task_2/input.txt",
 			"settings":
 			{
-				"buffer_size": 254,
+				"buffer_size": 312,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -550,7 +550,7 @@
 			"file": "lab/OOP/lab_02/task_2/slau.cpp",
 			"settings":
 			{
-				"buffer_size": 4690,
+				"buffer_size": 4821,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -559,7 +559,7 @@
 			"file": "lab/OOP/lab_02/task_2/slau.hpp",
 			"settings":
 			{
-				"buffer_size": 782,
+				"buffer_size": 806,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -718,6 +718,8 @@
 	"expanded_folders":
 	[
 		"/home/anton/CPP",
+		"/home/anton/CPP/experiments",
+		"/home/anton/CPP/experiments/constr",
 		"/home/anton/CPP/lab",
 		"/home/anton/CPP/lab/OOP",
 		"/home/anton/CPP/lab/OOP/lab_02",
@@ -726,6 +728,8 @@
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/experiments/constr/constr.cpp",
+		"/home/anton/CPP/experiments/constr",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.hpp",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.cpp",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/libs.hpp",
@@ -851,13 +855,11 @@
 		"/home/anton/C/experiments/asm/c5.c",
 		"/home/anton/C/experiments/asm/asm5.asm",
 		"/home/anton/C/experiments/asm/asm6.asm",
-		"/home/anton/C/experiments/asm/c1.c",
-		"/home/anton/C/experiments/asm/asm1.asm",
-		"/home/anton/C/experiments/asm/c2.c"
+		"/home/anton/C/experiments/asm/c1.c"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -1031,15 +1033,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 312,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								254,
-								254
+								312,
+								312
 							]
 						],
 						"settings":
@@ -1082,7 +1084,7 @@
 						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1091,15 +1093,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4690,
+						"buffer_size": 4821,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4631,
-								4631
+								4543,
+								4543
 							]
 						],
 						"settings":
@@ -1110,7 +1112,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 975.0,
+						"translation.y": 783.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1122,15 +1124,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 782,
+						"buffer_size": 806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								806,
+								806
 							]
 						],
 						"settings":
@@ -1144,7 +1146,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1152,7 +1154,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -1197,7 +1199,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":

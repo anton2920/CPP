@@ -22,6 +22,13 @@ slau::slau(size_t m) : m(m) {
     }
 }
 
+slau::slau(const slau &other) : slau(other.m) {
+
+    /* Main part */
+    std::copy(other.A, other.A + other.m, this->A);
+    std::copy(other.b, other.b + other.m, this->b);
+}
+
 slau::~slau() {
 
     /* Main part */

@@ -19,6 +19,7 @@ private:
 public:
     /* Methods */
     explicit slau(size_t m = 3);
+    slau(const slau &);
     ~slau();
 
 private:
