@@ -123,6 +123,33 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
+libs/fraction.o: libs/fraction.cpp.o
+
+.PHONY : libs/fraction.o
+
+# target to build an object file
+libs/fraction.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.o
+.PHONY : libs/fraction.cpp.o
+
+libs/fraction.i: libs/fraction.cpp.i
+
+.PHONY : libs/fraction.i
+
+# target to preprocess a source file
+libs/fraction.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.i
+.PHONY : libs/fraction.cpp.i
+
+libs/fraction.s: libs/fraction.cpp.s
+
+.PHONY : libs/fraction.s
+
+# target to generate assembly for a file
+libs/fraction.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.s
+.PHONY : libs/fraction.cpp.s
+
 libs/libs.o: libs/libs.cpp.o
 
 .PHONY : libs/libs.o
@@ -150,32 +177,32 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/slau.o: libs/slau.cpp.o
+libs/vector.o: libs/vector.cpp.o
 
-.PHONY : libs/slau.o
+.PHONY : libs/vector.o
 
 # target to build an object file
-libs/slau.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.o
-.PHONY : libs/slau.cpp.o
+libs/vector.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.o
+.PHONY : libs/vector.cpp.o
 
-libs/slau.i: libs/slau.cpp.i
+libs/vector.i: libs/vector.cpp.i
 
-.PHONY : libs/slau.i
+.PHONY : libs/vector.i
 
 # target to preprocess a source file
-libs/slau.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.i
-.PHONY : libs/slau.cpp.i
+libs/vector.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.i
+.PHONY : libs/vector.cpp.i
 
-libs/slau.s: libs/slau.cpp.s
+libs/vector.s: libs/vector.cpp.s
 
-.PHONY : libs/slau.s
+.PHONY : libs/vector.s
 
 # target to generate assembly for a file
-libs/slau.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/slau.cpp.s
-.PHONY : libs/slau.cpp.s
+libs/vector.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.s
+.PHONY : libs/vector.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
+	@echo "... libs/fraction.o"
+	@echo "... libs/fraction.i"
+	@echo "... libs/fraction.s"
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/slau.o"
-	@echo "... libs/slau.i"
-	@echo "... libs/slau.s"
+	@echo "... libs/vector.o"
+	@echo "... libs/vector.i"
+	@echo "... libs/vector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

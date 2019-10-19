@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/slau.cpp.o  -o lab_dev -lSorting 
+/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/fraction.cpp.o CMakeFiles/lab_dev.dir/libs/vector.cpp.o  -o lab_dev -lSorting 

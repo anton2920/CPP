@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/slau.cpp
-iostream
+/home/anton/CPP/lab/lab_dev/libs/fraction.cpp
+stdexcept
 -
-fstream
--
-cmath
--
-exception
--
-slau.hpp
-/home/anton/CPP/lab/lab_dev/libs/slau.hpp
+fraction.hpp
+/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
 
-/home/anton/CPP/lab/lab_dev/libs/slau.hpp
+/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
+ostream
+-
+
+/home/anton/CPP/lab/lab_dev/libs/vector.cpp
+vector.hpp
+/home/anton/CPP/lab/lab_dev/libs/vector.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/vector.hpp
 iostream
 -
+iterator
+-
+
+/home/anton/CPP/lab/lab_dev/main.cpp
+iostream
+-
+libs/fraction.hpp
+/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
+libs/vector.hpp
+/home/anton/CPP/lab/lab_dev/libs/vector.hpp
 
