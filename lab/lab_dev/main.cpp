@@ -7,7 +7,7 @@ int main() {
 
     /* Initializing variables */
     lab::fraction a(1, 2);
-    lab::fraction b(2, 6);
+    lab::fraction b(1, 3);
     lab::fraction c;
 
     /* Main part */
