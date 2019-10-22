@@ -6,25 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
+/home/anton/CPP/lab/lab_dev/libs/pharmacy.cpp
+pharmacy.hpp
+/home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp
+iostream
+-
 ostream
 -
-
-/home/anton/CPP/lab/lab_dev/libs/vector.hpp
-iostream
+ctime
 -
-iterator
--
-cmath
--
-
-/home/anton/CPP/lab/lab_dev/main.cpp
-iostream
--
-fstream
--
-libs/fraction.hpp
-/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
-libs/vector.hpp
-/home/anton/CPP/lab/lab_dev/libs/vector.hpp
 

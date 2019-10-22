@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/anton/CPP/lab/lab_dev/libs/fraction.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/fraction.cpp.o"
   "/home/anton/CPP/lab/lab_dev/libs/libs.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
+  "/home/anton/CPP/lab/lab_dev/libs/pharmacy.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.o"
   "/home/anton/CPP/lab/lab_dev/libs/vector.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/vector.cpp.o"
   "/home/anton/CPP/lab/lab_dev/main.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/main.cpp.o"
   )

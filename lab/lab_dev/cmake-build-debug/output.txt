@@ -1,0 +1,140 @@
+Name: Aspirin
+Quantity: 167
+Production date: { 24, 9, 2019 }
+Expiration: 24
+Type: Analgesics
+Price: 60
+
+Name: Diclofenac
+Quantity: 47
+Production date: { 19, 7, 2018 }
+Expiration: 24
+Type: Analgesics
+Price: 25
+
+Name: Nefopam
+Quantity: 54
+Production date: { 15, 7, 2017 }
+Expiration: 24
+Type: Analgesics
+Price: 30
+
+Name: OxyContin
+Quantity: 7
+Production date: { 14, 5, 2007 }
+Expiration: 12
+Type: Analgesics
+Price: 40
+
+Name: Paracetamol
+Quantity: 150
+Production date: { 22, 9, 2019 }
+Expiration: 6
+Type: Analgesics
+Price: 5
+
+Name: Amoxicillin
+Quantity: 61
+Production date: { 17, 9, 2015 }
+Expiration: 120
+Type: Antibiotics
+Price: 35
+
+Name: Keflex
+Quantity: 145
+Production date: { 31, 4, 2005 }
+Expiration: 10
+Type: Antibiotics
+Price: 50
+
+Name: Tetracycline
+Quantity: 78
+Production date: { 16, 3, 2018 }
+Expiration: 42
+Type: Antibiotics
+Price: 45
+
+Name: Zithromax
+Quantity: 54
+Production date: { 14, 8, 2017 }
+Expiration: 45
+Type: Antibiotics
+Price: 20
+
+Name: Ibuprofen
+Quantity: 37
+Production date: { 4, 5, 2018 }
+Expiration: 15
+Type: Antipyretics
+Price: 15
+
+Name: Naprosyn
+Quantity: 16
+Production date: { 8, 7, 2017 }
+Expiration: 12
+Type: Antipyretics
+Price: 10
+
+Name: Chlorhexidine
+Quantity: 89
+Production date: { 23, 12, 2018 }
+Expiration: 51
+Type: Antiseptics
+Price: 75
+
+Name: Hysept
+Quantity: 123
+Production date: { 21, 10, 2019 }
+Expiration: 74
+Type: Antiseptics
+Price: 55
+
+Name: Triclosan
+Quantity: 115
+Production date: { 4, 5, 2019 }
+Expiration: 89
+Type: Antiseptics
+Price: 70
+
+Name: Atorvastatin
+Quantity: 43
+Production date: { 3, 4, 2018 }
+Expiration: 48
+Type: Statins
+Price: 85
+
+Name: Pravachol
+Quantity: 79
+Production date: { 15, 7, 2018 }
+Expiration: 24
+Type: Statins
+Price: 95
+
+Name: Rosuvastatin
+Quantity: 40
+Production date: { 23, 6, 2018 }
+Expiration: 24
+Type: Statins
+Price: 80
+
+Name: Clonazepam
+Quantity: 56
+Production date: { 9, 10, 2018 }
+Expiration: 45
+Type: Tranquilizers
+Price: 65
+
+Name: Diazepam
+Quantity: 260
+Production date: { 29, 1, 2018 }
+Expiration: 72
+Type: Tranquilizers
+Price: 100
+
+Name: Rohypnol
+Quantity: 84
+Production date: { 4, 10, 2019 }
+Expiration: 10
+Type: Tranquilizers
+Price: 90
+

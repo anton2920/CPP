@@ -96,6 +96,12 @@
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/pharmacy.cpp">
+			<Option target="lab_dev"/>
+		</Unit>
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp">
+			<Option target="lab_dev"/>
+		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/vector.cpp">
 			<Option target="lab_dev"/>
 		</Unit>

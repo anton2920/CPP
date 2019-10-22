@@ -177,6 +177,33 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
+libs/pharmacy.o: libs/pharmacy.cpp.o
+
+.PHONY : libs/pharmacy.o
+
+# target to build an object file
+libs/pharmacy.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.o
+.PHONY : libs/pharmacy.cpp.o
+
+libs/pharmacy.i: libs/pharmacy.cpp.i
+
+.PHONY : libs/pharmacy.i
+
+# target to preprocess a source file
+libs/pharmacy.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.i
+.PHONY : libs/pharmacy.cpp.i
+
+libs/pharmacy.s: libs/pharmacy.cpp.s
+
+.PHONY : libs/pharmacy.s
+
+# target to generate assembly for a file
+libs/pharmacy.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.s
+.PHONY : libs/pharmacy.cpp.s
+
 libs/vector.o: libs/vector.cpp.o
 
 .PHONY : libs/vector.o
@@ -246,6 +273,9 @@ help:
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
+	@echo "... libs/pharmacy.o"
+	@echo "... libs/pharmacy.i"
+	@echo "... libs/pharmacy.s"
 	@echo "... libs/vector.o"
 	@echo "... libs/vector.i"
 	@echo "... libs/vector.s"

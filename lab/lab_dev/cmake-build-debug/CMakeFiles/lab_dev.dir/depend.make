@@ -6,11 +6,15 @@ CMakeFiles/lab_dev.dir/libs/fraction.cpp.o: ../libs/fraction.hpp
 
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.cpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.hpp
+CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/pharmacy.hpp
+
+CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.o: ../libs/pharmacy.cpp
+CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.o: ../libs/pharmacy.hpp
 
 CMakeFiles/lab_dev.dir/libs/vector.cpp.o: ../libs/vector.cpp
 CMakeFiles/lab_dev.dir/libs/vector.cpp.o: ../libs/vector.hpp
 
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/fraction.hpp
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/vector.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/libs.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/pharmacy.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../main.cpp
 

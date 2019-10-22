@@ -8,6 +8,7 @@ set(LIBS libs/libs.cpp libs/libs.hpp)
 set(SLAU libs/slau.cpp libs/slau.hpp)
 set(FRACTION libs/fraction.cpp libs/fraction.hpp)
 set(VECTOR libs/vector.cpp libs/vector.hpp)
+set(PHARMACY libs/pharmacy.cpp libs/pharmacy.hpp)
 
-add_executable(lab_dev main.cpp ${LIBS} ${FRACTION} ${VECTOR})
+add_executable(lab_dev main.cpp ${LIBS} ${FRACTION} ${VECTOR} ${PHARMACY})
 target_link_libraries(lab_dev m)
