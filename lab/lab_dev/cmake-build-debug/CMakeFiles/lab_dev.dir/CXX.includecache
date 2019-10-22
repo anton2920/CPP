@@ -6,28 +6,22 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/fraction.cpp
-stdexcept
--
-fraction.hpp
-/home/anton/CPP/lab/lab_dev/libs/fraction.hpp
-
 /home/anton/CPP/lab/lab_dev/libs/fraction.hpp
 ostream
 -
-
-/home/anton/CPP/lab/lab_dev/libs/vector.cpp
-vector.hpp
-/home/anton/CPP/lab/lab_dev/libs/vector.hpp
 
 /home/anton/CPP/lab/lab_dev/libs/vector.hpp
 iostream
 -
 iterator
 -
+cmath
+-
 
 /home/anton/CPP/lab/lab_dev/main.cpp
 iostream
+-
+fstream
 -
 libs/fraction.hpp
 /home/anton/CPP/lab/lab_dev/libs/fraction.hpp

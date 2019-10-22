@@ -73,7 +73,7 @@ namespace lab {
                 }
             }
             std::cout << "Type elements: \n";
-            for (std::size_t i = 0; i < n; ++i) {
+            for (long i = 0; i < n; ++i) {
                 in >> elem;
                 v.push_back(elem);
             }

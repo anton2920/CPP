@@ -10,4 +10,4 @@ set(FRACTION libs/fraction.cpp libs/fraction.hpp)
 set(VECTOR libs/vector.cpp libs/vector.hpp)
 
 add_executable(lab_dev main.cpp ${LIBS} ${FRACTION} ${VECTOR})
-target_link_libraries(lab_dev Sorting)
+target_link_libraries(lab_dev m)
