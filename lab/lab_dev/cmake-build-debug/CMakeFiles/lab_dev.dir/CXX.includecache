@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/pharmacy.cpp
+/home/anton/CPP/lab/lab_dev/libs/libs.cpp
+libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+iostream
+-
+list
+-
 pharmacy.hpp
 /home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp
 
