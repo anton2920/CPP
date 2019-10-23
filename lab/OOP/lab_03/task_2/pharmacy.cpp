@@ -172,17 +172,21 @@ pharmacy::date pharmacy::date::operator-(const pharmacy::date &other) const {
 
     /* Initializing variables */
     date tmp{};
-    std::tm d1, d2;
-    d1.tm_year = this->year;
-    d1.tm_mon = this->month - 1;
-    d1.tm_mday = this->day;
-
-    d2.tm_year = other.year;
-    d2.tm_mon = other.month - 1;
-    d2.tm_mday = other.day;
-
+    
     /* Main part */
+    tmp.day = this->day - other.day;
+    tmp.month = this->month - other.month;
+    tmp.year = this->year - other.year;
 
+    if (tmp.day < 0) {
+        --tmp.month;
+        tmp.day += 30;
+    }
+
+    if (tmp.month < 0) {
+        --tmp.year;
+        tmp.month += 12;
+    }
 
     /* Returning value */
     return tmp;
