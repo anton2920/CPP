@@ -42,7 +42,7 @@ void MainWindow::on_pushButton_quest_clicked() {
 void MainWindow::on_pushButton_stop_clicked() {
 
     /* Main part */
-    QMessageBox::critical(this, "Stop", "Some kind of warning", QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
+    QMessageBox::critical(this, "Stop", "Some kind of critical", QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
 }
 
 void MainWindow::on_pushButton_wrning_clicked() {

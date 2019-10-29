@@ -1077,6 +1077,7 @@ mainwindow.o: ../lab_05/mainwindow.cpp ../lab_05/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qicon.h \
 		ui_mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/QVariant \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/QIcon \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QAction \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qaction.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qactiongroup.h \
@@ -1100,7 +1101,12 @@ mainwindow.o: ../lab_05/mainwindow.cpp ../lab_05/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget \
 		../lab_05/bigint.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/QtMath \
-		/usr/Qt/5.13.1/gcc_64/include/QtCore/qmath.h
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qmath.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/QClipboard \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qclipboard.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QMessageBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmessagebox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_05/mainwindow.cpp
 
 bigint.o: ../lab_05/bigint.cpp ../lab_05/bigint.h

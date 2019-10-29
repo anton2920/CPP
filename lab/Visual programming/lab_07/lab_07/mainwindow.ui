@@ -76,6 +76,9 @@
          <property name="text">
           <string>N = F ⋅ v</string>
          </property>
+         <property name="tristate">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item row="3" column="2">

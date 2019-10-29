@@ -80,12 +80,12 @@ void MainWindow::on_pushButton_clicked() {
         ui->radioButton_corr->setStyleSheet(" QRadioButton {background-color : green} ");
     }
 
-    if (!ui->radioButton_2->isChecked() && !ui->radioButton_3->isChecked() &&
+    if (!ui->radioButton_corr->isChecked() && !ui->radioButton_2->isChecked() && !ui->radioButton_3->isChecked() &&
             !ui->radioButton_4->isChecked()) {
         correct = false;
     }
 
-    if (correct) {
+    if (correct && ui->checkBox_A->isChecked() && ui->checkBox_N->isChecked()) {
         QMessageBox::about(this, "Congrats!", "The formulas and the answer are correct!");
     } else {
         QMessageBox::critical(this, "Error!", "Something is wrong. Try harder!");
