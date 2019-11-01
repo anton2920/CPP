@@ -111,6 +111,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
+    void press_btn(int num);
+
     void ravno2();
 };
 #endif // MAINWINDOW_H

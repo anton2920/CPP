@@ -47,28 +47,7 @@ void MainWindow::on_pushButton_1_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "1");
-            } else {
-                ui->label->setText("1");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("1");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("1");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "1");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(1);
     }
 }
 
@@ -76,28 +55,7 @@ void MainWindow::on_pushButton_2_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "2");
-            } else {
-                ui->label->setText("2");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("2");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("2");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "2");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(2);
     }
 }
 
@@ -105,28 +63,7 @@ void MainWindow::on_pushButton_3_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "3");
-            } else {
-                ui->label->setText("3");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("3");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("3");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "3");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(3);
     }
 }
 
@@ -134,28 +71,7 @@ void MainWindow::on_pushButton_4_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "4");
-            } else {
-                ui->label->setText("4");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("4");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("4");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "4");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(4);
     }
 }
 
@@ -163,28 +79,7 @@ void MainWindow::on_pushButton_5_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "5");
-            } else {
-                ui->label->setText("5");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("5");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("5");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "5");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(5);
     }
 }
 
@@ -192,28 +87,7 @@ void MainWindow::on_pushButton_6_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "6");
-            } else {
-                ui->label->setText("6");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("6");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("6");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "6");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(6);
     }
 }
 
@@ -221,28 +95,7 @@ void MainWindow::on_pushButton_7_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "7");
-            } else {
-                ui->label->setText("7");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("7");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("7");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "7");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(7);
     }
 }
 
@@ -250,28 +103,7 @@ void MainWindow::on_pushButton_8_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
-        if (m_exp3 != 1) {
-            if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "8");
-            } else {
-                ui->label->setText("8");
-            }
-
-            if (lnt == 1) {
-                ui->label->setText("8");
-                lnt = 0;
-            }
-            if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("8");
-                pamat2 = 0;
-                m_pamat3 = 0;
-            }
-        } else {
-            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "8");
-            m_exp3 = 0;
-            m_exp4 = 0;
-        }
+        press_btn(8);
     }
 }
 
@@ -279,25 +111,33 @@ void MainWindow::on_pushButton_9_clicked() {
 
     /* Main part */
     if (ui->label->text() != ERROR_MSG) {
+        press_btn(9);
+    }
+}
+
+void MainWindow::press_btn(int num) {
+
+    /* Main part */
+    if (ui->label->text() != ERROR_MSG) {
         if (m_exp3 != 1) {
             if (ui->label->text() != "0") {
-                ui->label->setText(ui->label->text() + "9");
+                ui->label->setText(ui->label->text() + QString::number(num));
             } else {
-                ui->label->setText("9");
+                ui->label->setText(QString::number(num));
             }
 
             if (lnt == 1) {
-                ui->label->setText("9");
+                ui->label->setText(QString::number(num));
                 lnt = 0;
             }
             if (pamat2 == 1 || m_pamat3 == 1) {
-                ui->label->setText("9");
+                ui->label->setText(QString::number(num));
                 pamat2 = 0;
                 m_pamat3 = 0;
             }
         } else {
             ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-            ui->label->setText(ui->label->text() + "9");
+            ui->label->setText(ui->label->text() + QString::number(num));
             m_exp3 = 0;
             m_exp4 = 0;
         }
@@ -562,9 +402,11 @@ void MainWindow::on_pushButton_fact_clicked() {
     Dodecahedron::Bigint num;
 
     /* Main part */
-    num = Dodecahedron::factorial(ui->label->text().toInt());
+    if (ui->label->text() != ERROR_MSG) {
+        num = Dodecahedron::factorial(ui->label->text().toInt());
 
-    ui->label->setText(QString::fromStdString(Dodecahedron::to_string(num)));
+        ui->label->setText(QString::fromStdString(Dodecahedron::to_string(num)));
+    }
 }
 
 void MainWindow::on_pushButton_recip_clicked() {
@@ -582,31 +424,33 @@ void MainWindow::on_pushButton_recip_clicked() {
 void MainWindow::on_pushButton_back_clicked() {
 
     /* Main part */
-    if (ui->label->text().endsWith("E+1") || ui->label->text().endsWith("E-1") || ui->label->text().endsWith("E+2") || ui->label->text().endsWith("E-2") ||
-            ui->label->text().endsWith("E+3") || ui->label->text().endsWith("E-3") || ui->label->text().endsWith("E+4") || ui->label->text().endsWith("E-4") ||
-            ui->label->text().endsWith("E+5") || ui->label->text().endsWith("E-5") || ui->label->text().endsWith("E+6") || ui->label->text().endsWith("E-6") ||
-            ui->label->text().endsWith("E+7") || ui->label->text().endsWith("E-7") || ui->label->text().endsWith("E+8") || ui->label->text().endsWith("E-8") ||
-            ui->label->text().endsWith("E+9") || ui->label->text().endsWith("E-9")) {
-        ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-        ui->label->setText(ui->label->text() + "0");
-        m_exp3 = 1;
-    } else {
-        if (!ui->label->text().endsWith("E+0" && !ui->label->text().endsWith("E-0"))) {
-            if (pamat2 != 1) {
-                if (ui->label->text().length() == 1) {
-                    ui->label->setText("0");
-                    m_exp3 = 0;
-                } else if (zap == 1 && ui->label->text().endsWith(".")) {
-                    ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-                    zap = 0;
-                } else {
-                    ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
-                }
-            }
+    if (ui->label->text() != ERROR_MSG) {
+        if (ui->label->text().endsWith("E+1") || ui->label->text().endsWith("E-1") || ui->label->text().endsWith("E+2") || ui->label->text().endsWith("E-2") ||
+                ui->label->text().endsWith("E+3") || ui->label->text().endsWith("E-3") || ui->label->text().endsWith("E+4") || ui->label->text().endsWith("E-4") ||
+                ui->label->text().endsWith("E+5") || ui->label->text().endsWith("E-5") || ui->label->text().endsWith("E+6") || ui->label->text().endsWith("E-6") ||
+                ui->label->text().endsWith("E+7") || ui->label->text().endsWith("E-7") || ui->label->text().endsWith("E+8") || ui->label->text().endsWith("E-8") ||
+                ui->label->text().endsWith("E+9") || ui->label->text().endsWith("E-9")) {
+            ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
+            ui->label->setText(ui->label->text() + "0");
+            m_exp3 = 1;
         } else {
-            ui->label->setText(QString::number(m_exp2));
-            m_exp = 0;
-            m_exp9 = 0;
+            if (!ui->label->text().endsWith("E+0" && !ui->label->text().endsWith("E-0"))) {
+                if (pamat2 != 1) {
+                    if (ui->label->text().length() == 1) {
+                        ui->label->setText("0");
+                        m_exp3 = 0;
+                    } else if (zap == 1 && ui->label->text().endsWith(".")) {
+                        ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
+                        zap = 0;
+                    } else {
+                        ui->label->setText(ui->label->text().left(ui->label->text().length() - 1));
+                    }
+                }
+            } else {
+                ui->label->setText(QString::number(m_exp2));
+                m_exp = 0;
+                m_exp9 = 0;
+            }
         }
     }
 }

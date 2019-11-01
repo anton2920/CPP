@@ -20,5 +20,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    bool check_l(const QString &);
+    bool check_f();
 };
 #endif // MAINWINDOW_H

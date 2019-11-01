@@ -22,6 +22,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSpinBox>
+#include <QtWidgets/QSplitter>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -62,6 +63,7 @@ public:
     QLineEdit *lineEdit_s_c;
     QWidget *tab_2;
     QGridLayout *gridLayout_3;
+    QSplitter *splitter;
     QFrame *frame;
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox_5;
@@ -232,11 +234,16 @@ public:
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         gridLayout_3 = new QGridLayout(tab_2);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        frame = new QFrame(tab_2);
-        frame->setObjectName(QString::fromUtf8("frame"));
+        splitter = new QSplitter(tab_2);
+        splitter->setObjectName(QString::fromUtf8("splitter"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(splitter->sizePolicy().hasHeightForWidth());
+        splitter->setSizePolicy(sizePolicy);
+        splitter->setOrientation(Qt::Horizontal);
+        frame = new QFrame(splitter);
+        frame->setObjectName(QString::fromUtf8("frame"));
         sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
         frame->setSizePolicy(sizePolicy);
         frame->setFrameShape(QFrame::StyledPanel);
@@ -296,10 +303,8 @@ public:
 
         verticalLayout_2->addWidget(spinBox);
 
-
-        gridLayout_3->addWidget(frame, 0, 0, 1, 1);
-
-        frame_2 = new QFrame(tab_2);
+        splitter->addWidget(frame);
+        frame_2 = new QFrame(splitter);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
@@ -312,13 +317,14 @@ public:
 
         gridLayout_4->addWidget(label_ans, 0, 0, 1, 1);
 
+        splitter->addWidget(frame_2);
 
-        gridLayout_3->addWidget(frame_2, 0, 1, 1, 1);
+        gridLayout_3->addWidget(splitter, 0, 0, 1, 1);
 
         pushButton = new QPushButton(tab_2);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        gridLayout_3->addWidget(pushButton, 1, 0, 1, 2);
+        gridLayout_3->addWidget(pushButton, 1, 0, 1, 1);
 
         tabWidget->addTab(tab_2, QString());
 
