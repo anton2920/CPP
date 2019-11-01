@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"vec",
+				"vector.o\tabc"
+			],
+			[
+				"fra",
+				"fracion.cpp\tabc"
+			],
+			[
 				"nor",
 				"normB\tabc"
 			],
@@ -506,35 +514,11 @@
 			[
 				"back",
 				"back_line"
-			],
-			[
-				"menu",
-				"menu_l\tabc"
-			],
-			[
-				"clo",
-				"close_and_back\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "lab/OOP/lab_03/task_1/fraction.hpp",
-			"settings":
-			{
-				"buffer_size": 1287,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_03/task_1/vector.hpp",
-			"settings":
-			{
-				"buffer_size": 7261,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -689,33 +673,26 @@
 	"expanded_folders":
 	[
 		"/home/anton/CPP",
-		"/home/anton/CPP/experiments",
-		"/home/anton/CPP/experiments/constr",
 		"/home/anton/CPP/lab",
 		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_02",
-		"/home/anton/CPP/lab/OOP/lab_02/task_2",
-		"/home/anton/CPP/lab/OOP/lab_03",
-		"/home/anton/CPP/lab/OOP/lab_03/task_1",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2"
+		"/home/anton/CPP/lab/OOP/lab_03"
 	],
 	"file_history":
 	[
-		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.cpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/pharmacy.cpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/libs.cpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/libs.hpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/pharmacy.hpp",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/input.txt",
-		"/home/anton/CPP/lab/OOP/lab_03/task_2/output.txt",
-		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.hpp",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/vector.hpp",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/fraction.hpp",
+		"/home/anton/CPP/lab/OOP/lab_03/fraction.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/vector.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_02/task_2/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_02/task_2/input.txt",
 		"/home/anton/CPP/lab/OOP/lab_02/task_2/main.cpp",
-		"/home/anton/CPP/experiments/constr/constr.cpp",
-		"/home/anton/CPP/experiments/constr",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.hpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.cpp",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.hpp",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.cpp",
 		"/home/anton/CPP/lab/OOP/lab_02/task_1/libs.hpp",
@@ -828,11 +805,12 @@
 		"/home/anton/ASM/lab/lab_C/lab_06/a1.s",
 		"/home/anton/ASM/lab/lab_C/lab_04/a1.s",
 		"/home/anton/ASM/lab/lab_C/lab_05/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a5.s"
+		"/home/anton/ASM/lab/lab_C/lab_04/a5.s",
+		"/home/anton/ASM/lab/lab_C/lab_04/a4.s"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -968,75 +946,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "lab/OOP/lab_03/task_1/fraction.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1287,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 193.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "lab/OOP/lab_03/task_1/vector.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -1081,7 +998,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 74.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
