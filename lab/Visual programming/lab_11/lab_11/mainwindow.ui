@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>655</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>lab_11</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ContiguousSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <attribute name="headerVisible">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Music</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>Genre</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Classical</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Baroque</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Romantic</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blues</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rock</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Metal</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Heavy metal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Death metal</string>
+         </property>
+        </item>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Release year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Composer/Band</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>J.S. Bach</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>R. Wagner</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A. Dvořák</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Recording Label</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListWidget" name="listWidget">
+        <item>
+         <property name="text">
+          <string>Der Ring des Nibelungen</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Symphony No. 9 (Dvořák)</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
