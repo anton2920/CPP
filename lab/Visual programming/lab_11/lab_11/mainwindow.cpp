@@ -71,7 +71,7 @@ void MainWindow::on_pushButton_clicked() {
     /* Initializing variables */
     QVector<QString> v;
     int check[RECORDS] = {};
-    check[0] = check[1] = check[2] = check[3] = check[4] = 1;
+    check[0] = check[1] = check[2] = check[3] = check[4] = START_VALUE;
 
     /* Main part */
     ui->listWidget->clear();
@@ -161,7 +161,7 @@ void MainWindow::on_pushButton_clicked() {
     }
 
     for (std::size_t i = 0; i < RECORDS; ++i) {
-        if (check[i] == VALUE) {
+        if (check[i] >= VALUE) {
             ui->listWidget->addItem(items[i]);
         }
     }

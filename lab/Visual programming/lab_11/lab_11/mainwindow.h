@@ -26,7 +26,8 @@ private:
 
     enum consts {
         RECORDS = 11,
-        VALUE = 4
+        VALUE = 1,
+        START_VALUE = 0
     };
 
     QVector<QString> checkCheck();
