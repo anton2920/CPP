@@ -6,137 +6,391 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>655</width>
-    <height>394</height>
+    <width>707</width>
+    <height>457</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>lab_11</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QTreeWidget" name="treeWidget">
-      <property name="frameShadow">
-       <enum>QFrame::Plain</enum>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="alternatingRowColors">
-       <bool>true</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::ContiguousSelection</enum>
-      </property>
-      <property name="selectionBehavior">
-       <enum>QAbstractItemView::SelectItems</enum>
-      </property>
-      <attribute name="headerVisible">
-       <bool>true</bool>
-      </attribute>
-      <column>
-       <property name="text">
-        <string>Music</string>
-       </property>
-      </column>
-      <item>
-       <property name="text">
-        <string>Genre</string>
-       </property>
-       <item>
-        <property name="text">
-         <string>Classical</string>
-        </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <property name="text">
-          <string>Baroque</string>
-         </property>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::NoSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectItems</enum>
+          </property>
+          <attribute name="headerVisible">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Music</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Genre</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Classical</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Baroque</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Romantic</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blues</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rock</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Metal</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Heavy metal</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Death metal</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Release year</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>1727</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1740</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1832</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1876</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1893</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1968</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1969</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1970</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1983</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1998</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Composer/Band</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>J.S. Bach</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>R. Wagner</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>A. Dvořák</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>B.B. King</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>The Beatles</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Black Sabbath</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Meshuggah</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Recording Label</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>MCA</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Apple</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Vertigo</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nuclear Blast</string>
+            </property>
+            <property name="checkState">
+             <enum>Unchecked</enum>
+            </property>
+           </item>
+          </item>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>Romantic</string>
-         </property>
-        </item>
-       </item>
-       <item>
-        <property name="text">
-         <string>Blues</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Rock</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Metal</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>Heavy metal</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Death metal</string>
-         </property>
-        </item>
-       </item>
-      </item>
-      <item>
-       <property name="text">
-        <string>Release year</string>
+       </layout>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
        </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Composer/Band</string>
-       </property>
-       <item>
-        <property name="text">
-         <string>J.S. Bach</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>R. Wagner</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>A. Dvořák</string>
-        </property>
-       </item>
-      </item>
-      <item>
-       <property name="text">
-        <string>Recording Label</string>
-       </property>
-      </item>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="listWidget">
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="viewMode">
+            <enum>QListView::ListMode</enum>
+           </property>
+           <item>
+            <property name="text">
+             <string>The Art of Fugue</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>St Matthew Passion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Der Ring des Nibelungen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Symphony in C major (Wagner)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Symphony No. 9 (Dvořák)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blues 'N' Jazz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hey Jude</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Here Comes the Sun</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Paranoid</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Iron Man</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Chaosphere</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QTextBrowser" name="textBrowser"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
      </widget>
     </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QListWidget" name="listWidget">
-        <item>
-         <property name="text">
-          <string>Der Ring des Nibelungen</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Symphony No. 9 (Dvořák)</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTextBrowser" name="textBrowser"/>
-      </item>
-     </layout>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

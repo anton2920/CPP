@@ -1,7 +1,8 @@
-#ifndef MAINWINDOW_H
+﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTreeWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,7 +19,16 @@ public:
 private slots:
     void on_listWidget_currentTextChanged(const QString &currentText);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+
+    enum consts {
+        RECORDS = 11,
+        VALUE = 4
+    };
+
+    QVector<QString> checkCheck();
 };
 #endif // MAINWINDOW_H
