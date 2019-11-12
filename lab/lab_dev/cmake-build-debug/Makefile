@@ -123,32 +123,32 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
-libs/fraction.o: libs/fraction.cpp.o
+libs/animal.o: libs/animal.cpp.o
 
-.PHONY : libs/fraction.o
+.PHONY : libs/animal.o
 
 # target to build an object file
-libs/fraction.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.o
-.PHONY : libs/fraction.cpp.o
+libs/animal.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.o
+.PHONY : libs/animal.cpp.o
 
-libs/fraction.i: libs/fraction.cpp.i
+libs/animal.i: libs/animal.cpp.i
 
-.PHONY : libs/fraction.i
+.PHONY : libs/animal.i
 
 # target to preprocess a source file
-libs/fraction.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.i
-.PHONY : libs/fraction.cpp.i
+libs/animal.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.i
+.PHONY : libs/animal.cpp.i
 
-libs/fraction.s: libs/fraction.cpp.s
+libs/animal.s: libs/animal.cpp.s
 
-.PHONY : libs/fraction.s
+.PHONY : libs/animal.s
 
 # target to generate assembly for a file
-libs/fraction.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/fraction.cpp.s
-.PHONY : libs/fraction.cpp.s
+libs/animal.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.s
+.PHONY : libs/animal.cpp.s
 
 libs/libs.o: libs/libs.cpp.o
 
@@ -177,59 +177,32 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/pharmacy.o: libs/pharmacy.cpp.o
+libs/predator.o: libs/predator.cpp.o
 
-.PHONY : libs/pharmacy.o
-
-# target to build an object file
-libs/pharmacy.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.o
-.PHONY : libs/pharmacy.cpp.o
-
-libs/pharmacy.i: libs/pharmacy.cpp.i
-
-.PHONY : libs/pharmacy.i
-
-# target to preprocess a source file
-libs/pharmacy.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.i
-.PHONY : libs/pharmacy.cpp.i
-
-libs/pharmacy.s: libs/pharmacy.cpp.s
-
-.PHONY : libs/pharmacy.s
-
-# target to generate assembly for a file
-libs/pharmacy.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/pharmacy.cpp.s
-.PHONY : libs/pharmacy.cpp.s
-
-libs/vector.o: libs/vector.cpp.o
-
-.PHONY : libs/vector.o
+.PHONY : libs/predator.o
 
 # target to build an object file
-libs/vector.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.o
-.PHONY : libs/vector.cpp.o
+libs/predator.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.o
+.PHONY : libs/predator.cpp.o
 
-libs/vector.i: libs/vector.cpp.i
+libs/predator.i: libs/predator.cpp.i
 
-.PHONY : libs/vector.i
+.PHONY : libs/predator.i
 
 # target to preprocess a source file
-libs/vector.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.i
-.PHONY : libs/vector.cpp.i
+libs/predator.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.i
+.PHONY : libs/predator.cpp.i
 
-libs/vector.s: libs/vector.cpp.s
+libs/predator.s: libs/predator.cpp.s
 
-.PHONY : libs/vector.s
+.PHONY : libs/predator.s
 
 # target to generate assembly for a file
-libs/vector.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/vector.cpp.s
-.PHONY : libs/vector.cpp.s
+libs/predator.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.s
+.PHONY : libs/predator.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
-	@echo "... libs/fraction.o"
-	@echo "... libs/fraction.i"
-	@echo "... libs/fraction.s"
+	@echo "... libs/animal.o"
+	@echo "... libs/animal.i"
+	@echo "... libs/animal.s"
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/pharmacy.o"
-	@echo "... libs/pharmacy.i"
-	@echo "... libs/pharmacy.s"
-	@echo "... libs/vector.o"
-	@echo "... libs/vector.i"
-	@echo "... libs/vector.s"
+	@echo "... libs/predator.o"
+	@echo "... libs/predator.i"
+	@echo "... libs/predator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

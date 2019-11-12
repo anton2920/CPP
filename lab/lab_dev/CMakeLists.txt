@@ -3,12 +3,9 @@ project(lab_dev)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(STUDENT libs/student.cpp libs/student.hpp)
 set(LIBS libs/libs.cpp libs/libs.hpp)
-set(SLAU libs/slau.cpp libs/slau.hpp)
-set(FRACTION libs/fraction.cpp libs/fraction.hpp)
-set(VECTOR libs/vector.cpp libs/vector.hpp)
-set(PHARMACY libs/pharmacy.cpp libs/pharmacy.hpp)
+set(ANIMAL libs/animal.cpp libs/animal.hpp)
+set(PREDATOR libs/predator.cpp libs/predator.hpp)
 
-add_executable(lab_dev main.cpp ${LIBS} ${FRACTION} ${VECTOR} ${PHARMACY})
+add_executable(lab_dev main.cpp ${LIBS} ${ANIMAL} ${PREDATOR})
 target_link_libraries(lab_dev m)
