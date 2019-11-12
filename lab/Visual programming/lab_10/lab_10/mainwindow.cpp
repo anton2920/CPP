@@ -130,6 +130,11 @@ void MainWindow::on_frame_moved() {
     if ((ui->frame->x > rect.x() && ui->frame->x < rect.x() + rect.width()) &&
             (ui->frame->y > rect.y() && ui->frame->y < rect.y() + rect.height())) {
         val = 100;
+        if (!timer->isActive()) {
+            on_label_timer_second();
+            ui->spinBox->setEnabled(false);
+            timer->start(1000);
+        }
     } else {
         try {
             val = static_cast<int>(VAL / 2 * 100 / length(ui->frame->x, ui->frame->y, cent.x, cent.y));
@@ -138,12 +143,6 @@ void MainWindow::on_frame_moved() {
         }
     }
     ui->progressBar->setValue(abs(val));
-
-    if (!timer->isActive()) {
-        on_label_timer_second();
-        ui->spinBox->setEnabled(false);
-        timer->start(1000);
-    }
 }
 
 void MainWindow::on_frame_left() {
@@ -156,7 +155,7 @@ void MainWindow::label_c4_timeout() {
 
     /* Main part */
     ui->frame->setVisible(false);
-    QMessageBox::critical(this, "Whoops!", "The bomb blew up!");
+    QMessageBox::critical(this, "Whoops!", "The bomb has been blown up!");
 
     QMessageBox::StandardButton reply;
     reply = QMessageBox::question(this, "Game", "Do you want to start a new game?");
@@ -228,72 +227,54 @@ void MainWindow::on_label_c4_clicked() {
     label_c4_timeout();
 }
 
-void MainWindow::on_label_clicked() {
+void MainWindow::handle_wire(int wire) {
 
     /* Main part */
-    if (correct_wire == 1) {
+    if (correct_wire == wire) {
         win_game();
     } else {
         label_c4_timeout();
     }
+}
+
+void MainWindow::on_label_clicked() {
+
+    /* Main part */
+    handle_wire(1);
 }
 
 void MainWindow::on_label_2_clicked() {
 
     /* Main part */
-    if (correct_wire == 2) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(2);
 }
 
 void MainWindow::on_label_3_clicked() {
 
     /* Main part */
-    if (correct_wire == 3) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(3);
 }
 
 void MainWindow::on_label_4_clicked() {
 
     /* Main part */
-    if (correct_wire == 4) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(4);
 }
 
 void MainWindow::on_label_5_clicked() {
 
     /* Main part */
-    if (correct_wire == 5) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(5);
 }
 
 void MainWindow::on_label_6_clicked() {
 
     /* Main part */
-    if (correct_wire == 6) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(6);
 }
 
 void MainWindow::on_label_7_clicked() {
 
     /* Main part */
-    if (correct_wire == 7) {
-        win_game();
-    } else {
-        label_c4_timeout();
-    }
+    handle_wire(7);
 }

@@ -1080,12 +1080,37 @@ mainwindow.o: ../lab_09/mainwindow.cpp ../lab_09/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QComboBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qcombobox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qvalidator.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qregularexpression.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qrubberband.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QGridLayout \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qgridlayout.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayout.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayoutitem.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QLabel \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlabel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QListWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlistview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QSpinBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qspinbox.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTabWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QVBoxLayout \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_09/mainwindow.cpp
 

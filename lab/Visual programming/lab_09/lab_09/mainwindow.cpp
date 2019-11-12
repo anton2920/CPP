@@ -35,7 +35,8 @@ void MainWindow::on_spinBox_valueChanged(int arg1) {
         ui->comboBox->addItem("FM");
     }
 
-    ui->spinBox->setValue(0);
+    ui->spinBox->setMinimum(ui->spinBox->value());
+    ui->spinBox->setMaximum(ui->spinBox->maximum() + 1);
 }
 
 void MainWindow::on_comboBox_currentIndexChanged(const QString &arg1) {

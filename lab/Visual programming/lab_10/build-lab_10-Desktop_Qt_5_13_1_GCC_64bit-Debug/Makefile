@@ -1537,8 +1537,6 @@ mainwindow.o: ../lab_10/mainwindow.cpp ../lab_10/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
-		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QFrame \
-		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QGridLayout \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qgridlayout.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayout.h \
@@ -1547,6 +1545,7 @@ mainwindow.o: ../lab_10/mainwindow.cpp ../lab_10/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QHBoxLayout \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QLabel \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlabel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QProgressBar \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qprogressbar.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QSpinBox \
@@ -1559,9 +1558,13 @@ mainwindow.o: ../lab_10/mainwindow.cpp ../lab_10/mainwindow.h \
 		../lab_10/clickablelabel.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/Qt \
 		../lab_10/my_frame.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QFrame \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QMessageBox \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmessagebox.h \
-		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdialog.h
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdialog.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QTimer \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qtimer.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_10/mainwindow.cpp
 
 clickablelabel.o: ../lab_10/clickablelabel.cpp ../lab_10/clickablelabel.h \

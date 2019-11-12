@@ -233,6 +233,7 @@ DIST          = /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf \
+		../lab_11/.qmake.stash \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -441,6 +442,7 @@ Makefile: ../lab_11/lab_11.pro /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.con
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf \
 		/usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -638,6 +640,7 @@ Makefile: ../lab_11/lab_11.pro /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.con
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/qt_config.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/toolchain.prf:
 /usr/Qt/5.13.1/gcc_64/mkspecs/features/default_pre.prf:
@@ -817,6 +820,25 @@ moc_mainwindow.cpp: ../lab_11/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qicon.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTreeWidgetItem \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreeview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qvalidator.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qregularexpression.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qrubberband.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
 		moc_predefs.h \
 		/usr/Qt/5.13.1/gcc_64/bin/moc
 	/usr/Qt/5.13.1/gcc_64/bin/moc $(DEFINES) --include '/home/anton/CPP/lab/Visual programming/lab_11/build-lab_11-Desktop_Qt_5_13_1_GCC_64bit-Debug/moc_predefs.h' -I/usr/Qt/5.13.1/gcc_64/mkspecs/linux-g++ -I'/home/anton/CPP/lab/Visual programming/lab_11/lab_11' -I/usr/Qt/5.13.1/gcc_64/include -I/usr/Qt/5.13.1/gcc_64/include/QtWidgets -I/usr/Qt/5.13.1/gcc_64/include/QtGui -I/usr/Qt/5.13.1/gcc_64/include/QtCore -I. -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../lab_11/mainwindow.h -o moc_mainwindow.cpp
@@ -949,6 +971,25 @@ main.o: ../lab_11/main.cpp ../lab_11/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qicon.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTreeWidgetItem \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreeview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qvalidator.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qregularexpression.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qrubberband.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QApplication \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qapplication.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -957,7 +998,6 @@ main.o: ../lab_11/main.cpp ../lab_11/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QStyle \
-		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QDesktopWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../lab_11/main.cpp
 
@@ -1068,7 +1108,64 @@ mainwindow.o: ../lab_11/mainwindow.cpp ../lab_11/mainwindow.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/usr/Qt/5.13.1/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTreeWidgetItem \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreeview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qvalidator.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qregularexpression.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qstyle.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qrubberband.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		ui_mainwindow.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QVariant \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QApplication \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qcoreapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/qeventloop.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QGridLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qgridlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QHeaderView \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qheaderview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QListWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qlistview.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QPushButton \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QSplitter \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qsplitter.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTextBrowser \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qtextedit.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextdocument.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextoption.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextcursor.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qtextformat.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtGui/qpen.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QTreeWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QVBoxLayout \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QWidget \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/QMessageBox \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qmessagebox.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtWidgets/qdialog.h \
+		/usr/Qt/5.13.1/gcc_64/include/QtCore/QVector
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../lab_11/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

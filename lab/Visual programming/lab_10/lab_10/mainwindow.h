@@ -56,5 +56,7 @@ private:
     void generate_correct();
     int getCorrect();
 
+    void handle_wire(int wire);
 };
+
 #endif // MAINWINDOW_H

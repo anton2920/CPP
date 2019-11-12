@@ -77,17 +77,9 @@ void MainWindow::on_pushButton_clicked() {
     ui->listWidget->clear();
     v = checkCheck();
     if (!v.length()) {
-        ui->listWidget->addItem("The Art of Fugue");
-        ui->listWidget->addItem("St Matthew Passion");
-        ui->listWidget->addItem("Der Ring des Nibelungen");
-        ui->listWidget->addItem("Symphony in C major (Wagner)");
-        ui->listWidget->addItem("Symphony No. 9 (Dvořák)");
-        ui->listWidget->addItem("Blues 'N' Jazz");
-        ui->listWidget->addItem("Hey Jude");
-        ui->listWidget->addItem("Here Comes the Sun");
-        ui->listWidget->addItem("Paranoid");
-        ui->listWidget->addItem("Iron Man");
-        ui->listWidget->addItem("Chaosphere");
+        for (std::size_t i = 0; i < RECORDS; ++i) {
+            ui->listWidget->addItem(items[i]);
+        }
     } else {
         for (auto &i : v) {
             if (i == "Baroque") {
