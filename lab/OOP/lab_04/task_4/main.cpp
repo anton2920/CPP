@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "libs/libs.hpp"
+#include "libs.hpp"
 
 int main() {
 

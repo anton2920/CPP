@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pre",
+				"predator.cpp\tabc"
+			],
+			[
 				"vec",
 				"vector.o\tabc"
 			],
@@ -510,10 +514,6 @@
 			[
 				"st",
 				"stty_arg_on\tabc"
-			],
-			[
-				"back",
-				"back_line"
 			]
 		]
 	},
@@ -675,10 +675,32 @@
 		"/home/anton/CPP",
 		"/home/anton/CPP/lab",
 		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_03"
+		"/home/anton/CPP/lab/OOP/lab_04"
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/user.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/user.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_03/task_1/input.txt",
 		"/home/anton/CPP/lab/OOP/lab_03/task_1/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_03/task_1/vector.hpp",
@@ -784,33 +806,11 @@
 		"/home/anton/ASM/lab/lab_C/lab_05/a2.s",
 		"/home/anton/C/experiments/pow/lpow.s",
 		"/home/anton/ASM/training/ivt/a1.nasm",
-		"/home/anton/ASM/lab/lab_06/math.s",
-		"/home/anton/ASM/lab/lab_05/routines.s",
-		"/home/anton/ASM/lab/lab_05/tasks.s",
-		"/home/anton/ASM/lab/lab_05/a1.s",
-		"/home/anton/ASM/lab/lab_07",
-		"/home/anton/ASM/lab/lab_05/main.c",
-		"/home/anton/ASM/lab/lab_05/atoi.c",
-		"/home/anton/C/experiments/LowLevelFile/libs/rwcul.c",
-		"/home/anton/ASM/lab/lab_05/atoi.s",
-		"/home/anton/ASM/lab/lab_05/a1.d",
-		"/home/anton/ASM/lab/lab_02/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a6.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a5.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a4.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a3.s",
-		"/home/anton/ASM/lab/lab_C/lab_06/a2.s",
-		"/home/anton/ASM/lab/lab_C/lab_06/a3.s",
-		"/home/anton/PABC/home/max_exam.pas",
-		"/home/anton/ASM/lab/lab_C/lab_06/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_05/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a5.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a4.s"
+		"/home/anton/ASM/lab/lab_06/math.s"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -824,6 +824,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"predator",
+			"animal",
 			"student",
 			"size_t",
 			"lstrcm",
@@ -890,6 +892,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"user",
+			"libs",
 			"slau",
 			"std::size_t",
 			"                              ",
@@ -953,7 +957,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -998,7 +1002,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 73.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/user.cpp
-exception
--
-user.hpp
-/home/anton/CPP/lab/lab_dev/libs/user.hpp
-
-/home/anton/CPP/lab/lab_dev/libs/user.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
 iostream
--
-string
 -
 ctime
 -
+
+/home/anton/CPP/lab/lab_dev/main.cpp
+iostream
+-
+fstream
+-
+chrono
+-
+libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
 

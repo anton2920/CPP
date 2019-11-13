@@ -6,7 +6,6 @@ CMakeFiles/lab_dev.dir/libs/animal.cpp.o: ../libs/animal.hpp
 
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.cpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.hpp
-CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/user.hpp
 
 CMakeFiles/lab_dev.dir/libs/predator.cpp.o: ../libs/animal.hpp
 CMakeFiles/lab_dev.dir/libs/predator.cpp.o: ../libs/predator.cpp
@@ -16,6 +15,5 @@ CMakeFiles/lab_dev.dir/libs/user.cpp.o: ../libs/user.cpp
 CMakeFiles/lab_dev.dir/libs/user.cpp.o: ../libs/user.hpp
 
 CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/libs.hpp
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/user.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../main.cpp
 
