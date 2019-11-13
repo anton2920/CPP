@@ -60,7 +60,6 @@ struct date {
 
                 d.checkDate();
                 break;
-
             } catch (...) {
                 continue;
             }
