@@ -6,22 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs.cpp
-libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/user.cpp
+exception
+-
+user.hpp
+/home/anton/CPP/lab/lab_dev/libs/user.hpp
 
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/user.hpp
 iostream
 -
-list
--
-pharmacy.hpp
-/home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp
-
-/home/anton/CPP/lab/lab_dev/libs/pharmacy.hpp
-iostream
--
-ostream
+string
 -
 ctime
 -

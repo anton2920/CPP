@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/anton/CPP/lab/lab_dev/libs/animal.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/animal.cpp.o"
   "/home/anton/CPP/lab/lab_dev/libs/libs.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
   "/home/anton/CPP/lab/lab_dev/libs/predator.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/predator.cpp.o"
+  "/home/anton/CPP/lab/lab_dev/libs/user.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/libs/user.cpp.o"
   "/home/anton/CPP/lab/lab_dev/main.cpp" "/home/anton/CPP/lab/lab_dev/cmake-build-debug/CMakeFiles/lab_dev.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

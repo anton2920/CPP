@@ -3,6 +3,8 @@
 
 /* Header inclusion */
 
+/* Macro definitions */
+
 /* Type definitions */
 
 /* Functions' declarations */

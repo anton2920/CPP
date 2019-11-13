@@ -204,6 +204,33 @@ libs/predator.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.s
 .PHONY : libs/predator.cpp.s
 
+libs/user.o: libs/user.cpp.o
+
+.PHONY : libs/user.o
+
+# target to build an object file
+libs/user.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.o
+.PHONY : libs/user.cpp.o
+
+libs/user.i: libs/user.cpp.i
+
+.PHONY : libs/user.i
+
+# target to preprocess a source file
+libs/user.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.i
+.PHONY : libs/user.cpp.i
+
+libs/user.s: libs/user.cpp.s
+
+.PHONY : libs/user.s
+
+# target to generate assembly for a file
+libs/user.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.s
+.PHONY : libs/user.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +276,9 @@ help:
 	@echo "... libs/predator.o"
 	@echo "... libs/predator.i"
 	@echo "... libs/predator.s"
+	@echo "... libs/user.o"
+	@echo "... libs/user.i"
+	@echo "... libs/user.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
