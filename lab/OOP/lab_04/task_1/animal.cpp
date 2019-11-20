@@ -46,38 +46,41 @@ animal::~animal() {
 std::ostream &operator<<(std::ostream &stream, const animal &a) {
 
     /* I/O flow */
-    stream << "Animal: " << a.type <<
-        std::endl << "Habitat: ";
+    if (a.type != nullptr) {
+        
+        stream << "Animal: " << a.type <<
+            std::endl << "Habitat: ";
 
-    switch (a.habitat) {
-        case animal::NONE:
-            stream << "NONE";
-            break;
-        case animal::Asia:
-            stream << "Asia";
-            break;
-        case animal::Africa:
-            stream << "Africa";
-            break;
-        case animal::North_America:
-            stream << "North America";
-            break;
-        case animal::South_America:
-            stream << "South America";
-            break;
-        case animal::Antarctica:
-            stream << "Antarctica";
-            break;
-        case animal::Europe:
-            stream << "Europe";
-            break;
-        case animal::Australia:
-            stream << "Australia";
-            break;
+        switch (a.habitat) {
+            case animal::NONE:
+                stream << "NONE";
+                break;
+            case animal::Asia:
+                stream << "Asia";
+                break;
+            case animal::Africa:
+                stream << "Africa";
+                break;
+            case animal::North_America:
+                stream << "North America";
+                break;
+            case animal::South_America:
+                stream << "South America";
+                break;
+            case animal::Antarctica:
+                stream << "Antarctica";
+                break;
+            case animal::Europe:
+                stream << "Europe";
+                break;
+            case animal::Australia:
+                stream << "Australia";
+                break;
+        }
+
+        stream << std::endl << "Average life time: " << a.alife_t <<
+            std::endl;
     }
-
-    stream << std::endl << "Average life time: " << a.alife_t <<
-        std::endl;
 
     /* Returning value */
     return stream;

@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"pre",
+				"predator.cpp\tabc"
+			],
+			[
+				"vec",
+				"vector.o\tabc"
+			],
+			[
+				"fra",
+				"fracion.cpp\tabc"
+			],
+			[
+				"nor",
+				"normB\tabc"
+			],
+			[
+				"CXX",
+				"CXXFLAGS\tabc"
+			],
+			[
+				"CX",
+				"CXX\tabc"
+			],
+			[
+				"lib",
+				"libs.c\tabc"
+			],
+			[
+				"main",
+				"main.o\tabc"
+			],
+			[
 				"libs",
 				"libs.o\tabc"
 			],
@@ -18,10 +50,6 @@
 			[
 				"inc",
 				"include\tabc"
-			],
-			[
-				"main",
-				"main_1.cpp\tabc"
 			],
 			[
 				"CPP",
@@ -486,69 +514,19 @@
 			[
 				"st",
 				"stty_arg_on\tabc"
-			],
-			[
-				"back",
-				"back_line"
-			],
-			[
-				"menu",
-				"menu_l\tabc"
-			],
-			[
-				"clo",
-				"close_and_back\tabc"
-			],
-			[
-				"back_",
-				"back_sure"
-			],
-			[
-				"MENU",
-				"MENUBUF\tabc"
-			],
-			[
-				"create_database_l",
-				"create_database_lookout\tabc"
-			],
-			[
-				"create",
-				"create_database\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
-<<<<<<< HEAD
-=======
 		{
-			"file": "lab/OOP/lab_01/ptr/main.cpp",
+			"file": "lab/OOP/lab_04/task_1/animal.hpp",
 			"settings":
 			{
-				"buffer_size": 1115,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_01/ptr/libs.hpp",
-			"settings":
-			{
-				"buffer_size": 915,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lab/OOP/lab_01/ptr/libs.cpp",
-			"settings":
-			{
-				"buffer_size": 4211,
-				"encoding": "UTF-8",
+				"buffer_size": 996,
 				"line_ending": "Unix"
 			}
 		}
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -610,6 +588,18 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"coloer",
+				"UI: Select Color Scheme"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
 			],
@@ -619,14 +609,6 @@
 			],
 			[
 				"color ",
-				"UI: Select Color Scheme"
-			],
-			[
-				"colo",
-				"Code Folding: Fold Tag Attributes"
-			],
-			[
-				"col",
 				"UI: Select Color Scheme"
 			],
 			[
@@ -700,43 +682,71 @@
 	[
 		"/home/anton/CPP",
 		"/home/anton/CPP/lab",
-		"/home/anton/CPP/lab/lab_dev",
 		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_01",
-		"/home/anton/CPP/lab/OOP/lab_01/ptr"
+		"/home/anton/CPP/lab/OOP/lab_04",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4"
 	],
 	"file_history":
 	[
-<<<<<<< HEAD
-=======
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/user.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/user.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_2/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/vector.hpp",
+		"/home/anton/CPP/lab/OOP/lab_03/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/fraction.hpp",
+		"/home/anton/CPP/lab/OOP/lab_03/fraction.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/vector.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_03/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.hpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2/slau.cpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.hpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/student.cpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_02/task_1",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/main.cpp",
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
 		"/home/anton/CPP/lab/OOP/lab_01/new/libs.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/ptr/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/libs.hpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/ptr/libs.cpp",
-<<<<<<< HEAD
 		"/home/anton/CPP/lab/OOP/lab_01/io.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new/marr.hpp",
+		"/home/anton/CPP/lab/OOP/lab_01/new/marr.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/vector/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/vector/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_01/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_01/menu.cpp",
-=======
-		"/home/anton/CPP/lab/OOP/lab_01/ptr/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_01/menu.cpp",
-		"/home/anton/CPP/lab/OOP/lab_01/io.cpp",
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
 		"/home/anton/CPP/lab/OOP/lab_01/libs_1.cpp",
 		"/home/anton/CPP/lab/OOP/lab_01/new",
 		"/home/anton/CPP/lab/OOP/lab_01/marr.hpp",
@@ -806,59 +816,15 @@
 		"/home/anton/ASM/lab/lab_C/lab_05/a2.s",
 		"/home/anton/C/experiments/pow/lpow.s",
 		"/home/anton/ASM/training/ivt/a1.nasm",
-		"/home/anton/ASM/lab/lab_06/math.s",
-		"/home/anton/ASM/lab/lab_05/routines.s",
-		"/home/anton/ASM/lab/lab_05/tasks.s",
-		"/home/anton/ASM/lab/lab_05/a1.s",
-		"/home/anton/ASM/lab/lab_07",
-		"/home/anton/ASM/lab/lab_05/main.c",
-		"/home/anton/ASM/lab/lab_05/atoi.c",
-		"/home/anton/C/experiments/LowLevelFile/libs/rwcul.c",
-		"/home/anton/ASM/lab/lab_05/atoi.s",
-		"/home/anton/ASM/lab/lab_05/a1.d",
-		"/home/anton/ASM/lab/lab_02/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a6.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a5.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a4.s",
-		"/home/anton/ASM/lab/lab_C/lab_18/a3.s",
-		"/home/anton/ASM/lab/lab_C/lab_06/a2.s",
-		"/home/anton/ASM/lab/lab_C/lab_06/a3.s",
-		"/home/anton/PABC/home/max_exam.pas",
-		"/home/anton/ASM/lab/lab_C/lab_06/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_05/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a5.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a4.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a3.s",
-		"/home/anton/ASM/lab/lab_C/lab_04/a2.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/a1.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/aa.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/ab.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/ac.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/ad.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/ae.s",
-		"/home/anton/C/experiments/asm/c5.c",
-		"/home/anton/C/experiments/asm/asm5.asm",
-		"/home/anton/C/experiments/asm/asm6.asm",
-		"/home/anton/C/experiments/asm/c1.c",
-		"/home/anton/C/experiments/asm/asm1.asm",
-		"/home/anton/C/experiments/asm/c2.c",
-		"/home/anton/C/experiments/asm/asm2.asm",
-		"/home/anton/C/experiments/asm/c3.c",
-		"/home/anton/C/experiments/asm/asm3.asm",
-		"/home/anton/C/experiments/asm/c4.c",
-		"/home/anton/C/experiments/asm/asm4.asm",
-		"/home/anton/C/home/Max_lab_9/cmake-build-debug/rec.dat",
-		"/home/anton/C/lab/lab_13/a1out.bin",
-		"/home/anton/C/lab/lab_17/lab.h"
+		"/home/anton/ASM/lab/lab_06/math.s"
 	],
 	"find":
 	{
 <<<<<<< HEAD
-		"height": 32.0
-=======
 		"height": 26.0
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
+=======
+		"height": 44.0
+>>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
 	},
 	"find_in_files":
 	{
@@ -872,6 +838,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"predator",
+			"animal",
+			"student",
 			"size_t",
 			"lstrcm",
 			"lstrle",
@@ -937,6 +906,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"user",
+			"libs",
+			"slau",
 			"std::size_t",
 			"                              ",
 			"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
@@ -992,86 +964,24 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"sheets":
-			[
-=======
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "lab/OOP/lab_01/ptr/main.cpp",
-					"semi_transient": false,
+					"file": "lab/OOP/lab_04/task_1/animal.hpp",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1115,
+						"buffer_size": 996,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								453,
-								453
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "lab/OOP/lab_01/ptr/libs.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 915,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								915,
-								915
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "lab/OOP/lab_01/ptr/libs.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								14
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1087,17 +997,16 @@
 					"stack_index": 0,
 					"type": "text"
 				}
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
 			]
 		}
 	],
 	"incremental_find":
 	{
 <<<<<<< HEAD
-		"height": 32.0
-=======
 		"height": 26.0
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
+=======
+		"height": 44.0
+>>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
 	},
 	"input":
 	{
@@ -1143,10 +1052,10 @@
 	"replace":
 	{
 <<<<<<< HEAD
-		"height": 60.0
-=======
 		"height": 48.0
->>>>>>> b529f028c16dc5aa5b6b83aca612827ff0d3fb4c
+=======
+		"height": 84.0
+>>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
 	},
 	"save_all_on_build": true,
 	"select_file":

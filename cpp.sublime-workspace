@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lab/OOP/lab_04/task_1/animal.hpp",
+			"settings":
+			{
+				"buffer_size": 996,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -580,6 +588,10 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
 				"colo",
 				"UI: Select Color Scheme"
 			],
@@ -597,10 +609,6 @@
 			],
 			[
 				"color ",
-				"UI: Select Color Scheme"
-			],
-			[
-				"col",
 				"UI: Select Color Scheme"
 			],
 			[
@@ -675,17 +683,20 @@
 		"/home/anton/CPP",
 		"/home/anton/CPP/lab",
 		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_04"
+		"/home/anton/CPP/lab/OOP/lab_04",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4"
 	],
 	"file_history":
 	[
-		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/input.txt",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_2/main.cpp",
@@ -699,7 +710,6 @@
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.hpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/predator.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.hpp",
-		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/main.cpp",
 		"/home/anton/CPP/lab/OOP/lab_03/task_1/input.txt",
 		"/home/anton/CPP/lab/OOP/lab_03/task_1/Makefile",
@@ -810,7 +820,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -950,14 +960,45 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lab/OOP/lab_04/task_1/animal.hpp",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1002,7 +1043,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 73.0
 	},
 	"save_all_on_build": true,
 	"select_file":

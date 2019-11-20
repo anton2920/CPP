@@ -34,30 +34,6 @@ int menu() {
     return choice;
 }
 
-static word getNextWord(const word *c_word) {
-
-    /* Initializing variables */
-    std::size_t i;
-    word c_w = *c_word;
-
-    /* Main part */
-    for ( ; !isalpha(*c_w.begin); ++c_w.begin) {
-        if (*c_w.begin == '\0') {
-            c_w.begin = nullptr;
-            c_w.length = 0;
-            return c_w;
-        }
-    }
-
-    for (i = 0; !iswordend(c_w.begin[i]); ++i)
-        ;
-
-    c_w.length = i;
-
-    /* Returning value */
-    return c_w;
-}
-
 void task1() {
 
     /* Initializing variables */
@@ -81,7 +57,7 @@ void task1() {
                 }
                 wd = { buf, 0 };
             }
-            wd = getNextWord(&wd);
+            wd = wd.getNextWord();
             if (wd.begin == nullptr) {
                 --i;
             }
