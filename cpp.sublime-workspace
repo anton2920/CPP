@@ -820,7 +820,7 @@
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -998,7 +998,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 44.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -1043,7 +1043,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 84.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
