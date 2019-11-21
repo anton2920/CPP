@@ -820,7 +820,11 @@
 	],
 	"find":
 	{
+<<<<<<< HEAD
 		"height": 32.0
+=======
+		"height": 41.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"find_in_files":
 	{
@@ -998,7 +1002,11 @@
 	],
 	"incremental_find":
 	{
+<<<<<<< HEAD
 		"height": 32.0
+=======
+		"height": 28.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"input":
 	{
@@ -1043,7 +1051,11 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
+<<<<<<< HEAD
 		"height": 60.0
+=======
+		"height": 73.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"save_all_on_build": true,
 	"select_file":
