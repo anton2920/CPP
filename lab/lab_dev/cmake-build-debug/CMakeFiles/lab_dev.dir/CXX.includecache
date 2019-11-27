@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/csas.hpp
+st_pr.hpp
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/cts.hpp
+st_pr.hpp
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/is.hpp
+st_pr.hpp
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
 iostream
--
-ctime
 -
 
 /home/anton/CPP/lab/lab_dev/main.cpp
 iostream
 -
-fstream
--
-chrono
--
-libs/libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+libs/st_pr.hpp
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+libs/csas.hpp
+/home/anton/CPP/lab/lab_dev/libs/csas.hpp
+libs/cts.hpp
+/home/anton/CPP/lab/lab_dev/libs/cts.hpp
+libs/is.hpp
+/home/anton/CPP/lab/lab_dev/libs/is.hpp
 

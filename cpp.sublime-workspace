@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"csa",
+				"csas.cpp\tabc"
+			],
+			[
+				"cs",
+				"csas.hpp\t(main.cpp)"
+			],
+			[
+				"st_p",
+				"st_pr.cpp\tabc"
+			],
+			[
+				"CP",
+				"CPPFLAGS\tabc"
+			],
+			[
+				"st_r",
+				"st_pr.hpp\t(main.cpp)"
+			],
+			[
 				"pre",
 				"predator.cpp\tabc"
 			],
@@ -494,39 +514,11 @@
 			[
 				"create_database_pass",
 				"create_database_pass\tabc"
-			],
-			[
-				"PA",
-				"PASSBUF_LEN\tabc"
-			],
-			[
-				"pass",
-				"password\tabc"
-			],
-			[
-				"tu",
-				"turn_echo_off\tabc"
-			],
-			[
-				"tur",
-				"turn_echo_do\tabc"
-			],
-			[
-				"st",
-				"stty_arg_on\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "lab/OOP/lab_04/task_1/animal.hpp",
-			"settings":
-			{
-				"buffer_size": 996,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -683,12 +675,18 @@
 		"/home/anton/CPP",
 		"/home/anton/CPP/lab",
 		"/home/anton/CPP/lab/OOP",
-		"/home/anton/CPP/lab/OOP/lab_04",
-		"/home/anton/CPP/lab/OOP/lab_04/task_1",
-		"/home/anton/CPP/lab/OOP/lab_04/task_4"
+		"/home/anton/CPP/lab/OOP/lab_02",
+		"/home/anton/CPP/lab/OOP/lab_02/task_2",
+		"/home/anton/CPP/lab/OOP/lab_05"
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.cpp",
+		"/home/anton/CPP/lab/lab_dev/main.cpp",
+		"/home/anton/CPP/lab/lab_dev/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_05/csas.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
@@ -810,13 +808,7 @@
 		"/home/anton/ASM/lab/lab_C/lab_06/a6.s",
 		"/home/anton/ASM/lab/lab_C/lab_06/a5.s",
 		"/home/anton/ASM/lab/lab_C/lab_03/a3.s",
-		"/home/anton/ASM/training/polya_rivalry.s",
-		"/home/anton/ASM/lab/lab_C/lab_03/a2.s",
-		"/home/anton/ASM/lab/lab_C/lab_05/a3.s",
-		"/home/anton/ASM/lab/lab_C/lab_05/a2.s",
-		"/home/anton/C/experiments/pow/lpow.s",
-		"/home/anton/ASM/training/ivt/a1.nasm",
-		"/home/anton/ASM/lab/lab_06/math.s"
+		"/home/anton/ASM/training/polya_rivalry.s"
 	],
 	"find":
 	{
@@ -960,39 +952,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "lab/OOP/lab_04/task_1/animal.hpp",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 996,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

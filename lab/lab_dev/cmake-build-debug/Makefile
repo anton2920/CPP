@@ -123,33 +123,6 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
-libs/animal.o: libs/animal.cpp.o
-
-.PHONY : libs/animal.o
-
-# target to build an object file
-libs/animal.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.o
-.PHONY : libs/animal.cpp.o
-
-libs/animal.i: libs/animal.cpp.i
-
-.PHONY : libs/animal.i
-
-# target to preprocess a source file
-libs/animal.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.i
-.PHONY : libs/animal.cpp.i
-
-libs/animal.s: libs/animal.cpp.s
-
-.PHONY : libs/animal.s
-
-# target to generate assembly for a file
-libs/animal.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/animal.cpp.s
-.PHONY : libs/animal.cpp.s
-
 libs/libs.o: libs/libs.cpp.o
 
 .PHONY : libs/libs.o
@@ -177,59 +150,32 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/predator.o: libs/predator.cpp.o
+libs/list.o: libs/list.cpp.o
 
-.PHONY : libs/predator.o
-
-# target to build an object file
-libs/predator.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.o
-.PHONY : libs/predator.cpp.o
-
-libs/predator.i: libs/predator.cpp.i
-
-.PHONY : libs/predator.i
-
-# target to preprocess a source file
-libs/predator.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.i
-.PHONY : libs/predator.cpp.i
-
-libs/predator.s: libs/predator.cpp.s
-
-.PHONY : libs/predator.s
-
-# target to generate assembly for a file
-libs/predator.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/predator.cpp.s
-.PHONY : libs/predator.cpp.s
-
-libs/user.o: libs/user.cpp.o
-
-.PHONY : libs/user.o
+.PHONY : libs/list.o
 
 # target to build an object file
-libs/user.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.o
-.PHONY : libs/user.cpp.o
+libs/list.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.o
+.PHONY : libs/list.cpp.o
 
-libs/user.i: libs/user.cpp.i
+libs/list.i: libs/list.cpp.i
 
-.PHONY : libs/user.i
+.PHONY : libs/list.i
 
 # target to preprocess a source file
-libs/user.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.i
-.PHONY : libs/user.cpp.i
+libs/list.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.i
+.PHONY : libs/list.cpp.i
 
-libs/user.s: libs/user.cpp.s
+libs/list.s: libs/list.cpp.s
 
-.PHONY : libs/user.s
+.PHONY : libs/list.s
 
 # target to generate assembly for a file
-libs/user.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/user.cpp.s
-.PHONY : libs/user.cpp.s
+libs/list.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.s
+.PHONY : libs/list.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
-	@echo "... libs/animal.o"
-	@echo "... libs/animal.i"
-	@echo "... libs/animal.s"
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/predator.o"
-	@echo "... libs/predator.i"
-	@echo "... libs/predator.s"
-	@echo "... libs/user.o"
-	@echo "... libs/user.i"
-	@echo "... libs/user.s"
+	@echo "... libs/list.o"
+	@echo "... libs/list.i"
+	@echo "... libs/list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

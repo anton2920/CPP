@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/animal.cpp.o CMakeFiles/lab_dev.dir/libs/predator.cpp.o CMakeFiles/lab_dev.dir/libs/user.cpp.o  -o lab_dev -lm 
+/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o CMakeFiles/lab_dev.dir/libs/list.cpp.o  -o lab_dev -lm 
