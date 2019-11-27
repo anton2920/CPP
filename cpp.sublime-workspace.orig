@@ -821,10 +821,10 @@
 	"find":
 	{
 <<<<<<< HEAD
-		"height": 26.0
+		"height": 32.0
 =======
-		"height": 44.0
->>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
+		"height": 41.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"find_in_files":
 	{
@@ -1003,10 +1003,10 @@
 	"incremental_find":
 	{
 <<<<<<< HEAD
-		"height": 26.0
+		"height": 32.0
 =======
-		"height": 44.0
->>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
+		"height": 28.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"input":
 	{
@@ -1052,10 +1052,10 @@
 	"replace":
 	{
 <<<<<<< HEAD
-		"height": 48.0
+		"height": 60.0
 =======
-		"height": 84.0
->>>>>>> 366e28d74115805739404eecc98a2de5cac3e39f
+		"height": 73.0
+>>>>>>> 79b97a1489972d4ed3bb01c7504607a27eedf34d
 	},
 	"save_all_on_build": true,
 	"select_file":
