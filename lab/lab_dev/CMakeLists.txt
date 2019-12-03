@@ -9,7 +9,7 @@ set(CSAS libs/csas.cpp libs/csas.hpp)
 set(CTS libs/cts.cpp libs/cts.hpp)
 set(IS libs/is.cpp libs/is.hpp)
 
-set(LIST libs/list.cpp libs/list.hpp)
+set(LIST libs/list.hpp)
 
 add_executable(lab_dev main.cpp ${LIBS} ${LIST})
 target_link_libraries(lab_dev m)

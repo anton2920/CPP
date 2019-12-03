@@ -150,33 +150,6 @@ libs/libs.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
 .PHONY : libs/libs.cpp.s
 
-libs/list.o: libs/list.cpp.o
-
-.PHONY : libs/list.o
-
-# target to build an object file
-libs/list.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.o
-.PHONY : libs/list.cpp.o
-
-libs/list.i: libs/list.cpp.i
-
-.PHONY : libs/list.i
-
-# target to preprocess a source file
-libs/list.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.i
-.PHONY : libs/list.cpp.i
-
-libs/list.s: libs/list.cpp.s
-
-.PHONY : libs/list.s
-
-# target to generate assembly for a file
-libs/list.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/list.cpp.s
-.PHONY : libs/list.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -216,9 +189,6 @@ help:
 	@echo "... libs/libs.o"
 	@echo "... libs/libs.i"
 	@echo "... libs/libs.s"
-	@echo "... libs/list.o"
-	@echo "... libs/list.i"
-	@echo "... libs/list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

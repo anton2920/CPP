@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lab_dev.dir/libs/libs.cpp.o"
-  "CMakeFiles/lab_dev.dir/libs/list.cpp.o"
   "CMakeFiles/lab_dev.dir/main.cpp.o"
   "lab_dev"
   "lab_dev.pdb"
