@@ -4,8 +4,6 @@
 #include <iostream>
 #include <algorithm>
 
-#endif
-
 namespace lab {
     template<class T>
     class list {
@@ -72,6 +70,19 @@ namespace lab {
 
                 /* Returning value */
                 return *this;
+            }
+
+            iterator operator+(std::size_t offset) {
+
+                /* Initializing variables */
+                iterator iter = *this;
+
+                for (std::size_t i = 0; i < offset; ++i) {
+                    ++iter;
+                }
+
+                /* Returning value */
+                return iter;
             }
 
             bool operator==(const iterator &other) {
@@ -238,7 +249,7 @@ namespace lab {
             new_element->next = nullptr;
             new_element->prev = nullptr;
             this->bp = this->lp = new_element;
-        } else if (pos->elem != nullptr) {
+        } else if (pos.elem != nullptr) {
             new_element->next = pos.elem;
             new_element->prev = pos.elem->prev;
 
@@ -448,3 +459,5 @@ namespace lab {
         }
     }
 }
+
+#endif

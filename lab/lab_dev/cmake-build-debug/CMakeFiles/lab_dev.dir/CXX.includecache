@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/anton/CPP/lab/lab_dev/libs/libs.cpp
+libs.hpp
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/libs.hpp
+string
+-
+ctime
+-
+list.hpp
+/home/anton/CPP/lab/lab_dev/libs/list.hpp
+
 /home/anton/CPP/lab/lab_dev/libs/list.hpp
 iostream
 -
 algorithm
 -
-
-/home/anton/CPP/lab/lab_dev/main.cpp
-iostream
--
-libs/list.hpp
-/home/anton/CPP/lab/lab_dev/libs/list.hpp
 

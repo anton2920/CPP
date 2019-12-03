@@ -3,7 +3,9 @@
 
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.cpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.hpp
+CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/list.hpp
 
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/libs.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/list.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../main.cpp
 

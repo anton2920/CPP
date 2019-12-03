@@ -1,27 +1,26 @@
 #include <iostream>
 
 #include "libs/list.hpp"
+#include "libs/libs.hpp"
+#include "libs/stack.hpp"
 
 int main() {
 
     /* Initializing variables */
-    lab::list<int> l;
+    srand(time(nullptr) / 2);
+    lab::list<int> l1;
+    lab::list<lab::stack<student>> l2;
 
     /* Main part */
-    for (int i = 10; i > 0; --i) {
-        l.push_back(i);
-    }
-
-    for (auto &i : l) {
-        std::cout << i << " ";
-    }
-
-    l.sort();
-
-    std::cout << std::endl;
-
-    for (auto &i : l) {
-        std::cout << i << " ";
+    switch (menu()) {
+        case 1:
+            show(l1);
+            break;
+        case 2:
+            show(l2);
+            break;
+        default:
+            break;
     }
 
     /* Final output */

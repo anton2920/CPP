@@ -10,6 +10,7 @@ set(CTS libs/cts.cpp libs/cts.hpp)
 set(IS libs/is.cpp libs/is.hpp)
 
 set(LIST libs/list.hpp)
+set(STACK libs/stack.hpp)
 
-add_executable(lab_dev main.cpp ${LIBS} ${LIST})
+add_executable(lab_dev main.cpp ${LIBS} ${LIST} ${STACK})
 target_link_libraries(lab_dev m)
