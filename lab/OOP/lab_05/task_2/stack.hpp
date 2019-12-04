@@ -64,10 +64,10 @@ namespace lab {
     };
 
     template<class T>
-    stack<T>::stack() : l(l) {}
+    stack<T>::stack() : l() {}
 
     template<class T>
-    stack<T>::stack(const stack &other) : l() {
+    stack<T>::stack(const stack &other) : l(l) {
 
         /* VarCheck */
         if (other == nullptr) {

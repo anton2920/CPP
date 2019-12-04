@@ -79,9 +79,9 @@ public:
     };
 
 private:
-    std::string last_name;
-    std::string first_name;
-    date dob;
+    std::string last_name{};
+    std::string first_name{};
+    date dob{};
 
 public:
     explicit student(const std::string &lastName = "", const std::string &firstName = "", const date &dob = date(0, 0, 0));
