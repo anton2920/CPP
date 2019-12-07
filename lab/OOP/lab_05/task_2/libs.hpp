@@ -88,9 +88,9 @@ public:
     student(const student &other);
     virtual ~student() = default;
 
-    [[nodiscard]] const std::string &getLastName() const;
-    [[nodiscard]] const std::string &getFirstName() const;
-    [[nodiscard]] const date &getDob() const;
+    const std::string &getLastName() const;
+    const std::string &getFirstName() const;
+    const date &getDob() const;
 
     void setLastName(const std::string &_lastName);
     void setFirstName(const std::string &_firstName);

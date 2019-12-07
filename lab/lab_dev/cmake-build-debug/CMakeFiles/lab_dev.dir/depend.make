@@ -6,8 +6,9 @@ CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/libs.hpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/list.hpp
 CMakeFiles/lab_dev.dir/libs/libs.cpp.o: ../libs/stack.hpp
 
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/libs.hpp
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/list.hpp
-CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/stack.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/csas.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/cts.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/is.hpp
+CMakeFiles/lab_dev.dir/main.cpp.o: ../libs/st_pr.hpp
 CMakeFiles/lab_dev.dir/main.cpp.o: ../main.cpp
 

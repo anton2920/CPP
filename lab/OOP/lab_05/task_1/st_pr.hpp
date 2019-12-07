@@ -16,9 +16,9 @@ namespace study_program {
 
         virtual size_t count_abandoned_students() = 0;
 
-        [[nodiscard]] std::size_t getCurrNstudents() const;
-        [[nodiscard]] std::size_t getNstudents() const;
-        [[nodiscard]] std::size_t getNgroup() const;
+        std::size_t getCurrNstudents() const;
+        std::size_t getNstudents() const;
+        std::size_t getNgroup() const;
 
         void setCurrNstudents(size_t _currNstudents);
         void setNstudents(size_t _nstudents);
