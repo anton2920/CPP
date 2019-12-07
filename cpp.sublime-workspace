@@ -676,18 +676,19 @@
 	],
 	"file_history":
 	[
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/main.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/csas.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.hpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.cpp",
 		"/home/anton/CPP/experiments/MishaADT/Makefile",
 		"/home/anton/CPP/experiments/MishaADT/Line.h",
 		"/home/anton/CPP/experiments/MishaADT/main.cpp",
 		"/home/anton/CPP/experiments/MishaADT/Rectangle.h",
 		"/home/anton/CPP/experiments/MishaADT/Circle.h",
 		"/home/anton/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/home/anton/CPP/lab/OOP/lab_05/task_1/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.cpp",
 		"/home/anton/CPP/lab/lab_dev/main.cpp",
 		"/home/anton/CPP/lab/lab_dev/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_05/task_1/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_05/csas.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
@@ -802,8 +803,7 @@
 		"/home/anton/ASM/lab/lab_C/lab_07/a4.s",
 		"/home/anton/ASM/lab/lab_06/calc.s",
 		"/home/anton/ASM/home/Nastya/a1.s",
-		"/home/anton/ASM/home/Nastya/a2.s",
-		"/home/anton/ASM/lab/lab_C/lab_07/a1.s"
+		"/home/anton/ASM/home/Nastya/a2.s"
 	],
 	"find":
 	{

@@ -6,6 +6,8 @@
 namespace study_program {
     class cts : public st_pr {
     public:
+        cts() : st_pr() { this->name = "Computer technologies and systems"; }
+
         std::size_t count_abandoned_students() override;
     };
 }

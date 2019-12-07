@@ -6,15 +6,37 @@
 
 #IncludeRegexTransform: 
 
+/home/anton/CPP/lab/lab_dev/libs/csas.cpp
+cmath
+-
+csas.hpp
+/home/anton/CPP/lab/lab_dev/libs/csas.hpp
+
 /home/anton/CPP/lab/lab_dev/libs/csas.hpp
 st_pr.hpp
 /home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/cts.cpp
+cmath
+-
+cts.hpp
+/home/anton/CPP/lab/lab_dev/libs/cts.hpp
 
 /home/anton/CPP/lab/lab_dev/libs/cts.hpp
 st_pr.hpp
 /home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
 
+/home/anton/CPP/lab/lab_dev/libs/is.cpp
+cmath
+-
+is.hpp
 /home/anton/CPP/lab/lab_dev/libs/is.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/is.hpp
+st_pr.hpp
+/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
+
+/home/anton/CPP/lab/lab_dev/libs/st_pr.cpp
 st_pr.hpp
 /home/anton/CPP/lab/lab_dev/libs/st_pr.hpp
 

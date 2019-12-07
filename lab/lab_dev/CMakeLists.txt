@@ -12,5 +12,6 @@ set(IS libs/is.cpp libs/is.hpp)
 set(LIST libs/list.hpp)
 set(STACK libs/stack.hpp)
 
-add_executable(lab_dev main.cpp ${LIBS} ${LIST} ${STACK})
+add_executable(lab_dev main.cpp ${STPR} ${CSAS} ${CTS} ${IS})
+#add_executable(lab_dev main.cpp ${LIBS} ${LIST} ${STACK})
 target_link_libraries(lab_dev m)

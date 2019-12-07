@@ -1,3 +1,4 @@
+#include <cassert>
 #include <fstream>
 
 #include "libs.hpp"
@@ -258,14 +259,19 @@ void show(lab::list<lab::stack<student>> &l) {
     inputs >> *s;
     l.push_back(*s);
 
-    s = new lab::stack<student>;
-    inputs >> *s;
-    l.push_back(*s);
+    assert(!inputs.eof());
 
     s = new lab::stack<student>;
     inputs >> *s;
     l.push_back(*s);
 
+    assert(!inputs.eof());
+
+    s = new lab::stack<student>;
+    inputs >> *s;
+    l.push_back(*s);
+
+    assert(!inputs.eof());
 
     std::cout << "Source list: \n";
     print_list(l);
@@ -274,6 +280,8 @@ void show(lab::list<lab::stack<student>> &l) {
     s = new lab::stack<student>;
     inputs >> *s;
 
+    assert(!inputs.eof());
+
     l.push_back(*s);
     std::cout << "push_back value [" << *s << "]" << ": \n";
     print_list(l);
@@ -281,6 +289,8 @@ void show(lab::list<lab::stack<student>> &l) {
     /* push_front demo */
     s = new lab::stack<student>;
     inputs >> *s;
+
+    assert(!inputs.eof());
 
     l.push_front(*s);
     std::cout << "push_front value [" << *s << "]" << ": \n" << std::flush;
@@ -291,6 +301,8 @@ void show(lab::list<lab::stack<student>> &l) {
 
     s = new lab::stack<student>;
     inputs >> *s;
+
+    assert(!inputs.eof());
 
     l.insert(l.begin() + var, *s);
     std::cout << "insert value [" << *s << "]" << " on position " << var << ": \n" << std::flush;

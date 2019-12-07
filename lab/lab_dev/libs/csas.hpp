@@ -9,6 +9,8 @@ namespace study_program {
         const std::string main_troll = "Andrey Anatolyevich";
 
     public:
+        csas() : st_pr() { this->name = "Computer science and software"; }
+
         std::size_t count_abandoned_students() override;
     };
 }
