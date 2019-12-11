@@ -7,7 +7,7 @@
 int main() {
 
     /* Initializing variables */
-    srand(time(nullptr) / 2);
+    std::srand(time(nullptr));
     lab::list<int> l1;
     lab::list<lab::stack<student>> l2;
 

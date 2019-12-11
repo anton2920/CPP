@@ -193,7 +193,8 @@ void show(lab::list<int> &l) {
     }
 
     /* Main part */
-    for (int i = 0; i < 10; ++i) {
+	var = (std::rand() % (15 - 5 + 1)) + 5;
+    for (int i = 0; i < var; ++i) {
         l.push_back(rand() % 25);
     }
 
@@ -201,25 +202,25 @@ void show(lab::list<int> &l) {
     print_list(l);
 
     /* push_back demo */
-    var = rand() % RAND_CONST;
+    var = std::rand() % RAND_CONST;
     l.push_back(var);
     std::cout << "push_back value [" << var << "]" << ": ";
     print_list(l);
 
     /* push_front demo */
-    var = rand() % RAND_CONST;
+    var = std::rand() % RAND_CONST;
     l.push_front(var);
     std::cout << "push_front value [" << var << "]" << ": ";
     print_list(l);
 
     /* insert demo */
-    var = rand() % l.size();
+    var = std::rand() % l.size();
     l.insert(l.begin() + var, var);
     std::cout << "insert value [" << var << "]" << " on position " << var << ": ";
     print_list(l);
 
     /* erase demo */
-    var = rand() % l.size();
+    var = std::rand() % l.size();
     l.erase(l.begin() + var);
     std::cout << "erase value on position " << var << ": ";
     print_list(l);
@@ -287,7 +288,7 @@ void show(lab::list<lab::stack<student>> &l) {
     print_list(l);
 
     /* insert demo */
-    var = rand() % l.size();
+    var = std::rand() % l.size();
 
     s = new lab::stack<student>;
     inputs >> *s;
@@ -297,7 +298,7 @@ void show(lab::list<lab::stack<student>> &l) {
     print_list(l);
 
     /* erase demo */
-    var = rand() % l.size();
+    var = std::rand() % l.size();
     l.erase(l.begin() + var);
     std::cout << "erase value on position " << var << ": \n" << std::flush;
     print_list(l);
