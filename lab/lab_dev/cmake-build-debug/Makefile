@@ -123,113 +123,32 @@ lab_dev/fast:
 	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/build
 .PHONY : lab_dev/fast
 
-libs/csas.o: libs/csas.cpp.o
+libs/libs.o: libs/libs.cpp.o
 
-.PHONY : libs/csas.o
-
-# target to build an object file
-libs/csas.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/csas.cpp.o
-.PHONY : libs/csas.cpp.o
-
-libs/csas.i: libs/csas.cpp.i
-
-.PHONY : libs/csas.i
-
-# target to preprocess a source file
-libs/csas.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/csas.cpp.i
-.PHONY : libs/csas.cpp.i
-
-libs/csas.s: libs/csas.cpp.s
-
-.PHONY : libs/csas.s
-
-# target to generate assembly for a file
-libs/csas.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/csas.cpp.s
-.PHONY : libs/csas.cpp.s
-
-libs/cts.o: libs/cts.cpp.o
-
-.PHONY : libs/cts.o
+.PHONY : libs/libs.o
 
 # target to build an object file
-libs/cts.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/cts.cpp.o
-.PHONY : libs/cts.cpp.o
+libs/libs.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.o
+.PHONY : libs/libs.cpp.o
 
-libs/cts.i: libs/cts.cpp.i
+libs/libs.i: libs/libs.cpp.i
 
-.PHONY : libs/cts.i
-
-# target to preprocess a source file
-libs/cts.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/cts.cpp.i
-.PHONY : libs/cts.cpp.i
-
-libs/cts.s: libs/cts.cpp.s
-
-.PHONY : libs/cts.s
-
-# target to generate assembly for a file
-libs/cts.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/cts.cpp.s
-.PHONY : libs/cts.cpp.s
-
-libs/is.o: libs/is.cpp.o
-
-.PHONY : libs/is.o
-
-# target to build an object file
-libs/is.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/is.cpp.o
-.PHONY : libs/is.cpp.o
-
-libs/is.i: libs/is.cpp.i
-
-.PHONY : libs/is.i
+.PHONY : libs/libs.i
 
 # target to preprocess a source file
-libs/is.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/is.cpp.i
-.PHONY : libs/is.cpp.i
+libs/libs.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.i
+.PHONY : libs/libs.cpp.i
 
-libs/is.s: libs/is.cpp.s
+libs/libs.s: libs/libs.cpp.s
 
-.PHONY : libs/is.s
-
-# target to generate assembly for a file
-libs/is.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/is.cpp.s
-.PHONY : libs/is.cpp.s
-
-libs/st_pr.o: libs/st_pr.cpp.o
-
-.PHONY : libs/st_pr.o
-
-# target to build an object file
-libs/st_pr.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/st_pr.cpp.o
-.PHONY : libs/st_pr.cpp.o
-
-libs/st_pr.i: libs/st_pr.cpp.i
-
-.PHONY : libs/st_pr.i
-
-# target to preprocess a source file
-libs/st_pr.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/st_pr.cpp.i
-.PHONY : libs/st_pr.cpp.i
-
-libs/st_pr.s: libs/st_pr.cpp.s
-
-.PHONY : libs/st_pr.s
+.PHONY : libs/libs.s
 
 # target to generate assembly for a file
-libs/st_pr.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/st_pr.cpp.s
-.PHONY : libs/st_pr.cpp.s
+libs/libs.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_dev.dir/build.make CMakeFiles/lab_dev.dir/libs/libs.cpp.s
+.PHONY : libs/libs.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab_dev"
 	@echo "... edit_cache"
-	@echo "... libs/csas.o"
-	@echo "... libs/csas.i"
-	@echo "... libs/csas.s"
-	@echo "... libs/cts.o"
-	@echo "... libs/cts.i"
-	@echo "... libs/cts.s"
-	@echo "... libs/is.o"
-	@echo "... libs/is.i"
-	@echo "... libs/is.s"
-	@echo "... libs/st_pr.o"
-	@echo "... libs/st_pr.i"
-	@echo "... libs/st_pr.s"
+	@echo "... libs/libs.o"
+	@echo "... libs/libs.i"
+	@echo "... libs/libs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

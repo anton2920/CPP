@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/st_pr.cpp.o CMakeFiles/lab_dev.dir/libs/csas.cpp.o CMakeFiles/lab_dev.dir/libs/cts.cpp.o CMakeFiles/lab_dev.dir/libs/is.cpp.o  -o lab_dev -lm 
+/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o CMakeFiles/lab_dev.dir/libs/libs.cpp.o  -o lab_dev -lm 

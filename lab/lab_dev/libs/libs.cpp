@@ -163,7 +163,7 @@ int menu() {
 
     /* I/O flow */
     std::cout << "Do you want to proceed with...\n" << "\t1) Standard datatype [int]\n" <<
-            "\t2) Custom datatype [stack<student>]\n\n" << "Answer: ";
+              "\t2) Custom datatype [stack<student>]\n\n" << "Answer: ";
     std::cin >> ans;
 
     /* Final output */
@@ -247,6 +247,7 @@ void show(lab::list<lab::stack<student>> &l) {
     /* Initializing variables */
     std::ifstream inputs("input.txt");
     int var;
+    lab::stack<student> *s;
 
     /* VarCheck */
     if (!l.empty() || !inputs.is_open()) {
@@ -255,23 +256,13 @@ void show(lab::list<lab::stack<student>> &l) {
 
     /* Main part */
     /* Read stacks */
-    auto s = new lab::stack<student>;
-    inputs >> *s;
-    l.push_back(*s);
-
-    assert(!inputs.eof());
-
-    s = new lab::stack<student>;
-    inputs >> *s;
-    l.push_back(*s);
-
-    assert(!inputs.eof());
-
-    s = new lab::stack<student>;
-    inputs >> *s;
-    l.push_back(*s);
-
-    assert(!inputs.eof());
+    inputs >> var;
+    for (int i = 0; i < var; ++i) {
+        s = new lab::stack<student>;
+        inputs >> *s;
+        assert(!inputs.eof());
+        l.push_back(*s);
+    }
 
     std::cout << "Source list: \n";
     print_list(l);
@@ -301,8 +292,6 @@ void show(lab::list<lab::stack<student>> &l) {
 
     s = new lab::stack<student>;
     inputs >> *s;
-
-    assert(!inputs.eof());
 
     l.insert(l.begin() + var, *s);
     std::cout << "insert value [" << *s << "]" << " on position " << var << ": \n" << std::flush;

@@ -84,28 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/csas.cpp">
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs.cpp">
 			<Option target="lab_dev"/>
 		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/csas.hpp">
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/libs.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/cts.cpp">
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/list.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/cts.hpp">
-			<Option target="lab_dev"/>
-		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/is.cpp">
-			<Option target="lab_dev"/>
-		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/is.hpp">
-			<Option target="lab_dev"/>
-		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/st_pr.cpp">
-			<Option target="lab_dev"/>
-		</Unit>
-		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/st_pr.hpp">
+		<Unit filename="/home/anton/CPP/lab/lab_dev/libs/stack.hpp">
 			<Option target="lab_dev"/>
 		</Unit>
 		<Unit filename="/home/anton/CPP/lab/lab_dev/main.cpp">

@@ -86,7 +86,6 @@ private:
 public:
     explicit student(const std::string &lastName = "", const std::string &firstName = "", const date &dob = date(0, 0, 0));
     student(const student &other);
-    virtual ~student() = default;
 
     const std::string &getLastName() const;
     const std::string &getFirstName() const;

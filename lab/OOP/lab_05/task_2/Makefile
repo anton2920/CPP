@@ -4,7 +4,7 @@ CPPFLAGS = -Wall -Wextra -O2 -std=c++17
 LDFLAGS = 
 
 # Main part
-all: main.o libs.o
+all: main.o libs.o list.hpp stack.hpp
 	$(CPP) $(CPPFLAGS) main.o libs.o -o main $(LDFLAGS)
 
 main.o: main.cpp

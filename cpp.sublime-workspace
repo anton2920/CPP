@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return\tabc"
+			],
+			[
+				"stu",
+				"study_program\t(st_pr.hpp)"
+			],
+			[
+				"st",
+				"st_pr\tabc"
+			],
+			[
+				"p",
+				"push_back\tabc"
+			],
+			[
+				"sta",
+				"stack.o\tabc"
+			],
+			[
+				"main",
+				"main.cpp\tabc"
+			],
+			[
 				"as",
 				"abstract.o\tabc"
 			],
@@ -98,10 +122,6 @@
 			[
 				"lib",
 				"libs.c\tabc"
-			],
-			[
-				"main",
-				"main.o\tabc"
 			],
 			[
 				"libs",
@@ -494,31 +514,45 @@
 			[
 				"ad",
 				"add_records_read_do_while_1_end\tabc"
-			],
-			[
-				"ADD_RE",
-				"ADD_REC_BUF\tabc"
-			],
-			[
-				"len_add",
-				"len_add_invalid\tabc"
-			],
-			[
-				"ADD",
-				"ADD_REC_BUF\tabc"
-			],
-			[
-				"ADD_",
-				"ADD_REC_LEN\tabc"
-			],
-			[
-				"add_re",
-				"add_records_read\tabc"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "lab/OOP/lab_05/task_2/libs.cpp",
+			"settings":
+			{
+				"buffer_size": 6907,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_05/task_2/Makefile",
+			"settings":
+			{
+				"buffer_size": 451,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_05/task_2/main.cpp",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab/OOP/lab_05/task_2/input.txt",
+			"settings":
+			{
+				"buffer_size": 383,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -672,14 +706,28 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anton/CPP"
+		"/home/anton/CPP",
+		"/home/anton/CPP/lab",
+		"/home/anton/CPP/lab/OOP",
+		"/home/anton/CPP/lab/OOP/lab_05",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2"
 	],
 	"file_history":
 	[
-		"/home/anton/CPP/lab/OOP/lab_05/task_1/main.cpp",
-		"/home/anton/CPP/lab/OOP/lab_05/csas.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/stack.hpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/Makefile",
 		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.hpp",
 		"/home/anton/CPP/lab/OOP/lab_05/task_1/st_pr.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/main.cpp",
+		"/home/anton/CPP/lab/lab_dev/libs/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/list.hpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/libs.hpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/input.txt",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/libs.cpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_05/task_1/csas.hpp",
+		"/home/anton/CPP/lab/OOP/lab_05/task_2/main.cpp",
 		"/home/anton/CPP/experiments/MishaADT/Makefile",
 		"/home/anton/CPP/experiments/MishaADT/Line.h",
 		"/home/anton/CPP/experiments/MishaADT/main.cpp",
@@ -688,7 +736,7 @@
 		"/home/anton/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
 		"/home/anton/CPP/lab/lab_dev/main.cpp",
 		"/home/anton/CPP/lab/lab_dev/Makefile",
-		"/home/anton/CPP/lab/OOP/lab_05/task_1/Makefile",
+		"/home/anton/CPP/lab/OOP/lab_05/csas.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_1/animal.cpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_4/libs.hpp",
 		"/home/anton/CPP/lab/OOP/lab_04/task_3/libs.hpp",
@@ -794,20 +842,11 @@
 		"/home/anton/ASM/lab/lab_C/lab_10/a2.s",
 		"/home/anton/ASM/lab/lab_C/lab_10/a3.s",
 		"/home/anton/ASM/experiments/fracts/fract.s",
-		"/home/anton/ASM/lab/lab_C/lab_09/a3.s",
-		"/home/anton/ASM/lab/lab_C/lab_09/a2.s",
-		"/home/anton/ASM/home/Molch/task_3.s",
-		"/home/anton/ASM/home/Molch/task_3_check.c",
-		"/home/anton/ASM/asm.sublime-project",
-		"/home/anton/C/c.sublime-project",
-		"/home/anton/ASM/lab/lab_C/lab_07/a4.s",
-		"/home/anton/ASM/lab/lab_06/calc.s",
-		"/home/anton/ASM/home/Nastya/a1.s",
-		"/home/anton/ASM/home/Nastya/a2.s"
+		"/home/anton/ASM/lab/lab_C/lab_09/a3.s"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -947,14 +986,131 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lab/OOP/lab_05/task_2/libs.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4432,
+								4432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lab/OOP/lab_05/task_2/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lab/OOP/lab_05/task_2/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lab/OOP/lab_05/task_2/input.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -999,7 +1155,7 @@
 	"project": "cpp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
