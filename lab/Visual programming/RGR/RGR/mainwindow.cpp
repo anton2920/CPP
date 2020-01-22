@@ -19,6 +19,64 @@ MainWindow::MainWindow(QWidget *parent)
     scribbleArea = new ScribbleArea;
 //    setCentralWidget(scribbleArea);
     ui->gridLayout->addWidget(scribbleArea);
+
+    connect(ui->frame_black, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_white, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_gray, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_gray, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_red, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_red, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_yellow, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_yellow, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_green, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_green, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_blue, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_blue, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_blue_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_blue_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_pink, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_pink, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_yellow_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_yellow_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_green_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_green_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_blue_3, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_blue_3, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_blue_4, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_blue_4, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_pink_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_pink_2, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_d_orange, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+    connect(ui->frame_orange, SIGNAL(clicked(my_frame *)), this, SLOT(on_frame_black_clicked(my_frame *)));
+
+    connect(ui->frame_black, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_white, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_gray, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_gray, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_red, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_red, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_yellow, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_yellow, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_green, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_green, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_blue, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_blue, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_blue_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_blue_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_pink, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_pink, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_yellow_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_yellow_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_green_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_green_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_blue_3, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_blue_3, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_blue_4, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_blue_4, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_pink_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_pink_2, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_d_orange, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
+    connect(ui->frame_orange, SIGNAL(clicked_right(my_frame *)), this, SLOT(on_frame_black_clicked_right(my_frame *)));
 }
 
 MainWindow::~MainWindow()
@@ -253,11 +311,82 @@ void MainWindow::on_actionStatus_Bar_triggered() {
     ui->statusbar->setVisible(!ui->statusbar->isVisible());
 }
 
-void MainWindow::on_frame_black_clicked() {
+void MainWindow::on_frame_black_clicked(my_frame *frame) {
 
     /* Initializing variables */
-
+    QColor color;
 
     /* Main part */
-    this->scribbleArea->setPenColor(ui->frame_black->palette());
+    frame->setColor();
+    color = frame->getColor();
+
+    ui->frame_main_color->setStyleSheet(frame->styleSheet());
+
+    this->scribbleArea->setPenColor(color);
+}
+
+void MainWindow::on_frame_black_clicked_right(my_frame *frame) {
+
+    /* Initializing variables */
+    QColor color;
+
+    /* Main part */
+    frame->setColor();
+    color = frame->getColor();
+
+    ui->frame_2nd_color->setStyleSheet(frame->styleSheet());
+
+    this->scribbleArea->setPen2ndColor(color);
+}
+
+void MainWindow::on_pushButton_rectangle_clicked() {
+
+    /* Main part */
+    clear_btn_selection();
+    this->scribbleArea->setTool(ScribbleArea::tool::RECTANGLE);
+    ui->pushButton_rectangle->setChecked(true);
+}
+
+void MainWindow::on_pushButton_line_clicked() {
+
+    /* Main part */
+    clear_btn_selection();
+    this->scribbleArea->setTool(ScribbleArea::tool::LINE);
+    ui->pushButton_line->setChecked(true);
+}
+
+void MainWindow::on_pushButton_ellipse_clicked() {
+
+    /* Main part */
+    clear_btn_selection();
+    this->scribbleArea->setTool(ScribbleArea::tool::ELLIPSE);
+    ui->pushButton_ellipse->setChecked(true);
+}
+
+void MainWindow::on_pushButton_rounded_rectangle_clicked() {
+
+    /* Main part */
+    clear_btn_selection();
+    this->scribbleArea->setTool(ScribbleArea::tool::ROUNDEDRECT);
+    ui->pushButton_rounded_rectangle->setChecked(true);
+}
+
+void MainWindow::on_pushButton_text_clicked() {
+
+    /* Main part */
+    clear_btn_selection();
+    this->scribbleArea->setTool(ScribbleArea::tool::TEXT);
+    ui->pushButton_text->setChecked(true);
+}
+
+void MainWindow::on_actionClear_image_triggered() {
+
+    /* Main part */
+    this->scribbleArea->clearImage();
+}
+
+void MainWindow::on_actionSet_Text_Font_triggered() {
+
+    /* Main part */
+    this->scribbleArea->setTextFont();
 }

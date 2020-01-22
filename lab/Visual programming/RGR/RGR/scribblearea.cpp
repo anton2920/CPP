@@ -13,9 +13,12 @@ ScribbleArea::ScribbleArea(QWidget *parent)
     // Set defaults for the monitored variables
     modified = false;
     scribbling = false;
-    toolW = 1;
+    toolW = 5;
     toolClr = Qt::black;
+    tool2ndClr = Qt::white;
     T = tool::BRUSH;
+
+    isFontSet = false;
 }
 
 // Used to load the image and place it in the widget
@@ -57,6 +60,12 @@ void ScribbleArea::setPenColor(const QColor &newColor)
     toolClr = newColor;
 }
 
+void ScribbleArea::setPen2ndColor(const QColor &newColor) {
+
+    /* Initializing variables */
+    this->tool2ndClr = newColor;
+}
+
 // Used to change the pen width
 void ScribbleArea::setPenWidth(int newWidth)
 {
@@ -82,9 +91,22 @@ void ScribbleArea::clearImage()
 // Set that we are currently drawing
 void ScribbleArea::mousePressEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton) {
+    if (event->button() != Qt::MiddleButton) {
+//        startPoint = event->pos();
         lastPoint = event->pos();
-        scribbling = true;
+
+        if (this->T == tool::PEN || this->T == tool::BRUSH || this->T == tool::ERASER) {
+            scribbling = true;
+        } else if (this->T == tool::TEXT) {
+            drawLineTo(lastPoint);
+        } else {
+            scribbling = false;
+        }
+        if (event->button() == Qt::LeftButton) {
+            currentColor = this->toolClr;
+        } else if (event->button() == Qt::RightButton) {
+            currentColor = this->tool2ndClr;
+        }
     }
 }
 
@@ -93,14 +115,14 @@ void ScribbleArea::mousePressEvent(QMouseEvent *event)
 // from the last position to the current
 void ScribbleArea::mouseMoveEvent(QMouseEvent *event)
 {
-    if ((event->buttons() & Qt::LeftButton) && scribbling)
+    if ((event->buttons() & (Qt::LeftButton | Qt::RightButton)) && scribbling)
         drawLineTo(event->pos());
 }
 
 // If the button is released we set variables to stop drawing
 void ScribbleArea::mouseReleaseEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton && scribbling) {
+    if (event->button() == Qt::LeftButton || event->button() == Qt::RightButton) {
         drawLineTo(event->pos());
         scribbling = false;
     }
@@ -142,18 +164,44 @@ void ScribbleArea::drawLineTo(const QPoint &endPoint)
     // Set the current settings for the pen
     switch (T) {
         case PEN:
-            painter.setBrush(QBrush(toolClr, Qt::SolidPattern));
+            painter.setBrush(QBrush(currentColor, Qt::SolidPattern));
+            painter.drawLine(lastPoint, endPoint);
             break;
         case BRUSH:
-            painter.setPen(QPen(toolClr, toolW, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
+            painter.setPen(QPen(currentColor, toolW, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
+            painter.drawLine(lastPoint, endPoint);
             break;
         case ERASER:
             painter.setPen(QPen(Qt::white, toolW, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
+            painter.drawLine(lastPoint, endPoint);
+            break;
+        case RECTANGLE:
+            painter.setPen(QPen(currentColor, toolW, Qt::SolidLine, Qt::SquareCap, Qt::RoundJoin));
+            painter.drawRect(QRect(lastPoint, endPoint));
+            break;
+        case LINE:
+            painter.setPen(QPen(currentColor, toolW, Qt::SolidLine, Qt::FlatCap, Qt::RoundJoin));
+            painter.drawLine(lastPoint, endPoint);
+            break;
+        case ELLIPSE:
+            painter.setPen(QPen(currentColor, toolW, Qt::SolidLine, Qt::FlatCap, Qt::RoundJoin));
+            painter.drawEllipse(QRect(lastPoint, endPoint));
+            break;
+        case ROUNDEDRECT:
+            painter.setPen(QPen(currentColor, toolW, Qt::SolidLine, Qt::SquareCap, Qt::RoundJoin));
+            painter.drawRoundedRect(QRect(lastPoint, endPoint), 4, 4);
+            break;
+        case TEXT:
+            if (!isFontSet) {
+                setTextFont();
+            }
+            painter.setPen(currentColor);
+            QString text = QInputDialog::getText(this, "Paint text tool", "Enter your text: ");
+            painter.setFont(textFont);
+            painter.drawText(endPoint, text);
+            update(QRect(QPoint(0, 0), QPoint(this->image.size().width(), this->image.size().height())));
             break;
     }
-
-    // Draw a line from the last registered point to the current
-    painter.drawLine(lastPoint, endPoint);
 
     // Set that the image hasn't been saved
     modified = true;

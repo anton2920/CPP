@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "my_frame.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -53,7 +54,23 @@ private slots:
 
     void on_actionStatus_Bar_triggered();
 
-    void on_frame_black_clicked();
+    void on_frame_black_clicked(my_frame *frame);
+
+    void on_frame_black_clicked_right(my_frame *frame);
+
+    void on_pushButton_rectangle_clicked();
+
+    void on_pushButton_line_clicked();
+
+    void on_pushButton_ellipse_clicked();
+
+    void on_pushButton_rounded_rectangle_clicked();
+
+    void on_pushButton_text_clicked();
+
+    void on_actionClear_image_triggered();
+
+    void on_actionSet_Text_Font_triggered();
 
 private:
     // Will check if changes have occurred since last save

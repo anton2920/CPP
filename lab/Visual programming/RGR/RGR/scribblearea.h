@@ -2,6 +2,7 @@
 #define SCRIBBLEAREA_H
 
 #include <QWidget>
+#include <QFontDialog>
 
 class ScribbleArea : public QWidget
 {
@@ -11,7 +12,12 @@ public:
     enum tool {
         PEN,
         BRUSH,
-        ERASER
+        ERASER,
+        RECTANGLE,
+        LINE,
+        ELLIPSE,
+        ROUNDEDRECT,
+        TEXT
     };
 
     explicit ScribbleArea(QWidget *parent = nullptr);
@@ -20,6 +26,7 @@ public:
     bool openImage(const QString &fileName);
     bool saveImage(const QString &fileName, const char *fileFormat);
     void setPenColor(const QColor &newColor);
+    void setPen2ndColor(const QColor &newColor);
     void setPenWidth(int newWidth);
     void setTool(tool T);
 
@@ -27,6 +34,10 @@ public:
     bool isModified() const { return modified; }
     QColor penColor() const { return toolClr; }
     int penWidth() const { return toolW; }
+
+    void setTextFont() {
+        textFont = QFontDialog::getFont(&isFontSet, this);
+    }
 
 public slots:
 
@@ -61,12 +72,18 @@ private:
     // Holds the current pen width & color
     tool T;
     int toolW;
+    QColor currentColor;
     QColor toolClr;
+    QColor tool2ndClr;
+
+    QFont textFont;
+    bool isFontSet;
 
     // Stores the image being drawn
     QImage image;
 
     // Stores the location at the current mouse event
+    QPoint startPoint;
     QPoint lastPoint;
 };
 

@@ -6,33 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
-string
--
-ctime
--
-list.hpp
-/home/anton/CPP/lab/lab_dev/libs/list.hpp
-stack.hpp
-/home/anton/CPP/lab/lab_dev/libs/stack.hpp
-
-/home/anton/CPP/lab/lab_dev/libs/list.hpp
-iostream
--
-algorithm
--
-
-/home/anton/CPP/lab/lab_dev/libs/stack.hpp
-list.hpp
-/home/anton/CPP/lab/lab_dev/libs/list.hpp
-
 /home/anton/CPP/lab/lab_dev/main.cpp
 iostream
 -
-libs/list.hpp
-/home/anton/CPP/lab/lab_dev/libs/list.hpp
-libs/libs.hpp
-/home/anton/CPP/lab/lab_dev/libs/libs.hpp
-libs/stack.hpp
-/home/anton/CPP/lab/lab_dev/libs/stack.hpp
+list
+-
+string
+-
+fstream
+-
 

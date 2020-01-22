@@ -15,8 +15,15 @@ public:
 
     int x, y;
 
+    QColor color;
+
+    QColor &getColor();
+    void setColor();
+
 signals:
-    void clicked();
+    void clicked(my_frame *frame);
+    void clicked_right(my_frame *frame);
+
     void moved();
     void left();
 
@@ -24,6 +31,9 @@ protected:
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
     void leaveEvent(QEvent *);
+
+private:
+    QColor parseColor(QString &color);
 };
 
 #endif // MY_FRAME_H
