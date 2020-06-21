@@ -7,10 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/anton/CPP/lab/lab_dev/main.cpp
-set
--
-utility
--
 iostream
+-
+unordered_map
 -
 
