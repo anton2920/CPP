@@ -3,6 +3,6 @@ project(lab_dev)
 
 set(CMAKE_CXX_STANDARD 17)
 
-#add_executable(lab_dev main.cpp ${STPR} ${CSAS} ${CTS} ${IS})
 add_executable(lab_dev main.cpp)
-target_link_libraries(lab_dev m)
+
+#target_link_libraries(lab_dev m)

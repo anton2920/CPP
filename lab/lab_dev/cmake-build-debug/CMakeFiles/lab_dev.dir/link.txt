@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o  -o lab_dev  -lm 
+/usr/bin/c++  -g   CMakeFiles/lab_dev.dir/main.cpp.o  -o lab_dev 

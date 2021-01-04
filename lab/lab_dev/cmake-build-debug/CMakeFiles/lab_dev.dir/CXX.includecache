@@ -9,6 +9,8 @@
 /home/anton/CPP/lab/lab_dev/main.cpp
 iostream
 -
-unordered_map
+string
+-
+algorithm
 -
 
