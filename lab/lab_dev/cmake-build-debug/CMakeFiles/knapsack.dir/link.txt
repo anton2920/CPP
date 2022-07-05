@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -fopenmp -g CMakeFiles/knapsack.dir/knapsack.cpp.o -o knapsack 

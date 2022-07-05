@@ -1,4 +1,0 @@
-/home/anton/Загрузки/clion-2016.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/anton/CPP/perfect_numbers
--- Configuring done
--- Generating done
--- Build files have been written to: /home/anton/CPP/perfect_numbers/cmake-build-release

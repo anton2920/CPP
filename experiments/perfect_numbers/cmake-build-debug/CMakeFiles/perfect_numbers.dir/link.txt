@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/perfect_numbers.dir/main.cpp.o  -o perfect_numbers 

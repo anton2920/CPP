@@ -1,3 +1,0 @@
-/home/anton/CPP/Experiments(for PerfNumb)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/anton/CPP/Experiments(for PerfNumb)/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/anton/CPP/Experiments(for PerfNumb)/cmake-build-debug/CMakeFiles/Experiments_for_PerfNumb_.dir

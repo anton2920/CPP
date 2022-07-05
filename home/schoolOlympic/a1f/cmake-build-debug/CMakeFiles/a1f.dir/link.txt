@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/a1f.dir/main.cpp.o  -o a1f 

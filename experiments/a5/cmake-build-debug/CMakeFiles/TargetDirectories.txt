@@ -1,3 +1,0 @@
-/home/anton/CPP/experiments/a5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/anton/CPP/experiments/a5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/anton/CPP/experiments/a5/cmake-build-debug/CMakeFiles/a5.dir
